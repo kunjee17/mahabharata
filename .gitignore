@@ -263,3 +263,4 @@ bin/
 obj/
 *.userprefs
 
+*.ncrunch*
