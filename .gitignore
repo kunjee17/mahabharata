@@ -264,3 +264,13 @@ obj/
 *.userprefs
 
 *.ncrunch*
+
+### paket exe ###
+.paket/paket.exe
+
+### Build output ###
+.build
+.test
+
+### Fake dirs ###
+.fake
