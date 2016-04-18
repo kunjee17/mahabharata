@@ -9,15 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		build.cmd = build.cmd
-<<<<<<< HEAD
 		build.fsx = build.fsx
 		build.sh = build.sh
 		paket.dependencies = paket.dependencies
 		paket.lock = paket.lock
-=======
-		build.sh = build.sh
-		paket.dependencies = paket.dependencies
->>>>>>> da1748167a5895a2fecac3d2bce11e7a18ba518b
+		readme.md = readme.md
 	EndProjectSection
 EndProject
 Global
