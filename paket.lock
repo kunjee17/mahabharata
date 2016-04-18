@@ -3,3 +3,4 @@ NUGET
   specs:
     FAKE (4.25.4)
     FParsec (1.0.2)
+    FsVerbalExpressions (0.3.1)
