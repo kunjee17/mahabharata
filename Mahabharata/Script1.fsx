@@ -159,7 +159,7 @@ Regex.Split(sample2, "\n\n") |> Array.map (fun x ->
 (* 
     Filtering name based on capital later. Thanks to Eve. 
 *)
-let checkisName (str : string) = Char.IsUpper(str.ToCharArray().[0])
+let checkisName (str : string) = isUpper str.[0]
 //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
 let cleanedUpSample (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
 //remove roman numbers 
