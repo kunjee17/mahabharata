@@ -165,32 +165,42 @@ let cleanedUpSample (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
 //remove roman numbers 
 let isRoman str = Regex.IsMatch(str, "^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
 let filterObvious str = str <> "I" && str <> "A" && str <> "An" && str <> "The"
+let filterSalutation str = str <> "O"
 let combineFilter str = 
     (not <| String.IsNullOrWhiteSpace str) && (not <| isRoman str) && (filterObvious str) && (checkisName str)
+    && filterSalutation str
 
 let processStr (str : string) = 
     str.Split(' ')
-    |> Array.toSeq
-    |> PSeq.map (fun x -> x.Trim())
+    |> Array.map (fun x -> x.Trim())
 
 let allProbableNames (str : string) =
-    let processed = processStr str 
-    str.Split(' ')
-    |> Array.toSeq
-    |> PSeq.map (fun x -> x.Trim())
-    //    |> PSeq.filter (fun x -> not <| (String.IsNullOrWhiteSpace x))
-    //    |> PSeq.filter checkisName
-    //    |> PSeq.filter filterObvious //filter the obvious
-    //    |> PSeq.filter (fun x -> (isRoman >> not) x)
-    |> PSeq.filter combineFilter
-    |> PSeq.filter (fun x -> (processed |> Seq.contains (x.ToLower())))
-//    |> PSeq.filter (fun x -> not <| str.Contains(x.ToLower()))
-let names = cleanedUpSample >> allProbableNames //this would have all name appearance in sample. 
-let uniqueNames str = names str |> PSeq.distinct
-//big volume1 data. 
-let volume1path = Path.Combine(__SOURCE_DIRECTORY__, "..", "txt_data/volume1.txt")
-let volume1 = File.ReadAllText volume1path
-let printSeq (strs : string seq) = strs |> PSeq.iter (fun x -> printfn "%A" x)
+    // Looking up lower case words was very slow 
+    // because it was searching through the full text
+    // Changed it into a Set - constant lookup
+    let processed = processStr str |> set 
+    processStr str
+    |> Array.filter combineFilter
+    |> Array.filter (fun x -> not (processed.Contains(x.ToLower())))
 
-printSeq <| (uniqueNames volume1 |> Seq.take 100)
-uniqueNames volume1 |> PSeq.length
+let names = cleanedUpSample >> allProbableNames //this would have all name appearance in sample. 
+let uniqueNames str = names str |> Array.countBy id
+
+//big volume1 data. 
+let volume1 = 
+    Path.Combine(__SOURCE_DIRECTORY__, "..", "txt_data/volume1.txt")
+    |> File.ReadAllLines
+    |> Array.skipWhile (fun line -> line <> "THE MAHABHARATA") // Skip the description & preface
+    |> Array.takeWhile (fun line -> line <> "FOOTNOTES")    // Skip the footnotes
+    |> String.concat "\n"
+
+let printSeq strs = strs |> Array.iter (fun x -> printfn "%A" x)
+
+printSeq <| (uniqueNames volume1 |> Array.take 100)
+let nameCandidates = uniqueNames volume1
+
+// Look at top names
+nameCandidates
+|> Array.sortByDescending snd
+|> Array.take 50
+|> printSeq

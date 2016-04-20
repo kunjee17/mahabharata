@@ -274,3 +274,5 @@ obj/
 
 ### Fake dirs ###
 .fake
+
+.DS_Store
