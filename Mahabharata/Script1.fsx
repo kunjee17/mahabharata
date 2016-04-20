@@ -1,21 +1,26 @@
 ﻿//Parse name which comes before said
-
+// open VerbalExpression
+//can't make it work with string if I am passing "a said b" then it should return (a,b)
+//fall back to string split. 
+//TODO use regex or FParsec for better performace
+module Script1
 
 #I "../packages"
 #r "FsVerbalExpressions/lib/net461/FsVerbalExpressions.dll"
 #r "FParsec/lib/portable-net45+netcore45+wpa81+wp8/FParsecCS.dll"
 #r "FParsec/lib/portable-net45+netcore45+wpa81+wp8/FParsec.dll"
-
+#r "FSharp.Collections.ParallelSeq/lib/net40/FSharp.Collections.ParallelSeq.dll"
 
 open System.Text.RegularExpressions
 open FsVerbalExpressions
-// open VerbalExpression
 open System
 open FParsec
+open System.IO
+open FSharp.Collections.ParallelSeq
 
-let test p str =
+let test p str = 
     match run p str with
-    | Success(result, _, _)   -> printfn "Success: %A" result
+    | Success(result, _, _) -> printfn "Success: %A" result
     | Failure(errorMsg, _, _) -> printfn "Failure: %s" errorMsg
 
 let sample = """
@@ -37,7 +42,6 @@ stories collected in the Puranas containing precepts of religious duty
 and of worldly profit, or the acts of illustrious saints and sovereigns
 of mankind?"
 """
-
 let sample2 = """
 "Sauti said, 'Having heard the diverse sacred and wonderful stories which
 were composed in his Mahabharata by Krishna-Dwaipayana, and which were
@@ -125,39 +129,67 @@ let simpleEmail = "contact@kunjan.in"
 test pfloat "1.15"
 
 let str s = pstring s
+let emailtest = pipe2 pfloat (str "@" >>. pfloat) (fun x y -> (x, y))
 
-let emailtest = pipe2 pfloat (str "@" >>. pfloat)
-                    (fun x y -> (x , y))
 test emailtest "3@5"
-
-//can't make it work with string if I am passing "a said b" then it should return (a,b)
-//fall back to string split. 
-//TODO use regex or FParsec for better performace
-
-sample.Replace("\"", "").Replace("\'","")
-|> fun x -> Regex.Split (x, "said")
+sample.Replace("\"", "").Replace("\'", "")
+|> fun x -> Regex.Split(x, "said")
 |> Array.toList
-|> fun x -> match x with 
-               | head::tail -> (head.Trim(),match tail with 
-                                                  | head::tail -> head.Trim()
-                                                  | _ -> "") 
-               | _ -> ("","")
-               
-               
-Regex.Split(sample2, "\n\n")
-|> Array.map (fun x -> x.Replace("\"", "").Replace("\'","")
-                        |> fun x -> Regex.Split (x, "said")
-                        |> Array.toList
-                        |> fun x -> match x with 
-                                    | head::tail -> (head.Trim(),match tail with 
-                                                                        | head::tail -> ""
-                                                                        | _ -> "") 
-                                    | _ -> ("",""))
+|> fun x -> 
+    match x with
+    | head :: tail -> 
+        (head.Trim(), 
+         match tail with
+         | head :: tail -> head.Trim()
+         | _ -> "")
+    | _ -> ("", "")
+Regex.Split(sample2, "\n\n") |> Array.map (fun x -> 
+                                    x.Replace("\"", "").Replace("\'", "")
+                                    |> fun x -> Regex.Split(x, "said")
+                                    |> Array.toList
+                                    |> fun x -> 
+                                        match x with
+                                        | head :: tail -> 
+                                            (head.Trim(), 
+                                             match tail with
+                                             | head :: tail -> ""
+                                             | _ -> "")
+                                        | _ -> ("", ""))
 
+(* 
+    Filtering name based on capital later. Thanks to Eve. 
+*)
+let checkisName (str : string) = Char.IsUpper(str.ToCharArray().[0])
+//should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
+let cleanedUpSample (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
+//remove roman numbers 
+let isRoman str = Regex.IsMatch(str, "^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
+let filterObvious str = str <> "I" && str <> "A" && str <> "An" && str <> "The"
+let combineFilter str = 
+    (not <| String.IsNullOrWhiteSpace str) && (not <| isRoman str) && (filterObvious str) && (checkisName str)
 
+let processStr (str : string) = 
+    str.Split(' ')
+    |> Array.toSeq
+    |> PSeq.map (fun x -> x.Trim())
 
+let allProbableNames (str : string) = 
+    str.Split(' ')
+    |> Array.toSeq
+    |> PSeq.map (fun x -> x.Trim())
+    //    |> PSeq.filter (fun x -> not <| (String.IsNullOrWhiteSpace x))
+    //    |> PSeq.filter checkisName
+    //    |> PSeq.filter filterObvious //filter the obvious
+    //    |> PSeq.filter (fun x -> (isRoman >> not) x)
+    |> PSeq.filter combineFilter
 
- 
+//    |> PSeq.filter (fun x -> not <| str.Contains(x.ToLower()))
+let names = cleanedUpSample >> allProbableNames //this would have all name appearance in sample. 
+let uniqueNames str = names str |> PSeq.distinct
+//big volume1 data. 
+let volume1path = Path.Combine(__SOURCE_DIRECTORY__, "..", "txt_data/volume1.txt")
+let volume1 = File.ReadAllText volume1path
+let printSeq (strs : string seq) = strs |> PSeq.iter (fun x -> printfn "%A" x)
 
-
-                 
+printSeq <| (uniqueNames volume1 |> Seq.take 100)
+uniqueNames volume1 |> PSeq.length
