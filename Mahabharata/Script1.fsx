@@ -173,7 +173,8 @@ let processStr (str : string) =
     |> Array.toSeq
     |> PSeq.map (fun x -> x.Trim())
 
-let allProbableNames (str : string) = 
+let allProbableNames (str : string) =
+    let processed = processStr str 
     str.Split(' ')
     |> Array.toSeq
     |> PSeq.map (fun x -> x.Trim())
@@ -182,7 +183,7 @@ let allProbableNames (str : string) =
     //    |> PSeq.filter filterObvious //filter the obvious
     //    |> PSeq.filter (fun x -> (isRoman >> not) x)
     |> PSeq.filter combineFilter
-
+    |> PSeq.filter (fun x -> (processed |> Seq.contains (x.ToLower())))
 //    |> PSeq.filter (fun x -> not <| str.Contains(x.ToLower()))
 let names = cleanedUpSample >> allProbableNames //this would have all name appearance in sample. 
 let uniqueNames str = names str |> PSeq.distinct
