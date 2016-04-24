@@ -169,7 +169,7 @@ let filterSalutation str = str <> "O"
 let combineFilter str = 
     (not <| String.IsNullOrWhiteSpace str) && (not <| isRoman str) && (filterObvious str) && (checkisName str)
     && filterSalutation str
-
+ 
 let processStr (str : string) = 
     str.Split(' ')
     |> Array.map (fun x -> x.Trim())
