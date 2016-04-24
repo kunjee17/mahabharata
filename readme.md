@@ -30,6 +30,7 @@ Many authors told story of this epic in their own way. Here is another retry fro
 - [x] Extract all the possible characters and Places
 - [ ] Separate places from characters
 - [ ] Find the important ones
+- [ ] Find the family tree / relation ship of characters 
 - [ ] Combine names based on their plural names. Means Veda and Vedas are same when it comes to count frequency
 - [ ] Find multiple names for single person. Krishna called by many names like Vasudeva, Goverdhan etc. Same true for Arjun and others. So find out people who are same but called with different name.
 - [ ] Find out relationship between characters. Who is son of who, who is mother of who, who marries who. Here is interesting thing is a person can have two father. One is real one and one is biological one.
