@@ -27,7 +27,7 @@ let quote p =
   | Success(q,_,_) -> q
   | Failure(_,_,_) -> "Could not parse string"
 
-let words = (quote parsedQuote).Trim().Split(' ')
+let words = (quote parsedQuote) |> NameFinder.names
 
 let matches =
   [ for word in words do

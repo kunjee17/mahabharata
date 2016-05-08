@@ -153,7 +153,7 @@ module NameFinder
   *)
   let checkisName (str : string) = isUpper str.[0]
   //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
-  let cleanedUpSample (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
+  let removeSpecialChars (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
   //remove roman numbers 
   let isRoman str = Regex.IsMatch(str, "^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
   let filterObvious str = str <> "I" && str <> "A" && str <> "An" && str <> "The"
@@ -175,7 +175,7 @@ module NameFinder
       |> Array.filter combineFilter
       |> Array.filter (fun x -> not (processed.Contains(x.ToLower())))
 
-  let names = cleanedUpSample >> allProbableNames //this would have all name appearance in sample. 
+  let names = removeSpecialChars >> allProbableNames //this would have all name appearance in sample. 
   let uniqueNames str = names str |> Array.countBy id
 
   //big volume1 data. 
