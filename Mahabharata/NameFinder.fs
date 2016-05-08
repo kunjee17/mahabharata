@@ -3,20 +3,13 @@
 //can't make it work with string if I am passing "a said b" then it should return (a,b)
 //fall back to string split. 
 //TODO use regex or FParsec for better performace
-#I "../packages"
-#r "FsVerbalExpressions/lib/net461/FsVerbalExpressions.dll"
-#r "FParsec/lib/portable-net45+netcore45+wpa81+wp8/FParsecCS.dll"
-#r "FParsec/lib/portable-net45+netcore45+wpa81+wp8/FParsec.dll"
-#r "FSharp.Collections.ParallelSeq/lib/net40/FSharp.Collections.ParallelSeq.dll"
+module NameFinder
+  open System.Text.RegularExpressions
+  open System
+  open FParsec
+  open System.IO
+//  open FSharp.Collections.ParallelSeq
 
-open System.Text.RegularExpressions
-open FsVerbalExpressions
-open System
-open FParsec
-open System.IO
-open FSharp.Collections.ParallelSeq
-
-module NameFinder = 
   let test p str = 
       match run p str with
       | Success(result, _, _) -> printfn "Success: %A" result
@@ -131,29 +124,29 @@ module NameFinder =
   let emailtest = pipe2 pfloat (str "@" >>. pfloat) (fun x y -> (x, y))
 
   test emailtest "3@5"
-  sample.Replace("\"", "").Replace("\'", "")
-  |> fun x -> Regex.Split(x, "said")
-  |> Array.toList
-  |> fun x -> 
-      match x with
-      | head :: tail -> 
-          (head.Trim(), 
-           match tail with
-           | head :: tail -> head.Trim()
-           | _ -> "")
-      | _ -> ("", "")
-  Regex.Split(sample2, "\n\n") |> Array.map (fun x -> 
-                                      x.Replace("\"", "").Replace("\'", "")
-                                      |> fun x -> Regex.Split(x, "said")
-                                      |> Array.toList
-                                      |> fun x -> 
-                                          match x with
-                                          | head :: tail -> 
-                                              (head.Trim(), 
-                                               match tail with
-                                               | head :: tail -> ""
-                                               | _ -> "")
-                                          | _ -> ("", ""))
+//  sample.Replace("\"", "").Replace("\'", "")
+//  |> fun x -> Regex.Split(x, "said")
+//  |> Array.toList
+//  |> fun x -> 
+//      match x with
+//      | head :: tail -> 
+//          (head.Trim(), 
+//           match tail with
+//           | head :: tail -> head.Trim()
+//           | _ -> "")
+//      | _ -> ("", "")
+//  Regex.Split(sample2, "\n\n") |> Array.map (fun x -> 
+//                                      x.Replace("\"", "").Replace("\'", "")
+//                                      |> fun x -> Regex.Split(x, "said")
+//                                      |> Array.toList
+//                                      |> fun x -> 
+//                                          match x with
+//                                          | head :: tail -> 
+//                                              (head.Trim(), 
+//                                               match tail with
+//                                               | head :: tail -> ""
+//                                               | _ -> "")
+//                                          | _ -> ("", ""))
 
   (* 
       Filtering name based on capital later. Thanks to Eve. 
