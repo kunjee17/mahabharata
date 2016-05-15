@@ -114,7 +114,7 @@ module NameFinder
   this wheel which causeth the destruction of all things.
   """
 
-  sample.Replace("\"", "")
+//  sample.Replace("\"", "") 
 
   let simpleEmail = "contact@kunjan.in"
 
