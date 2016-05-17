@@ -11,7 +11,7 @@ let nameSet = set namesOnly
 
 // Split text into individual words
 let allWords = 
-    volume1.Split(" .,()!?-\n\t".ToCharArray())
+    volume.Split(" .,()!?-\n\t".ToCharArray())
     |> Array.map (fun s -> s.Trim())
     |> Array.filter ((<>) "")
 
@@ -69,6 +69,10 @@ let maybeNotNames =
         (not (maybeIsCharacter w)) && (not (surelyNames.Contains n)))
     |> Array.map fst
     |> Array.distinct
+
+maybeNotNames |> Array.iter (fun x -> printfn "%A" x)
+
+maybeNotNames |> Array.findIndex (fun x -> x = "Duhsasana")
 
 // Saraswati is a goddess & a river?
 

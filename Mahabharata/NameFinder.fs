@@ -116,14 +116,14 @@ module NameFinder
 
 //  sample.Replace("\"", "") 
 
-  let simpleEmail = "contact@kunjan.in"
+  // let simpleEmail = "contact@kunjan.in"
 
-  test pfloat "1.15"
+  // test pfloat "1.15"
 
-  let str s = pstring s
-  let emailtest = pipe2 pfloat (str "@" >>. pfloat) (fun x y -> (x, y))
+  // let str s = pstring s
+  // let emailtest = pipe2 pfloat (str "@" >>. pfloat) (fun x y -> (x, y))
 
-  test emailtest "3@5"
+  // test emailtest "3@5"
 //  sample.Replace("\"", "").Replace("\'", "")
 //  |> fun x -> Regex.Split(x, "said")
 //  |> Array.toList
@@ -185,11 +185,35 @@ module NameFinder
       |> Array.skipWhile (fun line -> line <> "THE MAHABHARATA") // Skip the description & preface
       |> Array.takeWhile (fun line -> line <> "FOOTNOTES")    // Skip the footnotes
       |> String.concat "\n"
+        
+  let volume2 = 
+      Path.Combine(__SOURCE_DIRECTORY__, "..", "txt_data/volume2.txt")
+      |> File.ReadAllLines
+      |> Array.skipWhile (fun line -> line <> "THE MAHABHARATA") // Skip the description & preface
+      |> Array.takeWhile (fun line -> line <> "FOOTNOTES")    // Skip the footnotes
+      |> String.concat "\n"
+ 
+  let volume3 = 
+      Path.Combine(__SOURCE_DIRECTORY__, "..", "txt_data/volume3.txt")
+      |> File.ReadAllLines
+      |> Array.skipWhile (fun line -> line <> "THE MAHABHARATA") // Skip the description & preface
+      |> Array.takeWhile (fun line -> line <> "FOOTNOTES")    // Skip the footnotes
+      |> String.concat "\n"
+        
+  let volume4 = 
+      Path.Combine(__SOURCE_DIRECTORY__, "..", "txt_data/volume4.txt")
+      |> File.ReadAllLines
+      |> Array.skipWhile (fun line -> line <> "THE MAHABHARATA") // Skip the description & preface
+      |> Array.takeWhile (fun line -> line <> "FOOTNOTES")    // Skip the footnotes
+      |> String.concat "\n"
+   
+  let volume = volume1 + volume2 + volume3 + volume4   
+        
 
   let printSeq strs = strs |> Array.iter (fun x -> printfn "%A" x)
 
   printSeq <| (uniqueNames volume1 |> Array.take 100)
-  let nameCandidates = uniqueNames volume1
+  let nameCandidates = uniqueNames volume
 
   // Look at top names
   let nameCandidatesArr =
