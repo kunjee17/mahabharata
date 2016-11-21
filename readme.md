@@ -76,5 +76,5 @@ Special thanks to
 
 - [Mark Gray](https://github.com/monkieboy)
 - [Evelina Gabasova](https://github.com/evelinag)
-- [Lena](https://github.com/lenadroid)
+- [Alena](https://github.com/lenadroid)
 - [Tirth Pandya](https://github.com/tirthpandya) 
