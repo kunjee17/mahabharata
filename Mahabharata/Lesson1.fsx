@@ -12,6 +12,7 @@ type Book(bookno:string) =
     //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
     let removeSpecialChars (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
 
+    member x.BookNo = bookno
     member x.BookText = 
                 Path.Combine(__SOURCE_DIRECTORY__, "..", "books/"+ bookno + ".txt")
                 |> File.ReadAllLines
@@ -38,12 +39,14 @@ let books = [|
         yield new Book(n) 
 |]
 
-let allUniqueTermsbut1 = books.[1..] |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
+
+let k = 1
+let allUniqueTermsbut1 = books.[k..] |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
 
 let termsspecificto1 = books.[0] |> fun x -> x.BookUniqueTerms - allUniqueTermsbut1
 
 
 
-termsspecificto1 |> Set.toArray |> Array.take 50 |> Array.iter (printfn "%A")
+termsspecificto1 |> Set.toArray |> Array.take 50 |> Array.iter (printfn "%A") 
 
 
