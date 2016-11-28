@@ -14,7 +14,7 @@ open FsVerbalExpressions
 open System
 open FParsec
 open System.IO
-open FSharp.Collections.ParallelSeq
+
 
 module NameFinder = 
   let test p str = 
