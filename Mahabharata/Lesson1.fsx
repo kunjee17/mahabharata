@@ -68,10 +68,22 @@ let getUniqueTermsByFrequencyForBook (bookno : string) : Doc =
     {Bookno = bookno; DocItems = docItems}
     
 
-let uniqueTermsforAllBooks = booknos |> Array.map getUniqueTermsByFrequencyForBook 
+let uniqueTermsforAllBooksAsDoc = booknos |> Array.map getUniqueTermsByFrequencyForBook 
+
+let uniqueTermsforAllBooks = books |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
+
+let invertedIndex (term:string) =
+    let n = books |> Array.filter (fun x -> x.BookUniqueTerms.Contains term) |> Array.length |> float
+    let m = books |> Array.length |> float
+    log (m/n)
+
+
+let invertedIndexTerms = 
+    uniqueTermsforAllBooks 
+        |> Set.map (fun x -> (x,invertedIndex x))
 
 let terms =
-    Compact.serialize uniqueTermsforAllBooks 
+    Compact.serialize uniqueTermsforAllBooksAsDoc 
 
 let JsonToFile (path:string)(text : string) = 
     use writer = new StreamWriter(path)
