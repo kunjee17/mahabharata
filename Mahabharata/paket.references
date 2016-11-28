@@ -1,3 +1,4 @@
 FParsec
 FsVerbalExpressions
 FSharp.Core
+Microsoft.FSharpLu.Json

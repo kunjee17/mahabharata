@@ -1,7 +1,8 @@
 source https://nuget.org/api/v2
-
+redirects : on
 
 nuget FAKE
 nuget FParsec
 nuget FsVerbalExpressions
 nuget FSharp.Core redirects: force
+nuget Microsoft.FSharpLu.Json
