@@ -70,20 +70,16 @@ let getUniqueTermsByFrequencyForBook (bookno : string) : Doc =
 
 let uniqueTermsforAllBooks = booknos |> Array.map getUniqueTermsByFrequencyForBook 
 
-type Container = {
-    Result : Object
-}
-
 let terms =
-    {Result = box uniqueTermsforAllBooks } |>
-    Compact.serialize 
+    Compact.serialize uniqueTermsforAllBooks 
 
 let JsonToFile (path:string)(text : string) = 
     use writer = new StreamWriter(path)
-    writer.WriteLine text
+    writer.WriteLine ("var terms=" + text)
 
 let jsonpath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "terms" + ".js")
 
 JsonToFile jsonpath terms
+
 
 
