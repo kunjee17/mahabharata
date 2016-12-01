@@ -6,6 +6,11 @@ NUGET
     FParsec (1.0.2)
     FSharp.Core (4.0.0.1) - redirects: force
     FsVerbalExpressions (0.6)
+    MathNet.Numerics (3.13.1)
+      TaskParallelLibrary (>= 1.0.2856) - framework: net35
+    MathNet.Numerics.FSharp (3.13.1)
+      FSharp.Core (>= 3.1.2.5)
+      MathNet.Numerics (3.13.1)
     Microsoft.CSharp (4.3) - framework: >= netstandard10
       System.Collections (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Diagnostics.Debug (>= 4.3) - framework: dnxcore50, >= netstandard13
@@ -244,3 +249,4 @@ NUGET
       System.Text.Encoding (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Threading (>= 4.3) - framework: dnxcore50, >= netstandard13
       System.Xml.ReaderWriter (>= 4.3) - framework: dnxcore50, netstandard10, >= netstandard13
+    TaskParallelLibrary (1.0.2856) - framework: net35

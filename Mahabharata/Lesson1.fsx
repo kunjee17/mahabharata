@@ -4,11 +4,17 @@ Lesson 1 - Basic understanding of NLP. Getting started with term,document freque
 #I "../packages"
 #r "Microsoft.FsharpLu.Json/lib/net452/Microsoft.FsharpLu.Json.dll"
 #r "Newtonsoft.Json/lib/net45/Newtonsoft.Json.dll"
+#r "MathNet.Numerics/lib/net40/MathNet.Numerics.dll"
+#r "MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
+
 open System.IO
 open System
 open System.Text.RegularExpressions
 open Newtonsoft.Json
 open Microsoft.FSharpLu.Json
+open MathNet.Numerics
+open MathNet.Numerics.LinearAlgebra
+open MathNet.Numerics.LinearAlgebra.SparseMatrix
 
 
 type DocItem = {
@@ -32,14 +38,17 @@ type Book(bookno:string) =
                 Path.Combine(__SOURCE_DIRECTORY__, "..", "books/"+ bookno + ".txt")
                 |> File.ReadAllLines
 
-    member x.BookTermGroup = 
-        x.BookText 
-            |> String.concat " " 
+    member x.TermFrequency (input:string) = 
+            input
+            // |> String.concat " " 
             |> (fun x -> x.Split ' ')
             |> Array.map (removeSpecialChars >> (fun x -> x.Trim())) 
             |> Array.filter (fun x -> x <> "")
-            |> Array.groupBy id 
-            |> Array.map (fun (a,b) -> a, b.Length )
+            |> Array.countBy id
+    member x.BookTermGroup = 
+            x.TermFrequency (x.BookText |> String.concat " ")
+             
+            
 
     member x.BookUniqueTerms = 
         x.BookTermGroup 
@@ -55,11 +64,24 @@ let books = [|
 |]
 
 
+let (m : Matrix<float>) = 
+    let allbookTerms = books 
+                        |> Array.map (fun x -> x.BookUniqueTerms) 
+                        |> Array.fold (+) Set.empty
+    let sm = SparseMatrix.zero books.Length allbookTerms.Count
+    let book0 = books.[0]
+    allbookTerms 
+        |> Set.toArray
+        |> Array.iteri (fun i x  -> 
+                            if book0.BookUniqueTerms.Contains x then  sm.[0,i]<- 1.0 
+                        )
+    sm
+
 let getUniqueTermsByFrequencyForBook (bookno : string) : Doc = 
     let bookToProcess = books |> Array.find (fun x -> x.BookNo = bookno)
     let allOtherBooks = books |> Array.filter (fun x -> x.BookNo <> bookno)
 
-    let allBookTerms = allOtherBooks |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
+    let allBookTerms = allOtherBooks |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (+) Set.empty
 
     let termsSpecifictoBook = bookToProcess.BookUniqueTerms - allBookTerms
     let docItems: DocItem [] = bookToProcess.BookTermGroup 
@@ -82,16 +104,16 @@ let invertedIndexTerms =
     uniqueTermsforAllBooks 
         |> Set.map (fun x -> (x,invertedIndex x))
 
-let terms =
-    Compact.serialize uniqueTermsforAllBooksAsDoc 
+// let terms =
+//     Compact.serialize uniqueTermsforAllBooksAsDoc 
 
-let JsonToFile (path:string)(text : string) = 
-    use writer = new StreamWriter(path)
-    writer.WriteLine ("var terms=" + text)
+// let JsonToFile (path:string)(text : string) = 
+//     use writer = new StreamWriter(path)
+//     writer.WriteLine ("var terms=" + text)
 
-let jsonpath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "terms" + ".js")
+// let jsonpath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "terms" + ".js")
 
-JsonToFile jsonpath terms
+// JsonToFile jsonpath terms
 
 
 
