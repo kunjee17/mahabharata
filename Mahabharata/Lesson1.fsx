@@ -1,11 +1,13 @@
 (**
-Lesson 1 - Basic understanding of NLP. Getting started with term,document frequency for term and Inverse document frequency for term. 
+Lesson 1 - Basic understanding of NLP. Getting started with term,document frequency for term and Inverse document frequency for term.
 *)
 #I "../packages"
 #r "Microsoft.FsharpLu.Json/lib/net452/Microsoft.FsharpLu.Json.dll"
 #r "Newtonsoft.Json/lib/net45/Newtonsoft.Json.dll"
 #r "MathNet.Numerics/lib/net40/MathNet.Numerics.dll"
 #r "MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
+// #r "FSharp.Data/lib/FSharp.Data.DesignTime.dll"
+#r "FSharp.Data/lib/net40/FSharp.Data.dll"
 
 open System.IO
 open System
@@ -15,10 +17,52 @@ open Microsoft.FSharpLu.Json
 open MathNet.Numerics
 open MathNet.Numerics.LinearAlgebra
 open MathNet.Numerics.LinearAlgebra.SparseMatrix
+open FSharp.Data
+
+//Basic_Emotions_(size_is_proportional_to_number_of__data.csv
+let EmotionalPath = Path.Combine(__SOURCE_DIRECTORY__, "..","data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
+type EmotionCsv = CsvProvider< "../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv">
+
+
+
+let Emotions = EmotionCsv.Load("../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
+
+type EmotionNumber = {
+    Anger:int
+    Anticipation:int
+    Disgust:int
+    Emotion:int
+    Fear:int
+    Joy:int
+    Negative:int
+    Positive:int
+    Sadness:int
+    Surprise:int
+    Trust:int
+    Word: string
+}
+
+let stringToNum s = if String.IsNullOrEmpty(s) then 0 else 1
+let EmotionsNumber = Emotions.Rows |> Seq.map (fun row -> {
+                                                            Anger = stringToNum row.Anger
+                                                            Anticipation = stringToNum row.Anticipation
+                                                            Disgust = stringToNum row.Disgust
+                                                            Emotion = stringToNum row.Emotion
+                                                            Fear = stringToNum row.Fear
+                                                            Joy = stringToNum row.Joy
+                                                            Negative = stringToNum row.Negative
+                                                            Positive = stringToNum row.Positive
+                                                            Sadness = stringToNum row.Sadness
+                                                            Surprise = stringToNum row.Surprise
+                                                            Trust = stringToNum row.Trust
+                                                            Word = row.Word
+                                                        })
+let emotionalWords = EmotionsNumber |> Seq.map (fun row -> row.Word) |> set
+// |> Seq.map (fun (nor,anger,anticipation,disgust,emotion,fear,joy,negative,positive,sadness,trust,word) -> ignore)
 
 
 type DocItem = {
-    Term : string 
+    Term : string
     Freq : int
 }
 
@@ -28,30 +72,30 @@ type Doc = {
 }
 
 
-type Book(bookno:string) = 
+type Book(bookno:string) =
 
     //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
     let removeSpecialChars (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
 
     member x.BookNo = bookno
-    member x.BookText = 
+    member x.BookText =
                 Path.Combine(__SOURCE_DIRECTORY__, "..", "books/"+ bookno + ".txt")
                 |> File.ReadAllLines
 
-    member x.TermFrequency (input:string) = 
+    member x.TermFrequency (input:string) =
             input
-            // |> String.concat " " 
+            // |> String.concat " "
             |> (fun x -> x.Split ' ')
-            |> Array.map (removeSpecialChars >> (fun x -> x.Trim())) 
+            |> Array.map (removeSpecialChars >> (fun x -> x.Trim()))
             |> Array.filter (fun x -> x <> "")
             |> Array.countBy id
-    member x.BookTermGroup = 
+    member x.BookTermGroup =
             x.TermFrequency (x.BookText |> String.concat " ")
-             
-            
 
-    member x.BookUniqueTerms = 
-        x.BookTermGroup 
+
+
+    member x.BookUniqueTerms =
+        x.BookTermGroup
             |> Array.map (fun (x,_)-> x)
             |> set
 
@@ -60,37 +104,82 @@ let booknos = [|"01";"02";"03";"04";"05";"06";"07";"08";"09";"10";"11";"12";"13"
 
 let books = [|
     for n in booknos do
-        yield Book(n) 
+        yield Book(n)
 |]
 
+let book0 = books.[0]
 
-let (m : Matrix<float>) = 
-    let allbookTerms = books 
-                        |> Array.map (fun x -> x.BookUniqueTerms) 
+let commonetEmotions = book0.BookUniqueTerms |> Set.intersect emotionalWords
+
+let commonEmotionTypes = EmotionsNumber |> Seq.filter (fun x -> commonetEmotions.Contains x.Word) |> Seq.toArray
+
+let zero = {
+        Anger = 0
+        Anticipation = 0
+        Disgust =0
+        Emotion = 0
+        Fear = 0
+        Joy = 0
+        Negative = 0
+        Positive = 0
+        Sadness = 0
+        Surprise = 0
+        Trust = 0
+        Word = "book0"
+    }
+
+let bookSum a b =
+    {
+        Anger = a.Anger + b.Anger
+        Anticipation = a.Anticipation + b.Anticipation
+        Disgust = a.Disgust + b.Disgust
+        Emotion = a.Emotion + b.Emotion
+        Fear = a.Fear + b.Fear
+        Joy = a.Joy + b.Joy
+        Negative = a.Negative + b.Negative
+        Positive = a.Positive + b.Positive
+        Sadness = a.Sadness + b.Sadness
+        Surprise = a.Surprise + b.Surprise
+        Trust = a.Trust + b.Trust
+        Word = "book0"
+    }
+
+
+let book0Emo = commonEmotionTypes
+                |> Array.fold (bookSum) zero
+
+
+
+
+
+
+let (m : Matrix<float>) =
+    let allbookTerms = books
+                        |> Array.map (fun x -> x.BookUniqueTerms)
                         |> Array.fold (+) Set.empty
     let sm = SparseMatrix.zero books.Length allbookTerms.Count
     let book0 = books.[0]
-    allbookTerms 
+    allbookTerms
         |> Set.toArray
-        |> Array.iteri (fun i x  -> 
-                            if book0.BookUniqueTerms.Contains x then  sm.[0,i]<- 1.0 
+        |> Array.iteri (fun i x  ->
+                            if book0.BookUniqueTerms.Contains x then  sm.[0,i]<- 1.0
                         )
     sm
 
-let getUniqueTermsByFrequencyForBook (bookno : string) : Doc = 
+let getUniqueTermsByFrequencyForBook (bookno : string) : Doc =
     let bookToProcess = books |> Array.find (fun x -> x.BookNo = bookno)
     let allOtherBooks = books |> Array.filter (fun x -> x.BookNo <> bookno)
 
     let allBookTerms = allOtherBooks |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (+) Set.empty
 
     let termsSpecifictoBook = bookToProcess.BookUniqueTerms - allBookTerms
-    let docItems: DocItem [] = bookToProcess.BookTermGroup 
-                                |> Array.filter (fun (x,_) -> termsSpecifictoBook.Contains x) 
+    let docItems: DocItem [] = bookToProcess.BookTermGroup
+                                |> Array.filter (fun (x,_) -> termsSpecifictoBook.Contains x)
                                 |> Array.map (fun (x,y)-> { Term = x; Freq = y})
     {Bookno = bookno; DocItems = docItems}
-    
 
-let uniqueTermsforAllBooksAsDoc = booknos |> Array.map getUniqueTermsByFrequencyForBook 
+
+let uniqueTermsforAllBooksAsDoc = booknos |> Array.map getUniqueTermsByFrequencyForBook
 
 let uniqueTermsforAllBooks = books |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
 
@@ -100,14 +189,14 @@ let invertedIndex (term:string) =
     log (m/n)
 
 
-let invertedIndexTerms = 
-    uniqueTermsforAllBooks 
+let invertedIndexTerms =
+    uniqueTermsforAllBooks
         |> Set.map (fun x -> (x,invertedIndex x))
 
 // let terms =
-//     Compact.serialize uniqueTermsforAllBooksAsDoc 
+//     Compact.serialize uniqueTermsforAllBooksAsDoc
 
-// let JsonToFile (path:string)(text : string) = 
+// let JsonToFile (path:string)(text : string) =
 //     use writer = new StreamWriter(path)
 //     writer.WriteLine ("var terms=" + text)
 

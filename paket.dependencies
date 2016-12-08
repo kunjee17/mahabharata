@@ -7,3 +7,4 @@ nuget FsVerbalExpressions
 nuget FSharp.Core redirects: force
 nuget Microsoft.FSharpLu.Json
 nuget MathNet.Numerics.FSharp
+nuget FSharp.Data
