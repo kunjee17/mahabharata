@@ -6,7 +6,6 @@ Lesson 1 - Basic understanding of NLP. Getting started with term,document freque
 #r "Newtonsoft.Json/lib/net45/Newtonsoft.Json.dll"
 #r "MathNet.Numerics/lib/net40/MathNet.Numerics.dll"
 #r "MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
-// #r "FSharp.Data/lib/FSharp.Data.DesignTime.dll"
 #r "FSharp.Data/lib/net40/FSharp.Data.dll"
 
 open System.IO
@@ -25,9 +24,9 @@ type EmotionCsv = CsvProvider< "../data/Basic_Emotions_(size_is_proportional_to_
 
 
 
-let Emotions = EmotionCsv.Load("../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
+let EmotionData = EmotionCsv.Load("../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
 
-type EmotionNumber = {
+type EmotionInNumber = {
     Anger:int
     Anticipation:int
     Disgust:int
@@ -42,22 +41,25 @@ type EmotionNumber = {
     Word: string
 }
 
+let JsonToFile (path:string)(text : string) =
+    use writer = new StreamWriter(path)
+    writer.WriteLine (text)
 let stringToNum s = if String.IsNullOrEmpty(s) then 0 else 1
-let EmotionsNumber = Emotions.Rows |> Seq.map (fun row -> {
-                                                            Anger = stringToNum row.Anger
-                                                            Anticipation = stringToNum row.Anticipation
-                                                            Disgust = stringToNum row.Disgust
-                                                            Emotion = stringToNum row.Emotion
-                                                            Fear = stringToNum row.Fear
-                                                            Joy = stringToNum row.Joy
-                                                            Negative = stringToNum row.Negative
-                                                            Positive = stringToNum row.Positive
-                                                            Sadness = stringToNum row.Sadness
-                                                            Surprise = stringToNum row.Surprise
-                                                            Trust = stringToNum row.Trust
-                                                            Word = row.Word
-                                                        })
-let emotionalWords = EmotionsNumber |> Seq.map (fun row -> row.Word) |> set
+let allEmotionsInNumber = EmotionData.Rows |> Seq.map (fun row -> {
+                                                                    Anger = stringToNum row.Anger
+                                                                    Anticipation = stringToNum row.Anticipation
+                                                                    Disgust = stringToNum row.Disgust
+                                                                    Emotion = stringToNum row.Emotion
+                                                                    Fear = stringToNum row.Fear
+                                                                    Joy = stringToNum row.Joy
+                                                                    Negative = stringToNum row.Negative
+                                                                    Positive = stringToNum row.Positive
+                                                                    Sadness = stringToNum row.Sadness
+                                                                    Surprise = stringToNum row.Surprise
+                                                                    Trust = stringToNum row.Trust
+                                                                    Word = row.Word
+                                                                })
+let emotionWordsSet = allEmotionsInNumber |> Seq.map (fun row -> row.Word) |> set
 // |> Seq.map (fun (nor,anger,anticipation,disgust,emotion,fear,joy,negative,positive,sadness,trust,word) -> ignore)
 
 
@@ -70,6 +72,37 @@ type Doc = {
     Bookno : string
     DocItems : DocItem []
 }
+
+let zeroEmotion = {
+        Anger = 0
+        Anticipation = 0
+        Disgust =0
+        Emotion = 0
+        Fear = 0
+        Joy = 0
+        Negative = 0
+        Positive = 0
+        Sadness = 0
+        Surprise = 0
+        Trust = 0
+        Word = "book0"
+    }
+
+let bookSum bookname a b =
+    {
+        Anger = a.Anger + b.Anger
+        Anticipation = a.Anticipation + b.Anticipation
+        Disgust = a.Disgust + b.Disgust
+        Emotion = a.Emotion + b.Emotion
+        Fear = a.Fear + b.Fear
+        Joy = a.Joy + b.Joy
+        Negative = a.Negative + b.Negative
+        Positive = a.Positive + b.Positive
+        Sadness = a.Sadness + b.Sadness
+        Surprise = a.Surprise + b.Surprise
+        Trust = a.Trust + b.Trust
+        Word = bookname
+    }
 
 
 type Book(bookno:string) =
@@ -92,12 +125,15 @@ type Book(bookno:string) =
     member x.BookTermGroup =
             x.TermFrequency (x.BookText |> String.concat " ")
 
-
-
     member x.BookUniqueTerms =
         x.BookTermGroup
             |> Array.map (fun (x,_)-> x)
             |> set
+    
+    member x.EmotionalIndex =
+        let commonEmotions = x.BookUniqueTerms |> Set.intersect emotionWordsSet
+        let commonEmotionsInNumber = allEmotionsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray 
+        commonEmotionsInNumber |> Array.fold (bookSum bookno) zeroEmotion
 
 
 let booknos = [|"01";"02";"03";"04";"05";"06";"07";"08";"09";"10";"11";"12";"13";"14";"15";"16";"17";"18"|]
@@ -109,46 +145,12 @@ let books = [|
 
 let book0 = books.[0]
 
-let commonetEmotions = book0.BookUniqueTerms |> Set.intersect emotionalWords
+let allBookEmotionalIndex = books |> Array.map (fun x -> x.EmotionalIndex)
 
-let commonEmotionTypes = EmotionsNumber |> Seq.filter (fun x -> commonetEmotions.Contains x.Word) |> Seq.toArray
+let emotionalJsonData = Compact.serialize allBookEmotionalIndex
 
-let zero = {
-        Anger = 0
-        Anticipation = 0
-        Disgust =0
-        Emotion = 0
-        Fear = 0
-        Joy = 0
-        Negative = 0
-        Positive = 0
-        Sadness = 0
-        Surprise = 0
-        Trust = 0
-        Word = "book0"
-    }
-
-let bookSum a b =
-    {
-        Anger = a.Anger + b.Anger
-        Anticipation = a.Anticipation + b.Anticipation
-        Disgust = a.Disgust + b.Disgust
-        Emotion = a.Emotion + b.Emotion
-        Fear = a.Fear + b.Fear
-        Joy = a.Joy + b.Joy
-        Negative = a.Negative + b.Negative
-        Positive = a.Positive + b.Positive
-        Sadness = a.Sadness + b.Sadness
-        Surprise = a.Surprise + b.Surprise
-        Trust = a.Trust + b.Trust
-        Word = "book0"
-    }
-
-
-let book0Emo = commonEmotionTypes
-                |> Array.fold (bookSum) zero
-
-
+let emotionalPath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "emotional" + ".json")
+JsonToFile emotionalPath emotionalJsonData
 
 
 
@@ -196,9 +198,7 @@ let invertedIndexTerms =
 // let terms =
 //     Compact.serialize uniqueTermsforAllBooksAsDoc
 
-// let JsonToFile (path:string)(text : string) =
-//     use writer = new StreamWriter(path)
-//     writer.WriteLine ("var terms=" + text)
+
 
 // let jsonpath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "terms" + ".js")
 
