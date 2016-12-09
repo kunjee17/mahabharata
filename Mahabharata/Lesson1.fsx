@@ -30,7 +30,7 @@ type EmotionInNumber = {
     Anger:int
     Anticipation:int
     Disgust:int
-    Emotion:int
+    // Emotion:int
     Fear:int
     Joy:int
     Negative:int
@@ -45,20 +45,50 @@ let JsonToFile (path:string)(text : string) =
     use writer = new StreamWriter(path)
     writer.WriteLine (text)
 let stringToNum s = if String.IsNullOrEmpty(s) then 0 else 1
-let allEmotionsInNumber = EmotionData.Rows |> Seq.map (fun row -> {
-                                                                    Anger = stringToNum row.Anger
-                                                                    Anticipation = stringToNum row.Anticipation
-                                                                    Disgust = stringToNum row.Disgust
-                                                                    Emotion = stringToNum row.Emotion
-                                                                    Fear = stringToNum row.Fear
-                                                                    Joy = stringToNum row.Joy
-                                                                    Negative = stringToNum row.Negative
-                                                                    Positive = stringToNum row.Positive
-                                                                    Sadness = stringToNum row.Sadness
-                                                                    Surprise = stringToNum row.Surprise
-                                                                    Trust = stringToNum row.Trust
-                                                                    Word = row.Word
-                                                                })
+
+let emotionCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, positive, sadness, surprise, trust, word) =     
+        let a = {
+            Anger = stringToNum anger
+            Anticipation = stringToNum anticipation
+            Disgust = stringToNum disgust
+            Fear = stringToNum fear
+            Joy = stringToNum joy
+            Negative = stringToNum negative
+            Positive = stringToNum positive
+            Sadness = stringToNum sadness
+            Surprise = stringToNum surprise
+            Trust = stringToNum trust
+            Word = word
+        }
+
+        match emotion with 
+        | "anger" -> if a.Anger = 0 then {a with Anger = 1} else a
+        | "anticip" -> if a.Anticipation = 0 then {a with Anticipation = 1} else a 
+        | "disgust" -> if a.Disgust = 0 then {a with Disgust = 1 } else a
+        | "fear" -> if a.Fear = 0 then {a with Fear = 1} else a
+        | "joy" -> if a.Joy = 0 then {a with Joy = 1} else a
+        | "negative" -> if a.Negative = 0 then {a with Negative = 1} else a
+        | "positive" -> if a.Positive = 0 then {a with Positive = 1} else a
+        | "sadness" -> if a.Sadness = 0 then {a with Sadness = 1} else a
+        | "surprise" -> if a.Surprise = 0 then {a with Surprise = 1} else a
+        | "trust" -> if a.Trust = 0 then {a with Trust = 1} else a
+        | _ -> a 
+    
+
+let allEmotionsInNumber = EmotionData.Rows |> Seq.map (fun row -> emotionCalculate (
+                                                                    row.Anger,
+                                                                    row.Anticipation,
+                                                                    row.Disgust,
+                                                                    row.Emotion,
+                                                                    row.Fear,
+                                                                    row.Joy,
+                                                                    row.Negative,
+                                                                    row.Positive,
+                                                                    row.Sadness,
+                                                                    row.Surprise,
+                                                                    row.Trust,
+                                                                    row.Word
+                                                        ))
 let emotionWordsSet = allEmotionsInNumber |> Seq.map (fun row -> row.Word) |> set
 // |> Seq.map (fun (nor,anger,anticipation,disgust,emotion,fear,joy,negative,positive,sadness,trust,word) -> ignore)
 
@@ -77,7 +107,7 @@ let zeroEmotion = {
         Anger = 0
         Anticipation = 0
         Disgust =0
-        Emotion = 0
+        // Emotion = 0
         Fear = 0
         Joy = 0
         Negative = 0
@@ -93,7 +123,7 @@ let bookSum bookname a b =
         Anger = a.Anger + b.Anger
         Anticipation = a.Anticipation + b.Anticipation
         Disgust = a.Disgust + b.Disgust
-        Emotion = a.Emotion + b.Emotion
+        // Emotion = a.Emotion + b.Emotion
         Fear = a.Fear + b.Fear
         Joy = a.Joy + b.Joy
         Negative = a.Negative + b.Negative
@@ -139,7 +169,7 @@ type Book(bookno:string, bookname:string) =
             Anger = (r.Anger * 100/commonEmotionsCount)
             Anticipation = (r.Anticipation * 100/commonEmotionsCount)
             Disgust =(r.Disgust * 100/commonEmotionsCount)
-            Emotion = (r.Emotion * 100/commonEmotionsCount)
+            // Emotion = (r.Emotion * 100/commonEmotionsCount)
             Fear = (r.Fear * 100/commonEmotionsCount)
             Joy = (r.Joy * 100/commonEmotionsCount)
             Negative = (r.Negative * 100/commonEmotionsCount)
