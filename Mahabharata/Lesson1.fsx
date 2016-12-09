@@ -90,8 +90,19 @@ let allEmotionsInNumber = EmotionData.Rows |> Seq.map (fun row -> emotionCalcula
                                                                     row.Word
                                                         ))
 let emotionWordsSet = allEmotionsInNumber |> Seq.map (fun row -> row.Word) |> set
-// |> Seq.map (fun (nor,anger,anticipation,disgust,emotion,fear,joy,negative,positive,sadness,trust,word) -> ignore)
 
+
+type WordPosNeg = {
+    Word :string
+    Rating : int
+}
+
+let posnegWordList =
+    Path.Combine(__SOURCE_DIRECTORY__, "..", "data/AFINN/"+ "AFINN-111" + ".txt")
+    |> File.ReadAllLines
+    |> Array.map (fun x ->
+                    x.Split '\t' |> (fun b -> {Word = b.[0]; Rating = System.Int32.Parse b.[1]})
+                    )
 
 type DocItem = {
     Term : string
@@ -179,7 +190,15 @@ type Book(bookno:string, bookname:string) =
             Trust = (r.Trust * 100/commonEmotionsCount)
         }
 
-
+    member x.PosNegIndex =
+        let commonWords = posnegWordList 
+                                |> Array.map (fun x -> x.Word) 
+                                |> set 
+                                |> Set.intersect x.BookUniqueTerms
+        posnegWordList 
+        |> Array.filter (fun a -> commonWords.Contains a.Word) 
+        |> Array.map (fun b -> b.Rating) 
+        |> Array.sum
 let booknos = [|
                 "01";
                 "02";
@@ -228,6 +247,8 @@ let books = [|
 
 let book0 = books.[0]
 
+books |> Array.map (fun a -> (a.BookNo, a.PosNegIndex))
+
 let allBookEmotionalIndex = books |> Array.map (fun x -> x.EmotionalIndex)
 
 let emotionalJsonData = Compact.serialize allBookEmotionalIndex
@@ -237,12 +258,7 @@ JsonToFile emotionalPath emotionalJsonData
 
 
 
-let posnegWordList =
-    Path.Combine(__SOURCE_DIRECTORY__, "..", "data/AFINN/"+ "AFINN-111" + ".txt")
-    |> File.ReadAllLines
-    |> Array.map (fun x ->
-                    x.Split '\t' |> (fun b -> b.[0],b.[1])
-                    )
+
 
 
 
