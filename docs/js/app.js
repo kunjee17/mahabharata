@@ -1,7 +1,7 @@
 $(document).ready(function () {
     console.log('Ath shree Mahabharata katha');
 
-    var drawChart = function (chartid, bookName, bookdata) {
+    var drawColumnChart = function (chartid, bookName, bookdata) {
         Highcharts.chart(chartid, {
             chart: {
                 type: 'column'
@@ -61,7 +61,11 @@ $(document).ready(function () {
 
     var generateIdName = function (name) {
         return name.replace(' ', '-');
-    }
+    };
+
+    var activaTab = function (tab) {
+        $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+    };
 
     $.getJSON('js/emotional.json')
         .done(function (books) {
@@ -69,8 +73,8 @@ $(document).ready(function () {
             books.map(function (book) {
                 $('.nav.nav-tabs').append('<li><a href="#' + generateIdName(book.Word) + '" data-toggle="pill">' + book.Word + '</a></li>');
                 $('.tab-content')
-                    .append('<div class="tab-pane fade" id="' + generateIdName(book.Word) + '"><p>' + book.Word + '</p><div id="' + generateIdName(book.Word) + '-data"></div></div>');
-                $('#' + generateIdName(book.Word) + '-data').append('<div id="' + generateIdName(book.Word) + '-chart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto"></div>');
+                    .append('<div class="tab-pane fade" id="' + generateIdName(book.Word) + '"><strong>' + book.Word + '</strong><br/><br/><br/><div id="' + generateIdName(book.Word) + '-data"></div></div>');
+                $('#' + generateIdName(book.Word) + '-data').append('<div id="' + generateIdName(book.Word) + '-columnchart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto"></div>');
                 var bookdata = _.chain(book)
                     .map(function (y, name) {
                         return { y: y, name: name };
@@ -80,11 +84,9 @@ $(document).ready(function () {
                     })
                     .value();
 
-
-                console.log(bookdata);
-                drawChart(generateIdName(book.Word + '-chart'), book.Word, bookdata);
+                drawColumnChart(generateIdName(book.Word + '-columnchart'), book.Word, bookdata);
             });
-
+            activaTab(generateIdName(books[0].Word));
         })
         .fail(function (err) {
             console.log(err);
