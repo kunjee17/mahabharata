@@ -1,0 +1,3690 @@
+[
+  {
+    "Word": "abandon",
+    "Rating": -2
+  },
+  {
+    "Word": "abandoned",
+    "Rating": -2
+  },
+  {
+    "Word": "abduction",
+    "Rating": -2
+  },
+  {
+    "Word": "ability",
+    "Rating": 2
+  },
+  {
+    "Word": "absolve",
+    "Rating": 2
+  },
+  {
+    "Word": "absolved",
+    "Rating": 2
+  },
+  {
+    "Word": "absorbed",
+    "Rating": 1
+  },
+  {
+    "Word": "abused",
+    "Rating": -3
+  },
+  {
+    "Word": "accept",
+    "Rating": 1
+  },
+  {
+    "Word": "accepted",
+    "Rating": 1
+  },
+  {
+    "Word": "accepting",
+    "Rating": 1
+  },
+  {
+    "Word": "accident",
+    "Rating": -2
+  },
+  {
+    "Word": "accidental",
+    "Rating": -2
+  },
+  {
+    "Word": "accidents",
+    "Rating": -2
+  },
+  {
+    "Word": "accomplish",
+    "Rating": 2
+  },
+  {
+    "Word": "accomplished",
+    "Rating": 2
+  },
+  {
+    "Word": "accused",
+    "Rating": -2
+  },
+  {
+    "Word": "achievable",
+    "Rating": 1
+  },
+  {
+    "Word": "acrimonious",
+    "Rating": -3
+  },
+  {
+    "Word": "adequate",
+    "Rating": 1
+  },
+  {
+    "Word": "admire",
+    "Rating": 3
+  },
+  {
+    "Word": "admit",
+    "Rating": -1
+  },
+  {
+    "Word": "admitted",
+    "Rating": -1
+  },
+  {
+    "Word": "adopt",
+    "Rating": 1
+  },
+  {
+    "Word": "adopts",
+    "Rating": 1
+  },
+  {
+    "Word": "adorable",
+    "Rating": 3
+  },
+  {
+    "Word": "adore",
+    "Rating": 3
+  },
+  {
+    "Word": "adored",
+    "Rating": 3
+  },
+  {
+    "Word": "adores",
+    "Rating": 3
+  },
+  {
+    "Word": "advanced",
+    "Rating": 1
+  },
+  {
+    "Word": "advantage",
+    "Rating": 2
+  },
+  {
+    "Word": "adventures",
+    "Rating": 2
+  },
+  {
+    "Word": "affected",
+    "Rating": -1
+  },
+  {
+    "Word": "affection",
+    "Rating": 3
+  },
+  {
+    "Word": "affectionate",
+    "Rating": 3
+  },
+  {
+    "Word": "afflicted",
+    "Rating": -1
+  },
+  {
+    "Word": "afraid",
+    "Rating": -2
+  },
+  {
+    "Word": "aggression",
+    "Rating": -2
+  },
+  {
+    "Word": "agree",
+    "Rating": 1
+  },
+  {
+    "Word": "agreeable",
+    "Rating": 2
+  },
+  {
+    "Word": "agreed",
+    "Rating": 1
+  },
+  {
+    "Word": "agreement",
+    "Rating": 1
+  },
+  {
+    "Word": "alarm",
+    "Rating": -2
+  },
+  {
+    "Word": "alarmed",
+    "Rating": -2
+  },
+  {
+    "Word": "alert",
+    "Rating": -1
+  },
+  {
+    "Word": "alive",
+    "Rating": 1
+  },
+  {
+    "Word": "alone",
+    "Rating": -2
+  },
+  {
+    "Word": "amazed",
+    "Rating": 2
+  },
+  {
+    "Word": "ambitious",
+    "Rating": 2
+  },
+  {
+    "Word": "amused",
+    "Rating": 3
+  },
+  {
+    "Word": "amusement",
+    "Rating": 3
+  },
+  {
+    "Word": "anger",
+    "Rating": -3
+  },
+  {
+    "Word": "angry",
+    "Rating": -3
+  },
+  {
+    "Word": "anguish",
+    "Rating": -3
+  },
+  {
+    "Word": "annoyed",
+    "Rating": -2
+  },
+  {
+    "Word": "anxiety",
+    "Rating": -2
+  },
+  {
+    "Word": "anxious",
+    "Rating": -2
+  },
+  {
+    "Word": "apology",
+    "Rating": -1
+  },
+  {
+    "Word": "appease",
+    "Rating": 2
+  },
+  {
+    "Word": "appeased",
+    "Rating": 2
+  },
+  {
+    "Word": "applaud",
+    "Rating": 2
+  },
+  {
+    "Word": "applauded",
+    "Rating": 2
+  },
+  {
+    "Word": "applauding",
+    "Rating": 2
+  },
+  {
+    "Word": "applause",
+    "Rating": 2
+  },
+  {
+    "Word": "approval",
+    "Rating": 2
+  },
+  {
+    "Word": "approved",
+    "Rating": 2
+  },
+  {
+    "Word": "ardent",
+    "Rating": 1
+  },
+  {
+    "Word": "ashamed",
+    "Rating": -2
+  },
+  {
+    "Word": "ass",
+    "Rating": -4
+  },
+  {
+    "Word": "astonished",
+    "Rating": 2
+  },
+  {
+    "Word": "attack",
+    "Rating": -1
+  },
+  {
+    "Word": "attacked",
+    "Rating": -1
+  },
+  {
+    "Word": "attacking",
+    "Rating": -1
+  },
+  {
+    "Word": "attract",
+    "Rating": 1
+  },
+  {
+    "Word": "attracted",
+    "Rating": 1
+  },
+  {
+    "Word": "attractions",
+    "Rating": 2
+  },
+  {
+    "Word": "authority",
+    "Rating": 1
+  },
+  {
+    "Word": "avert",
+    "Rating": -1
+  },
+  {
+    "Word": "averted",
+    "Rating": -1
+  },
+  {
+    "Word": "avoid",
+    "Rating": -1
+  },
+  {
+    "Word": "avoided",
+    "Rating": -1
+  },
+  {
+    "Word": "await",
+    "Rating": -1
+  },
+  {
+    "Word": "awaited",
+    "Rating": -1
+  },
+  {
+    "Word": "axe",
+    "Rating": -1
+  },
+  {
+    "Word": "backed",
+    "Rating": 1
+  },
+  {
+    "Word": "backs",
+    "Rating": 1
+  },
+  {
+    "Word": "bad",
+    "Rating": -3
+  },
+  {
+    "Word": "banish",
+    "Rating": -1
+  },
+  {
+    "Word": "battle",
+    "Rating": -1
+  },
+  {
+    "Word": "battles",
+    "Rating": -1
+  },
+  {
+    "Word": "beaten",
+    "Rating": -2
+  },
+  {
+    "Word": "beauties",
+    "Rating": 3
+  },
+  {
+    "Word": "beautiful",
+    "Rating": 3
+  },
+  {
+    "Word": "beautifully",
+    "Rating": 3
+  },
+  {
+    "Word": "beloved",
+    "Rating": 3
+  },
+  {
+    "Word": "benefit",
+    "Rating": 2
+  },
+  {
+    "Word": "benefits",
+    "Rating": 2
+  },
+  {
+    "Word": "bereaved",
+    "Rating": -2
+  },
+  {
+    "Word": "best",
+    "Rating": 3
+  },
+  {
+    "Word": "betray",
+    "Rating": -3
+  },
+  {
+    "Word": "betraying",
+    "Rating": -3
+  },
+  {
+    "Word": "better",
+    "Rating": 2
+  },
+  {
+    "Word": "big",
+    "Rating": 1
+  },
+  {
+    "Word": "bitch",
+    "Rating": -5
+  },
+  {
+    "Word": "bitter",
+    "Rating": -2
+  },
+  {
+    "Word": "bitterly",
+    "Rating": -2
+  },
+  {
+    "Word": "blame",
+    "Rating": -2
+  },
+  {
+    "Word": "blaming",
+    "Rating": -2
+  },
+  {
+    "Word": "bless",
+    "Rating": 2
+  },
+  {
+    "Word": "blessing",
+    "Rating": 3
+  },
+  {
+    "Word": "blind",
+    "Rating": -1
+  },
+  {
+    "Word": "bliss",
+    "Rating": 3
+  },
+  {
+    "Word": "blocks",
+    "Rating": -1
+  },
+  {
+    "Word": "boastful",
+    "Rating": -2
+  },
+  {
+    "Word": "bold",
+    "Rating": 2
+  },
+  {
+    "Word": "bore",
+    "Rating": -2
+  },
+  {
+    "Word": "brave",
+    "Rating": 2
+  },
+  {
+    "Word": "bright",
+    "Rating": 1
+  },
+  {
+    "Word": "brightest",
+    "Rating": 2
+  },
+  {
+    "Word": "brightness",
+    "Rating": 1
+  },
+  {
+    "Word": "brilliant",
+    "Rating": 4
+  },
+  {
+    "Word": "broke",
+    "Rating": -1
+  },
+  {
+    "Word": "broken",
+    "Rating": -1
+  },
+  {
+    "Word": "burden",
+    "Rating": -2
+  },
+  {
+    "Word": "burdened",
+    "Rating": -2
+  },
+  {
+    "Word": "calm",
+    "Rating": 2
+  },
+  {
+    "Word": "capable",
+    "Rating": 1
+  },
+  {
+    "Word": "captivated",
+    "Rating": 3
+  },
+  {
+    "Word": "care",
+    "Rating": 2
+  },
+  {
+    "Word": "careful",
+    "Rating": 2
+  },
+  {
+    "Word": "carefully",
+    "Rating": 2
+  },
+  {
+    "Word": "careless",
+    "Rating": -2
+  },
+  {
+    "Word": "cares",
+    "Rating": 2
+  },
+  {
+    "Word": "celebrate",
+    "Rating": 3
+  },
+  {
+    "Word": "celebrated",
+    "Rating": 3
+  },
+  {
+    "Word": "certain",
+    "Rating": 1
+  },
+  {
+    "Word": "chance",
+    "Rating": 2
+  },
+  {
+    "Word": "charged",
+    "Rating": -3
+  },
+  {
+    "Word": "charming",
+    "Rating": 3
+  },
+  {
+    "Word": "chastise",
+    "Rating": -3
+  },
+  {
+    "Word": "chastised",
+    "Rating": -3
+  },
+  {
+    "Word": "chastising",
+    "Rating": -3
+  },
+  {
+    "Word": "cheer",
+    "Rating": 2
+  },
+  {
+    "Word": "cheerful",
+    "Rating": 2
+  },
+  {
+    "Word": "cheering",
+    "Rating": 2
+  },
+  {
+    "Word": "cheerless",
+    "Rating": -2
+  },
+  {
+    "Word": "cheers",
+    "Rating": 2
+  },
+  {
+    "Word": "cherish",
+    "Rating": 2
+  },
+  {
+    "Word": "cherished",
+    "Rating": 2
+  },
+  {
+    "Word": "cherishing",
+    "Rating": 2
+  },
+  {
+    "Word": "childish",
+    "Rating": -2
+  },
+  {
+    "Word": "choked",
+    "Rating": -2
+  },
+  {
+    "Word": "clash",
+    "Rating": -2
+  },
+  {
+    "Word": "clean",
+    "Rating": 2
+  },
+  {
+    "Word": "clear",
+    "Rating": 1
+  },
+  {
+    "Word": "cleared",
+    "Rating": 1
+  },
+  {
+    "Word": "clever",
+    "Rating": 2
+  },
+  {
+    "Word": "clouded",
+    "Rating": -1
+  },
+  {
+    "Word": "combat",
+    "Rating": -1
+  },
+  {
+    "Word": "comfort",
+    "Rating": 2
+  },
+  {
+    "Word": "comforting",
+    "Rating": 2
+  },
+  {
+    "Word": "comforts",
+    "Rating": 2
+  },
+  {
+    "Word": "commended",
+    "Rating": 2
+  },
+  {
+    "Word": "commit",
+    "Rating": 1
+  },
+  {
+    "Word": "committed",
+    "Rating": 1
+  },
+  {
+    "Word": "committing",
+    "Rating": 1
+  },
+  {
+    "Word": "compassionate",
+    "Rating": 2
+  },
+  {
+    "Word": "compelled",
+    "Rating": 1
+  },
+  {
+    "Word": "competent",
+    "Rating": 2
+  },
+  {
+    "Word": "complacent",
+    "Rating": -2
+  },
+  {
+    "Word": "complain",
+    "Rating": -2
+  },
+  {
+    "Word": "conciliate",
+    "Rating": 2
+  },
+  {
+    "Word": "conciliated",
+    "Rating": 2
+  },
+  {
+    "Word": "conciliating",
+    "Rating": 2
+  },
+  {
+    "Word": "condemned",
+    "Rating": -2
+  },
+  {
+    "Word": "confidence",
+    "Rating": 2
+  },
+  {
+    "Word": "conflict",
+    "Rating": -2
+  },
+  {
+    "Word": "confused",
+    "Rating": -2
+  },
+  {
+    "Word": "congratulations",
+    "Rating": 2
+  },
+  {
+    "Word": "consent",
+    "Rating": 2
+  },
+  {
+    "Word": "conspiracy",
+    "Rating": -3
+  },
+  {
+    "Word": "constrained",
+    "Rating": -2
+  },
+  {
+    "Word": "contempt",
+    "Rating": -2
+  },
+  {
+    "Word": "contemptuous",
+    "Rating": -2
+  },
+  {
+    "Word": "contemptuously",
+    "Rating": -2
+  },
+  {
+    "Word": "contending",
+    "Rating": -1
+  },
+  {
+    "Word": "convinced",
+    "Rating": 1
+  },
+  {
+    "Word": "cool",
+    "Rating": 1
+  },
+  {
+    "Word": "corpse",
+    "Rating": -1
+  },
+  {
+    "Word": "costly",
+    "Rating": -2
+  },
+  {
+    "Word": "courage",
+    "Rating": 2
+  },
+  {
+    "Word": "courageous",
+    "Rating": 2
+  },
+  {
+    "Word": "coward",
+    "Rating": -2
+  },
+  {
+    "Word": "cried",
+    "Rating": -2
+  },
+  {
+    "Word": "cries",
+    "Rating": -2
+  },
+  {
+    "Word": "crime",
+    "Rating": -3
+  },
+  {
+    "Word": "criminals",
+    "Rating": -3
+  },
+  {
+    "Word": "cruel",
+    "Rating": -3
+  },
+  {
+    "Word": "cruelty",
+    "Rating": -3
+  },
+  {
+    "Word": "crush",
+    "Rating": -1
+  },
+  {
+    "Word": "crushed",
+    "Rating": -2
+  },
+  {
+    "Word": "cry",
+    "Rating": -1
+  },
+  {
+    "Word": "crying",
+    "Rating": -2
+  },
+  {
+    "Word": "curious",
+    "Rating": 1
+  },
+  {
+    "Word": "curse",
+    "Rating": -1
+  },
+  {
+    "Word": "cut",
+    "Rating": -1
+  },
+  {
+    "Word": "cutting",
+    "Rating": -1
+  },
+  {
+    "Word": "danger",
+    "Rating": -2
+  },
+  {
+    "Word": "daring",
+    "Rating": 2
+  },
+  {
+    "Word": "darkness",
+    "Rating": -1
+  },
+  {
+    "Word": "dauntless",
+    "Rating": 2
+  },
+  {
+    "Word": "dead",
+    "Rating": -3
+  },
+  {
+    "Word": "deafening",
+    "Rating": -1
+  },
+  {
+    "Word": "dear",
+    "Rating": 2
+  },
+  {
+    "Word": "dearly",
+    "Rating": 3
+  },
+  {
+    "Word": "death",
+    "Rating": -2
+  },
+  {
+    "Word": "debt",
+    "Rating": -2
+  },
+  {
+    "Word": "deceit",
+    "Rating": -3
+  },
+  {
+    "Word": "deceitful",
+    "Rating": -3
+  },
+  {
+    "Word": "deceived",
+    "Rating": -3
+  },
+  {
+    "Word": "deceiving",
+    "Rating": -3
+  },
+  {
+    "Word": "deception",
+    "Rating": -3
+  },
+  {
+    "Word": "defeated",
+    "Rating": -2
+  },
+  {
+    "Word": "deferring",
+    "Rating": -1
+  },
+  {
+    "Word": "degraded",
+    "Rating": -2
+  },
+  {
+    "Word": "dejected",
+    "Rating": -2
+  },
+  {
+    "Word": "delay",
+    "Rating": -1
+  },
+  {
+    "Word": "delight",
+    "Rating": 3
+  },
+  {
+    "Word": "delighted",
+    "Rating": 3
+  },
+  {
+    "Word": "delighting",
+    "Rating": 3
+  },
+  {
+    "Word": "delights",
+    "Rating": 3
+  },
+  {
+    "Word": "demand",
+    "Rating": -1
+  },
+  {
+    "Word": "demanded",
+    "Rating": -1
+  },
+  {
+    "Word": "demanding",
+    "Rating": -1
+  },
+  {
+    "Word": "depressed",
+    "Rating": -2
+  },
+  {
+    "Word": "derided",
+    "Rating": -2
+  },
+  {
+    "Word": "derision",
+    "Rating": -2
+  },
+  {
+    "Word": "desirable",
+    "Rating": 2
+  },
+  {
+    "Word": "desire",
+    "Rating": 1
+  },
+  {
+    "Word": "desired",
+    "Rating": 2
+  },
+  {
+    "Word": "desirous",
+    "Rating": 2
+  },
+  {
+    "Word": "despair",
+    "Rating": -3
+  },
+  {
+    "Word": "desperately",
+    "Rating": -3
+  },
+  {
+    "Word": "despondent",
+    "Rating": -3
+  },
+  {
+    "Word": "destroy",
+    "Rating": -3
+  },
+  {
+    "Word": "destroyed",
+    "Rating": -3
+  },
+  {
+    "Word": "destroying",
+    "Rating": -3
+  },
+  {
+    "Word": "destroys",
+    "Rating": -3
+  },
+  {
+    "Word": "destruction",
+    "Rating": -3
+  },
+  {
+    "Word": "destructive",
+    "Rating": -3
+  },
+  {
+    "Word": "determined",
+    "Rating": 2
+  },
+  {
+    "Word": "devastated",
+    "Rating": -2
+  },
+  {
+    "Word": "devoted",
+    "Rating": 3
+  },
+  {
+    "Word": "die",
+    "Rating": -3
+  },
+  {
+    "Word": "died",
+    "Rating": -3
+  },
+  {
+    "Word": "difficult",
+    "Rating": -1
+  },
+  {
+    "Word": "dire",
+    "Rating": -3
+  },
+  {
+    "Word": "dirt",
+    "Rating": -2
+  },
+  {
+    "Word": "dirty",
+    "Rating": -2
+  },
+  {
+    "Word": "disappear",
+    "Rating": -1
+  },
+  {
+    "Word": "disappeared",
+    "Rating": -1
+  },
+  {
+    "Word": "disappears",
+    "Rating": -1
+  },
+  {
+    "Word": "disappointment",
+    "Rating": -2
+  },
+  {
+    "Word": "disaster",
+    "Rating": -2
+  },
+  {
+    "Word": "disconsolate",
+    "Rating": -2
+  },
+  {
+    "Word": "discontented",
+    "Rating": -2
+  },
+  {
+    "Word": "discord",
+    "Rating": -2
+  },
+  {
+    "Word": "disdain",
+    "Rating": -2
+  },
+  {
+    "Word": "disgrace",
+    "Rating": -2
+  },
+  {
+    "Word": "disgraced",
+    "Rating": -2
+  },
+  {
+    "Word": "disguise",
+    "Rating": -1
+  },
+  {
+    "Word": "disguised",
+    "Rating": -1
+  },
+  {
+    "Word": "disguising",
+    "Rating": -1
+  },
+  {
+    "Word": "disgusted",
+    "Rating": -3
+  },
+  {
+    "Word": "dislike",
+    "Rating": -2
+  },
+  {
+    "Word": "displeased",
+    "Rating": -2
+  },
+  {
+    "Word": "dispute",
+    "Rating": -2
+  },
+  {
+    "Word": "disputes",
+    "Rating": -2
+  },
+  {
+    "Word": "disquiet",
+    "Rating": -2
+  },
+  {
+    "Word": "disregard",
+    "Rating": -2
+  },
+  {
+    "Word": "disregarded",
+    "Rating": -2
+  },
+  {
+    "Word": "disregarding",
+    "Rating": -2
+  },
+  {
+    "Word": "disrespect",
+    "Rating": -2
+  },
+  {
+    "Word": "disrespected",
+    "Rating": -2
+  },
+  {
+    "Word": "dissatisfied",
+    "Rating": -2
+  },
+  {
+    "Word": "distracted",
+    "Rating": -2
+  },
+  {
+    "Word": "distress",
+    "Rating": -2
+  },
+  {
+    "Word": "distressed",
+    "Rating": -2
+  },
+  {
+    "Word": "disturb",
+    "Rating": -2
+  },
+  {
+    "Word": "disturbed",
+    "Rating": -2
+  },
+  {
+    "Word": "doomed",
+    "Rating": -2
+  },
+  {
+    "Word": "doubt",
+    "Rating": -1
+  },
+  {
+    "Word": "doubtful",
+    "Rating": -1
+  },
+  {
+    "Word": "doubts",
+    "Rating": -1
+  },
+  {
+    "Word": "downcast",
+    "Rating": -2
+  },
+  {
+    "Word": "drag",
+    "Rating": -1
+  },
+  {
+    "Word": "dragged",
+    "Rating": -1
+  },
+  {
+    "Word": "drained",
+    "Rating": -2
+  },
+  {
+    "Word": "dreadful",
+    "Rating": -3
+  },
+  {
+    "Word": "dream",
+    "Rating": 1
+  },
+  {
+    "Word": "dreams",
+    "Rating": 1
+  },
+  {
+    "Word": "drop",
+    "Rating": -1
+  },
+  {
+    "Word": "drowned",
+    "Rating": -2
+  },
+  {
+    "Word": "drunk",
+    "Rating": -2
+  },
+  {
+    "Word": "dull",
+    "Rating": -2
+  },
+  {
+    "Word": "eager",
+    "Rating": 2
+  },
+  {
+    "Word": "earnest",
+    "Rating": 2
+  },
+  {
+    "Word": "ease",
+    "Rating": 2
+  },
+  {
+    "Word": "easy",
+    "Rating": 1
+  },
+  {
+    "Word": "effective",
+    "Rating": 2
+  },
+  {
+    "Word": "elegant",
+    "Rating": 2
+  },
+  {
+    "Word": "elegantly",
+    "Rating": 2
+  },
+  {
+    "Word": "embrace",
+    "Rating": 1
+  },
+  {
+    "Word": "emergency",
+    "Rating": -2
+  },
+  {
+    "Word": "empty",
+    "Rating": -1
+  },
+  {
+    "Word": "encouraged",
+    "Rating": 2
+  },
+  {
+    "Word": "enemies",
+    "Rating": -2
+  },
+  {
+    "Word": "enemy",
+    "Rating": -2
+  },
+  {
+    "Word": "energetic",
+    "Rating": 2
+  },
+  {
+    "Word": "engage",
+    "Rating": 1
+  },
+  {
+    "Word": "engrossed",
+    "Rating": 1
+  },
+  {
+    "Word": "enjoy",
+    "Rating": 2
+  },
+  {
+    "Word": "enjoying",
+    "Rating": 2
+  },
+  {
+    "Word": "enjoys",
+    "Rating": 2
+  },
+  {
+    "Word": "enlightened",
+    "Rating": 2
+  },
+  {
+    "Word": "enraged",
+    "Rating": -2
+  },
+  {
+    "Word": "enraging",
+    "Rating": -2
+  },
+  {
+    "Word": "ensure",
+    "Rating": 1
+  },
+  {
+    "Word": "entertaining",
+    "Rating": 2
+  },
+  {
+    "Word": "entitled",
+    "Rating": 1
+  },
+  {
+    "Word": "envy",
+    "Rating": -1
+  },
+  {
+    "Word": "error",
+    "Rating": -2
+  },
+  {
+    "Word": "escape",
+    "Rating": -1
+  },
+  {
+    "Word": "escapes",
+    "Rating": -1
+  },
+  {
+    "Word": "escaping",
+    "Rating": -1
+  },
+  {
+    "Word": "esteemed",
+    "Rating": 2
+  },
+  {
+    "Word": "evil",
+    "Rating": -3
+  },
+  {
+    "Word": "excellence",
+    "Rating": 3
+  },
+  {
+    "Word": "excellent",
+    "Rating": 3
+  },
+  {
+    "Word": "excite",
+    "Rating": 3
+  },
+  {
+    "Word": "excited",
+    "Rating": 3
+  },
+  {
+    "Word": "excitement",
+    "Rating": 3
+  },
+  {
+    "Word": "exciting",
+    "Rating": 3
+  },
+  {
+    "Word": "excluded",
+    "Rating": -2
+  },
+  {
+    "Word": "exclusive",
+    "Rating": 2
+  },
+  {
+    "Word": "exempt",
+    "Rating": -1
+  },
+  {
+    "Word": "exhausted",
+    "Rating": -2
+  },
+  {
+    "Word": "exhilarated",
+    "Rating": 3
+  },
+  {
+    "Word": "expand",
+    "Rating": 1
+  },
+  {
+    "Word": "exploits",
+    "Rating": -2
+  },
+  {
+    "Word": "exposed",
+    "Rating": -1
+  },
+  {
+    "Word": "exposing",
+    "Rating": -1
+  },
+  {
+    "Word": "extend",
+    "Rating": 1
+  },
+  {
+    "Word": "faggot",
+    "Rating": -3
+  },
+  {
+    "Word": "faggots",
+    "Rating": -3
+  },
+  {
+    "Word": "fail",
+    "Rating": -2
+  },
+  {
+    "Word": "failed",
+    "Rating": -2
+  },
+  {
+    "Word": "failing",
+    "Rating": -2
+  },
+  {
+    "Word": "failure",
+    "Rating": -2
+  },
+  {
+    "Word": "fair",
+    "Rating": 2
+  },
+  {
+    "Word": "faith",
+    "Rating": 1
+  },
+  {
+    "Word": "faithful",
+    "Rating": 3
+  },
+  {
+    "Word": "fallen",
+    "Rating": -2
+  },
+  {
+    "Word": "falling",
+    "Rating": -1
+  },
+  {
+    "Word": "falsified",
+    "Rating": -3
+  },
+  {
+    "Word": "falsify",
+    "Rating": -3
+  },
+  {
+    "Word": "fame",
+    "Rating": 1
+  },
+  {
+    "Word": "fascinate",
+    "Rating": 3
+  },
+  {
+    "Word": "fatigue",
+    "Rating": -2
+  },
+  {
+    "Word": "fatigued",
+    "Rating": -2
+  },
+  {
+    "Word": "fear",
+    "Rating": -2
+  },
+  {
+    "Word": "fearful",
+    "Rating": -2
+  },
+  {
+    "Word": "fearing",
+    "Rating": -2
+  },
+  {
+    "Word": "fearless",
+    "Rating": 2
+  },
+  {
+    "Word": "feeling",
+    "Rating": 1
+  },
+  {
+    "Word": "festive",
+    "Rating": 2
+  },
+  {
+    "Word": "fight",
+    "Rating": -1
+  },
+  {
+    "Word": "fine",
+    "Rating": 2
+  },
+  {
+    "Word": "fire",
+    "Rating": -2
+  },
+  {
+    "Word": "fired",
+    "Rating": -2
+  },
+  {
+    "Word": "fit",
+    "Rating": 1
+  },
+  {
+    "Word": "fond",
+    "Rating": 2
+  },
+  {
+    "Word": "fondness",
+    "Rating": 2
+  },
+  {
+    "Word": "fool",
+    "Rating": -2
+  },
+  {
+    "Word": "foolish",
+    "Rating": -2
+  },
+  {
+    "Word": "fools",
+    "Rating": -2
+  },
+  {
+    "Word": "forced",
+    "Rating": -1
+  },
+  {
+    "Word": "forgive",
+    "Rating": 1
+  },
+  {
+    "Word": "forgiving",
+    "Rating": 1
+  },
+  {
+    "Word": "forgotten",
+    "Rating": -1
+  },
+  {
+    "Word": "fortunate",
+    "Rating": 2
+  },
+  {
+    "Word": "free",
+    "Rating": 1
+  },
+  {
+    "Word": "freedom",
+    "Rating": 2
+  },
+  {
+    "Word": "fresh",
+    "Rating": 1
+  },
+  {
+    "Word": "friendly",
+    "Rating": 2
+  },
+  {
+    "Word": "fright",
+    "Rating": -2
+  },
+  {
+    "Word": "frightened",
+    "Rating": -2
+  },
+  {
+    "Word": "frightening",
+    "Rating": -3
+  },
+  {
+    "Word": "frustrate",
+    "Rating": -2
+  },
+  {
+    "Word": "frustrated",
+    "Rating": -2
+  },
+  {
+    "Word": "frustrating",
+    "Rating": -2
+  },
+  {
+    "Word": "fulfilled",
+    "Rating": 2
+  },
+  {
+    "Word": "funeral",
+    "Rating": -1
+  },
+  {
+    "Word": "furious",
+    "Rating": -3
+  },
+  {
+    "Word": "futile",
+    "Rating": 2
+  },
+  {
+    "Word": "gain",
+    "Rating": 2
+  },
+  {
+    "Word": "gained",
+    "Rating": 2
+  },
+  {
+    "Word": "gaining",
+    "Rating": 2
+  },
+  {
+    "Word": "generous",
+    "Rating": 2
+  },
+  {
+    "Word": "ghost",
+    "Rating": -1
+  },
+  {
+    "Word": "gift",
+    "Rating": 2
+  },
+  {
+    "Word": "glad",
+    "Rating": 3
+  },
+  {
+    "Word": "glee",
+    "Rating": 3
+  },
+  {
+    "Word": "glorious",
+    "Rating": 2
+  },
+  {
+    "Word": "glory",
+    "Rating": 2
+  },
+  {
+    "Word": "god",
+    "Rating": 1
+  },
+  {
+    "Word": "good",
+    "Rating": 3
+  },
+  {
+    "Word": "goodness",
+    "Rating": 3
+  },
+  {
+    "Word": "grace",
+    "Rating": 1
+  },
+  {
+    "Word": "gracious",
+    "Rating": 3
+  },
+  {
+    "Word": "grand",
+    "Rating": 3
+  },
+  {
+    "Word": "grant",
+    "Rating": 1
+  },
+  {
+    "Word": "granted",
+    "Rating": 1
+  },
+  {
+    "Word": "granting",
+    "Rating": 1
+  },
+  {
+    "Word": "grants",
+    "Rating": 1
+  },
+  {
+    "Word": "grateful",
+    "Rating": 3
+  },
+  {
+    "Word": "gratification",
+    "Rating": 2
+  },
+  {
+    "Word": "grave",
+    "Rating": -2
+  },
+  {
+    "Word": "great",
+    "Rating": 3
+  },
+  {
+    "Word": "greater",
+    "Rating": 3
+  },
+  {
+    "Word": "greatest",
+    "Rating": 3
+  },
+  {
+    "Word": "greed",
+    "Rating": -3
+  },
+  {
+    "Word": "greeted",
+    "Rating": 1
+  },
+  {
+    "Word": "grey",
+    "Rating": -1
+  },
+  {
+    "Word": "grief",
+    "Rating": -2
+  },
+  {
+    "Word": "grieved",
+    "Rating": -2
+  },
+  {
+    "Word": "gross",
+    "Rating": -2
+  },
+  {
+    "Word": "growing",
+    "Rating": 1
+  },
+  {
+    "Word": "growth",
+    "Rating": 2
+  },
+  {
+    "Word": "guilt",
+    "Rating": -3
+  },
+  {
+    "Word": "guilty",
+    "Rating": -3
+  },
+  {
+    "Word": "hacked",
+    "Rating": -1
+  },
+  {
+    "Word": "hailed",
+    "Rating": 2
+  },
+  {
+    "Word": "happiness",
+    "Rating": 3
+  },
+  {
+    "Word": "happy",
+    "Rating": 3
+  },
+  {
+    "Word": "hard",
+    "Rating": -1
+  },
+  {
+    "Word": "harm",
+    "Rating": -2
+  },
+  {
+    "Word": "harsh",
+    "Rating": -2
+  },
+  {
+    "Word": "hate",
+    "Rating": -3
+  },
+  {
+    "Word": "hated",
+    "Rating": -3
+  },
+  {
+    "Word": "haunt",
+    "Rating": -1
+  },
+  {
+    "Word": "healthy",
+    "Rating": 2
+  },
+  {
+    "Word": "heaven",
+    "Rating": 2
+  },
+  {
+    "Word": "heavenly",
+    "Rating": 4
+  },
+  {
+    "Word": "hell",
+    "Rating": -4
+  },
+  {
+    "Word": "help",
+    "Rating": 2
+  },
+  {
+    "Word": "helpless",
+    "Rating": -2
+  },
+  {
+    "Word": "hero",
+    "Rating": 2
+  },
+  {
+    "Word": "heroes",
+    "Rating": 2
+  },
+  {
+    "Word": "heroic",
+    "Rating": 3
+  },
+  {
+    "Word": "hesitate",
+    "Rating": -2
+  },
+  {
+    "Word": "hid",
+    "Rating": -1
+  },
+  {
+    "Word": "hides",
+    "Rating": -1
+  },
+  {
+    "Word": "hiding",
+    "Rating": -1
+  },
+  {
+    "Word": "hilarious",
+    "Rating": 2
+  },
+  {
+    "Word": "honest",
+    "Rating": 2
+  },
+  {
+    "Word": "honour",
+    "Rating": 2
+  },
+  {
+    "Word": "honoured",
+    "Rating": 2
+  },
+  {
+    "Word": "honouring",
+    "Rating": 2
+  },
+  {
+    "Word": "hope",
+    "Rating": 2
+  },
+  {
+    "Word": "hopes",
+    "Rating": 2
+  },
+  {
+    "Word": "hoping",
+    "Rating": 2
+  },
+  {
+    "Word": "horrible",
+    "Rating": -3
+  },
+  {
+    "Word": "hostile",
+    "Rating": -2
+  },
+  {
+    "Word": "huge",
+    "Rating": 1
+  },
+  {
+    "Word": "humiliated",
+    "Rating": -3
+  },
+  {
+    "Word": "humiliation",
+    "Rating": -3
+  },
+  {
+    "Word": "humor",
+    "Rating": 2
+  },
+  {
+    "Word": "hunger",
+    "Rating": -2
+  },
+  {
+    "Word": "hurt",
+    "Rating": -2
+  },
+  {
+    "Word": "hurting",
+    "Rating": -2
+  },
+  {
+    "Word": "ignorance",
+    "Rating": -2
+  },
+  {
+    "Word": "ignorant",
+    "Rating": -2
+  },
+  {
+    "Word": "ill",
+    "Rating": -2
+  },
+  {
+    "Word": "illness",
+    "Rating": -2
+  },
+  {
+    "Word": "immortal",
+    "Rating": 2
+  },
+  {
+    "Word": "impatient",
+    "Rating": -2
+  },
+  {
+    "Word": "important",
+    "Rating": 2
+  },
+  {
+    "Word": "impotent",
+    "Rating": -2
+  },
+  {
+    "Word": "impressed",
+    "Rating": 3
+  },
+  {
+    "Word": "inaction",
+    "Rating": -2
+  },
+  {
+    "Word": "incapable",
+    "Rating": -2
+  },
+  {
+    "Word": "incensed",
+    "Rating": -2
+  },
+  {
+    "Word": "inconvenience",
+    "Rating": -2
+  },
+  {
+    "Word": "increase",
+    "Rating": 1
+  },
+  {
+    "Word": "increased",
+    "Rating": 1
+  },
+  {
+    "Word": "indestructible",
+    "Rating": 2
+  },
+  {
+    "Word": "indifference",
+    "Rating": -2
+  },
+  {
+    "Word": "indifferent",
+    "Rating": -2
+  },
+  {
+    "Word": "indignant",
+    "Rating": -2
+  },
+  {
+    "Word": "indignation",
+    "Rating": -2
+  },
+  {
+    "Word": "infected",
+    "Rating": -2
+  },
+  {
+    "Word": "inferior",
+    "Rating": -2
+  },
+  {
+    "Word": "inflamed",
+    "Rating": -2
+  },
+  {
+    "Word": "influential",
+    "Rating": 2
+  },
+  {
+    "Word": "infuriate",
+    "Rating": -2
+  },
+  {
+    "Word": "infuriated",
+    "Rating": -2
+  },
+  {
+    "Word": "injured",
+    "Rating": -2
+  },
+  {
+    "Word": "injury",
+    "Rating": -2
+  },
+  {
+    "Word": "injustice",
+    "Rating": -2
+  },
+  {
+    "Word": "inquisitive",
+    "Rating": 2
+  },
+  {
+    "Word": "insignificant",
+    "Rating": -2
+  },
+  {
+    "Word": "inspire",
+    "Rating": 2
+  },
+  {
+    "Word": "inspired",
+    "Rating": 2
+  },
+  {
+    "Word": "inspiring",
+    "Rating": 3
+  },
+  {
+    "Word": "insult",
+    "Rating": -2
+  },
+  {
+    "Word": "insulted",
+    "Rating": -2
+  },
+  {
+    "Word": "insulting",
+    "Rating": -2
+  },
+  {
+    "Word": "insults",
+    "Rating": -2
+  },
+  {
+    "Word": "intelligent",
+    "Rating": 2
+  },
+  {
+    "Word": "intense",
+    "Rating": 1
+  },
+  {
+    "Word": "interest",
+    "Rating": 1
+  },
+  {
+    "Word": "interested",
+    "Rating": 2
+  },
+  {
+    "Word": "interesting",
+    "Rating": 2
+  },
+  {
+    "Word": "interests",
+    "Rating": 1
+  },
+  {
+    "Word": "interrogated",
+    "Rating": -2
+  },
+  {
+    "Word": "interrupted",
+    "Rating": -2
+  },
+  {
+    "Word": "interruption",
+    "Rating": -2
+  },
+  {
+    "Word": "invincible",
+    "Rating": 2
+  },
+  {
+    "Word": "invulnerable",
+    "Rating": 2
+  },
+  {
+    "Word": "irresistible",
+    "Rating": 2
+  },
+  {
+    "Word": "jealous",
+    "Rating": -2
+  },
+  {
+    "Word": "jewel",
+    "Rating": 1
+  },
+  {
+    "Word": "jewels",
+    "Rating": 1
+  },
+  {
+    "Word": "joke",
+    "Rating": 2
+  },
+  {
+    "Word": "joy",
+    "Rating": 3
+  },
+  {
+    "Word": "joyful",
+    "Rating": 3
+  },
+  {
+    "Word": "joyfully",
+    "Rating": 3
+  },
+  {
+    "Word": "joyous",
+    "Rating": 3
+  },
+  {
+    "Word": "jubilant",
+    "Rating": 3
+  },
+  {
+    "Word": "justice",
+    "Rating": 2
+  },
+  {
+    "Word": "keen",
+    "Rating": 1
+  },
+  {
+    "Word": "kill",
+    "Rating": -3
+  },
+  {
+    "Word": "killed",
+    "Rating": -3
+  },
+  {
+    "Word": "killing",
+    "Rating": -3
+  },
+  {
+    "Word": "kind",
+    "Rating": 2
+  },
+  {
+    "Word": "lame",
+    "Rating": -2
+  },
+  {
+    "Word": "laugh",
+    "Rating": 1
+  },
+  {
+    "Word": "laughed",
+    "Rating": 1
+  },
+  {
+    "Word": "laughing",
+    "Rating": 1
+  },
+  {
+    "Word": "leave",
+    "Rating": -1
+  },
+  {
+    "Word": "lenient",
+    "Rating": 1
+  },
+  {
+    "Word": "lethargy",
+    "Rating": -2
+  },
+  {
+    "Word": "liar",
+    "Rating": -3
+  },
+  {
+    "Word": "like",
+    "Rating": 2
+  },
+  {
+    "Word": "liked",
+    "Rating": 2
+  },
+  {
+    "Word": "likes",
+    "Rating": 2
+  },
+  {
+    "Word": "limited",
+    "Rating": -1
+  },
+  {
+    "Word": "limits",
+    "Rating": -1
+  },
+  {
+    "Word": "lonely",
+    "Rating": -2
+  },
+  {
+    "Word": "longing",
+    "Rating": -1
+  },
+  {
+    "Word": "loom",
+    "Rating": -1
+  },
+  {
+    "Word": "looming",
+    "Rating": -1
+  },
+  {
+    "Word": "loose",
+    "Rating": -3
+  },
+  {
+    "Word": "losing",
+    "Rating": -3
+  },
+  {
+    "Word": "loss",
+    "Rating": -3
+  },
+  {
+    "Word": "lost",
+    "Rating": -3
+  },
+  {
+    "Word": "lovable",
+    "Rating": 3
+  },
+  {
+    "Word": "love",
+    "Rating": 3
+  },
+  {
+    "Word": "loved",
+    "Rating": 3
+  },
+  {
+    "Word": "lovely",
+    "Rating": 3
+  },
+  {
+    "Word": "loving",
+    "Rating": 2
+  },
+  {
+    "Word": "lowest",
+    "Rating": -1
+  },
+  {
+    "Word": "luck",
+    "Rating": 3
+  },
+  {
+    "Word": "lucky",
+    "Rating": 3
+  },
+  {
+    "Word": "mad",
+    "Rating": -3
+  },
+  {
+    "Word": "madly",
+    "Rating": -3
+  },
+  {
+    "Word": "madness",
+    "Rating": -3
+  },
+  {
+    "Word": "matter",
+    "Rating": 1
+  },
+  {
+    "Word": "matters",
+    "Rating": 1
+  },
+  {
+    "Word": "melancholy",
+    "Rating": -2
+  },
+  {
+    "Word": "mercy",
+    "Rating": 2
+  },
+  {
+    "Word": "merry",
+    "Rating": 3
+  },
+  {
+    "Word": "mess",
+    "Rating": -2
+  },
+  {
+    "Word": "miserable",
+    "Rating": -3
+  },
+  {
+    "Word": "misery",
+    "Rating": -2
+  },
+  {
+    "Word": "miss",
+    "Rating": -2
+  },
+  {
+    "Word": "missing",
+    "Rating": -2
+  },
+  {
+    "Word": "mistake",
+    "Rating": -2
+  },
+  {
+    "Word": "mistaken",
+    "Rating": -2
+  },
+  {
+    "Word": "mistaking",
+    "Rating": -2
+  },
+  {
+    "Word": "mock",
+    "Rating": -2
+  },
+  {
+    "Word": "mocking",
+    "Rating": -2
+  },
+  {
+    "Word": "mourned",
+    "Rating": -2
+  },
+  {
+    "Word": "mourning",
+    "Rating": -2
+  },
+  {
+    "Word": "murderous",
+    "Rating": -3
+  },
+  {
+    "Word": "natural",
+    "Rating": 1
+  },
+  {
+    "Word": "neglect",
+    "Rating": -2
+  },
+  {
+    "Word": "neglected",
+    "Rating": -2
+  },
+  {
+    "Word": "nerves",
+    "Rating": -1
+  },
+  {
+    "Word": "nice",
+    "Rating": 3
+  },
+  {
+    "Word": "no",
+    "Rating": -1
+  },
+  {
+    "Word": "noble",
+    "Rating": 2
+  },
+  {
+    "Word": "notorious",
+    "Rating": -2
+  },
+  {
+    "Word": "obsolete",
+    "Rating": -2
+  },
+  {
+    "Word": "obstacles",
+    "Rating": -2
+  },
+  {
+    "Word": "offend",
+    "Rating": -2
+  },
+  {
+    "Word": "offended",
+    "Rating": -2
+  },
+  {
+    "Word": "offender",
+    "Rating": -2
+  },
+  {
+    "Word": "offending",
+    "Rating": -2
+  },
+  {
+    "Word": "opportunity",
+    "Rating": 2
+  },
+  {
+    "Word": "oppressed",
+    "Rating": -2
+  },
+  {
+    "Word": "outraged",
+    "Rating": -3
+  },
+  {
+    "Word": "overjoyed",
+    "Rating": 4
+  },
+  {
+    "Word": "overlooked",
+    "Rating": -1
+  },
+  {
+    "Word": "pain",
+    "Rating": -2
+  },
+  {
+    "Word": "pained",
+    "Rating": -2
+  },
+  {
+    "Word": "panic",
+    "Rating": -3
+  },
+  {
+    "Word": "pardon",
+    "Rating": 2
+  },
+  {
+    "Word": "pathetic",
+    "Rating": -2
+  },
+  {
+    "Word": "pay",
+    "Rating": -1
+  },
+  {
+    "Word": "peace",
+    "Rating": 2
+  },
+  {
+    "Word": "peaceful",
+    "Rating": 2
+  },
+  {
+    "Word": "peacefully",
+    "Rating": 2
+  },
+  {
+    "Word": "penalty",
+    "Rating": -2
+  },
+  {
+    "Word": "pensive",
+    "Rating": -1
+  },
+  {
+    "Word": "perfect",
+    "Rating": 3
+  },
+  {
+    "Word": "perfectly",
+    "Rating": 3
+  },
+  {
+    "Word": "peril",
+    "Rating": -2
+  },
+  {
+    "Word": "perpetrator",
+    "Rating": -2
+  },
+  {
+    "Word": "perplexed",
+    "Rating": -2
+  },
+  {
+    "Word": "persecute",
+    "Rating": -2
+  },
+  {
+    "Word": "persecuted",
+    "Rating": -2
+  },
+  {
+    "Word": "persecuting",
+    "Rating": -2
+  },
+  {
+    "Word": "perturbed",
+    "Rating": -2
+  },
+  {
+    "Word": "picturesque",
+    "Rating": 2
+  },
+  {
+    "Word": "piteous",
+    "Rating": -2
+  },
+  {
+    "Word": "pitied",
+    "Rating": -1
+  },
+  {
+    "Word": "pity",
+    "Rating": -2
+  },
+  {
+    "Word": "playful",
+    "Rating": 2
+  },
+  {
+    "Word": "pleasant",
+    "Rating": 3
+  },
+  {
+    "Word": "please",
+    "Rating": 1
+  },
+  {
+    "Word": "pleased",
+    "Rating": 3
+  },
+  {
+    "Word": "pleasure",
+    "Rating": 3
+  },
+  {
+    "Word": "poison",
+    "Rating": -2
+  },
+  {
+    "Word": "poisoned",
+    "Rating": -2
+  },
+  {
+    "Word": "pollute",
+    "Rating": -2
+  },
+  {
+    "Word": "polluted",
+    "Rating": -2
+  },
+  {
+    "Word": "poor",
+    "Rating": -2
+  },
+  {
+    "Word": "popular",
+    "Rating": 3
+  },
+  {
+    "Word": "positive",
+    "Rating": 2
+  },
+  {
+    "Word": "postponing",
+    "Rating": -1
+  },
+  {
+    "Word": "poverty",
+    "Rating": -1
+  },
+  {
+    "Word": "powerful",
+    "Rating": 2
+  },
+  {
+    "Word": "powerless",
+    "Rating": -2
+  },
+  {
+    "Word": "praise",
+    "Rating": 3
+  },
+  {
+    "Word": "praised",
+    "Rating": 3
+  },
+  {
+    "Word": "praises",
+    "Rating": 3
+  },
+  {
+    "Word": "praising",
+    "Rating": 3
+  },
+  {
+    "Word": "pray",
+    "Rating": 1
+  },
+  {
+    "Word": "prepared",
+    "Rating": 1
+  },
+  {
+    "Word": "pressure",
+    "Rating": -1
+  },
+  {
+    "Word": "pretend",
+    "Rating": -1
+  },
+  {
+    "Word": "pretty",
+    "Rating": 1
+  },
+  {
+    "Word": "prevent",
+    "Rating": -1
+  },
+  {
+    "Word": "prevented",
+    "Rating": -1
+  },
+  {
+    "Word": "preventing",
+    "Rating": -1
+  },
+  {
+    "Word": "prisoner",
+    "Rating": -2
+  },
+  {
+    "Word": "prisoners",
+    "Rating": -2
+  },
+  {
+    "Word": "progress",
+    "Rating": 2
+  },
+  {
+    "Word": "prominent",
+    "Rating": 2
+  },
+  {
+    "Word": "promise",
+    "Rating": 1
+  },
+  {
+    "Word": "promised",
+    "Rating": 1
+  },
+  {
+    "Word": "promises",
+    "Rating": 1
+  },
+  {
+    "Word": "promote",
+    "Rating": 1
+  },
+  {
+    "Word": "prosecute",
+    "Rating": -1
+  },
+  {
+    "Word": "prospect",
+    "Rating": 1
+  },
+  {
+    "Word": "prosperous",
+    "Rating": 3
+  },
+  {
+    "Word": "protect",
+    "Rating": 1
+  },
+  {
+    "Word": "protected",
+    "Rating": 1
+  },
+  {
+    "Word": "protects",
+    "Rating": 1
+  },
+  {
+    "Word": "protest",
+    "Rating": -2
+  },
+  {
+    "Word": "proud",
+    "Rating": 2
+  },
+  {
+    "Word": "provoked",
+    "Rating": -1
+  },
+  {
+    "Word": "punish",
+    "Rating": -2
+  },
+  {
+    "Word": "punitive",
+    "Rating": -2
+  },
+  {
+    "Word": "quaking",
+    "Rating": -2
+  },
+  {
+    "Word": "questioned",
+    "Rating": -1
+  },
+  {
+    "Word": "rage",
+    "Rating": -2
+  },
+  {
+    "Word": "rainy",
+    "Rating": -1
+  },
+  {
+    "Word": "raptures",
+    "Rating": 2
+  },
+  {
+    "Word": "rash",
+    "Rating": -2
+  },
+  {
+    "Word": "reach",
+    "Rating": 1
+  },
+  {
+    "Word": "reached",
+    "Rating": 1
+  },
+  {
+    "Word": "reaching",
+    "Rating": 1
+  },
+  {
+    "Word": "reckless",
+    "Rating": -2
+  },
+  {
+    "Word": "recommend",
+    "Rating": 2
+  },
+  {
+    "Word": "refuse",
+    "Rating": -2
+  },
+  {
+    "Word": "refused",
+    "Rating": -2
+  },
+  {
+    "Word": "refusing",
+    "Rating": -2
+  },
+  {
+    "Word": "regrets",
+    "Rating": -2
+  },
+  {
+    "Word": "reject",
+    "Rating": -1
+  },
+  {
+    "Word": "rejected",
+    "Rating": -1
+  },
+  {
+    "Word": "rejecting",
+    "Rating": -1
+  },
+  {
+    "Word": "rejoice",
+    "Rating": 4
+  },
+  {
+    "Word": "rejoiced",
+    "Rating": 4
+  },
+  {
+    "Word": "relieve",
+    "Rating": 1
+  },
+  {
+    "Word": "relieved",
+    "Rating": 2
+  },
+  {
+    "Word": "relieving",
+    "Rating": 2
+  },
+  {
+    "Word": "relishing",
+    "Rating": 2
+  },
+  {
+    "Word": "remarkable",
+    "Rating": 2
+  },
+  {
+    "Word": "rescue",
+    "Rating": 2
+  },
+  {
+    "Word": "rescued",
+    "Rating": 2
+  },
+  {
+    "Word": "resigned",
+    "Rating": -1
+  },
+  {
+    "Word": "resolute",
+    "Rating": 2
+  },
+  {
+    "Word": "resolve",
+    "Rating": 2
+  },
+  {
+    "Word": "resolved",
+    "Rating": 2
+  },
+  {
+    "Word": "resolves",
+    "Rating": 2
+  },
+  {
+    "Word": "resolving",
+    "Rating": 2
+  },
+  {
+    "Word": "respected",
+    "Rating": 2
+  },
+  {
+    "Word": "responsible",
+    "Rating": 2
+  },
+  {
+    "Word": "restore",
+    "Rating": 1
+  },
+  {
+    "Word": "restored",
+    "Rating": 1
+  },
+  {
+    "Word": "retained",
+    "Rating": -1
+  },
+  {
+    "Word": "retarded",
+    "Rating": -2
+  },
+  {
+    "Word": "retreat",
+    "Rating": -1
+  },
+  {
+    "Word": "revenge",
+    "Rating": -2
+  },
+  {
+    "Word": "revered",
+    "Rating": 2
+  },
+  {
+    "Word": "revive",
+    "Rating": 2
+  },
+  {
+    "Word": "reward",
+    "Rating": 2
+  },
+  {
+    "Word": "rewarded",
+    "Rating": 2
+  },
+  {
+    "Word": "rich",
+    "Rating": 2
+  },
+  {
+    "Word": "ridiculous",
+    "Rating": -3
+  },
+  {
+    "Word": "risk",
+    "Rating": -2
+  },
+  {
+    "Word": "rob",
+    "Rating": -2
+  },
+  {
+    "Word": "robber",
+    "Rating": -2
+  },
+  {
+    "Word": "ruin",
+    "Rating": -2
+  },
+  {
+    "Word": "sad",
+    "Rating": -2
+  },
+  {
+    "Word": "safe",
+    "Rating": 1
+  },
+  {
+    "Word": "safely",
+    "Rating": 1
+  },
+  {
+    "Word": "safety",
+    "Rating": 1
+  },
+  {
+    "Word": "satisfied",
+    "Rating": 2
+  },
+  {
+    "Word": "save",
+    "Rating": 2
+  },
+  {
+    "Word": "saved",
+    "Rating": 2
+  },
+  {
+    "Word": "secure",
+    "Rating": 2
+  },
+  {
+    "Word": "secured",
+    "Rating": 2
+  },
+  {
+    "Word": "selfish",
+    "Rating": -3
+  },
+  {
+    "Word": "sentence",
+    "Rating": -2
+  },
+  {
+    "Word": "sentenced",
+    "Rating": -2
+  },
+  {
+    "Word": "severe",
+    "Rating": -2
+  },
+  {
+    "Word": "shame",
+    "Rating": -2
+  },
+  {
+    "Word": "share",
+    "Rating": 1
+  },
+  {
+    "Word": "shoot",
+    "Rating": -1
+  },
+  {
+    "Word": "sigh",
+    "Rating": -2
+  },
+  {
+    "Word": "significance",
+    "Rating": 1
+  },
+  {
+    "Word": "significant",
+    "Rating": 1
+  },
+  {
+    "Word": "silly",
+    "Rating": -1
+  },
+  {
+    "Word": "sincere",
+    "Rating": 2
+  },
+  {
+    "Word": "sincerity",
+    "Rating": 2
+  },
+  {
+    "Word": "sinful",
+    "Rating": -3
+  },
+  {
+    "Word": "slavery",
+    "Rating": -3
+  },
+  {
+    "Word": "sleeplessness",
+    "Rating": -2
+  },
+  {
+    "Word": "smile",
+    "Rating": 2
+  },
+  {
+    "Word": "smiled",
+    "Rating": 2
+  },
+  {
+    "Word": "smiles",
+    "Rating": 2
+  },
+  {
+    "Word": "smiling",
+    "Rating": 2
+  },
+  {
+    "Word": "solemn",
+    "Rating": -1
+  },
+  {
+    "Word": "solid",
+    "Rating": 2
+  },
+  {
+    "Word": "solution",
+    "Rating": 1
+  },
+  {
+    "Word": "soothe",
+    "Rating": 3
+  },
+  {
+    "Word": "soothing",
+    "Rating": 3
+  },
+  {
+    "Word": "sore",
+    "Rating": -1
+  },
+  {
+    "Word": "sorrow",
+    "Rating": -2
+  },
+  {
+    "Word": "sorrowful",
+    "Rating": -2
+  },
+  {
+    "Word": "sorry",
+    "Rating": -1
+  },
+  {
+    "Word": "spark",
+    "Rating": 1
+  },
+  {
+    "Word": "spirit",
+    "Rating": 1
+  },
+  {
+    "Word": "spirited",
+    "Rating": 2
+  },
+  {
+    "Word": "splendid",
+    "Rating": 3
+  },
+  {
+    "Word": "starve",
+    "Rating": -2
+  },
+  {
+    "Word": "steadfast",
+    "Rating": 2
+  },
+  {
+    "Word": "steal",
+    "Rating": -2
+  },
+  {
+    "Word": "stimulate",
+    "Rating": 1
+  },
+  {
+    "Word": "stimulated",
+    "Rating": 1
+  },
+  {
+    "Word": "stolen",
+    "Rating": -2
+  },
+  {
+    "Word": "stop",
+    "Rating": -1
+  },
+  {
+    "Word": "stopped",
+    "Rating": -1
+  },
+  {
+    "Word": "stopping",
+    "Rating": -1
+  },
+  {
+    "Word": "stout",
+    "Rating": 2
+  },
+  {
+    "Word": "straight",
+    "Rating": 1
+  },
+  {
+    "Word": "strange",
+    "Rating": -1
+  },
+  {
+    "Word": "strength",
+    "Rating": 2
+  },
+  {
+    "Word": "strengthen",
+    "Rating": 2
+  },
+  {
+    "Word": "stricken",
+    "Rating": -2
+  },
+  {
+    "Word": "strike",
+    "Rating": -1
+  },
+  {
+    "Word": "strong",
+    "Rating": 2
+  },
+  {
+    "Word": "stronger",
+    "Rating": 2
+  },
+  {
+    "Word": "strongest",
+    "Rating": 2
+  },
+  {
+    "Word": "struck",
+    "Rating": -1
+  },
+  {
+    "Word": "struggling",
+    "Rating": -2
+  },
+  {
+    "Word": "success",
+    "Rating": 2
+  },
+  {
+    "Word": "successful",
+    "Rating": 3
+  },
+  {
+    "Word": "sucks",
+    "Rating": -3
+  },
+  {
+    "Word": "suffer",
+    "Rating": -2
+  },
+  {
+    "Word": "suffering",
+    "Rating": -2
+  },
+  {
+    "Word": "suffers",
+    "Rating": -2
+  },
+  {
+    "Word": "suicide",
+    "Rating": -2
+  },
+  {
+    "Word": "superior",
+    "Rating": 2
+  },
+  {
+    "Word": "support",
+    "Rating": 2
+  },
+  {
+    "Word": "supported",
+    "Rating": 2
+  },
+  {
+    "Word": "supporter",
+    "Rating": 1
+  },
+  {
+    "Word": "supporting",
+    "Rating": 1
+  },
+  {
+    "Word": "suspect",
+    "Rating": -1
+  },
+  {
+    "Word": "suspected",
+    "Rating": -1
+  },
+  {
+    "Word": "suspecting",
+    "Rating": -1
+  },
+  {
+    "Word": "suspended",
+    "Rating": -1
+  },
+  {
+    "Word": "suspicious",
+    "Rating": -2
+  },
+  {
+    "Word": "swearing",
+    "Rating": -2
+  },
+  {
+    "Word": "sweet",
+    "Rating": 2
+  },
+  {
+    "Word": "swift",
+    "Rating": 2
+  },
+  {
+    "Word": "swiftly",
+    "Rating": 2
+  },
+  {
+    "Word": "tears",
+    "Rating": -2
+  },
+  {
+    "Word": "tender",
+    "Rating": 2
+  },
+  {
+    "Word": "terrible",
+    "Rating": -3
+  },
+  {
+    "Word": "terribly",
+    "Rating": -3
+  },
+  {
+    "Word": "terrific",
+    "Rating": 4
+  },
+  {
+    "Word": "terrified",
+    "Rating": -3
+  },
+  {
+    "Word": "terror",
+    "Rating": -3
+  },
+  {
+    "Word": "thoughtful",
+    "Rating": 2
+  },
+  {
+    "Word": "thoughtless",
+    "Rating": -2
+  },
+  {
+    "Word": "threatened",
+    "Rating": -2
+  },
+  {
+    "Word": "threatens",
+    "Rating": -2
+  },
+  {
+    "Word": "thwart",
+    "Rating": -2
+  },
+  {
+    "Word": "timid",
+    "Rating": -2
+  },
+  {
+    "Word": "tired",
+    "Rating": -2
+  },
+  {
+    "Word": "top",
+    "Rating": 2
+  },
+  {
+    "Word": "tops",
+    "Rating": 2
+  },
+  {
+    "Word": "torn",
+    "Rating": -2
+  },
+  {
+    "Word": "torture",
+    "Rating": -4
+  },
+  {
+    "Word": "tortured",
+    "Rating": -4
+  },
+  {
+    "Word": "tortures",
+    "Rating": -4
+  },
+  {
+    "Word": "torturing",
+    "Rating": -4
+  },
+  {
+    "Word": "tranquil",
+    "Rating": 2
+  },
+  {
+    "Word": "treasure",
+    "Rating": 2
+  },
+  {
+    "Word": "treasures",
+    "Rating": 2
+  },
+  {
+    "Word": "trembling",
+    "Rating": -2
+  },
+  {
+    "Word": "triumph",
+    "Rating": 4
+  },
+  {
+    "Word": "trouble",
+    "Rating": -2
+  },
+  {
+    "Word": "troubled",
+    "Rating": -2
+  },
+  {
+    "Word": "true",
+    "Rating": 2
+  },
+  {
+    "Word": "trust",
+    "Rating": 1
+  },
+  {
+    "Word": "trusted",
+    "Rating": 2
+  },
+  {
+    "Word": "ugly",
+    "Rating": -3
+  },
+  {
+    "Word": "uncertain",
+    "Rating": -1
+  },
+  {
+    "Word": "uneasy",
+    "Rating": -2
+  },
+  {
+    "Word": "unequal",
+    "Rating": -1
+  },
+  {
+    "Word": "unfair",
+    "Rating": -2
+  },
+  {
+    "Word": "unfulfilled",
+    "Rating": -2
+  },
+  {
+    "Word": "unhappy",
+    "Rating": -2
+  },
+  {
+    "Word": "united",
+    "Rating": 1
+  },
+  {
+    "Word": "unsatisfied",
+    "Rating": -2
+  },
+  {
+    "Word": "unsettled",
+    "Rating": -1
+  },
+  {
+    "Word": "unsupported",
+    "Rating": -2
+  },
+  {
+    "Word": "unworthy",
+    "Rating": -2
+  },
+  {
+    "Word": "useful",
+    "Rating": 2
+  },
+  {
+    "Word": "vested",
+    "Rating": 1
+  },
+  {
+    "Word": "vexation",
+    "Rating": -2
+  },
+  {
+    "Word": "vicious",
+    "Rating": -2
+  },
+  {
+    "Word": "victim",
+    "Rating": -3
+  },
+  {
+    "Word": "vigilant",
+    "Rating": 3
+  },
+  {
+    "Word": "vile",
+    "Rating": -3
+  },
+  {
+    "Word": "violate",
+    "Rating": -2
+  },
+  {
+    "Word": "violated",
+    "Rating": -2
+  },
+  {
+    "Word": "violence",
+    "Rating": -3
+  },
+  {
+    "Word": "violent",
+    "Rating": -3
+  },
+  {
+    "Word": "virtuous",
+    "Rating": 2
+  },
+  {
+    "Word": "virulent",
+    "Rating": -2
+  },
+  {
+    "Word": "vision",
+    "Rating": 1
+  },
+  {
+    "Word": "vitality",
+    "Rating": 3
+  },
+  {
+    "Word": "want",
+    "Rating": 1
+  },
+  {
+    "Word": "war",
+    "Rating": -2
+  },
+  {
+    "Word": "warfare",
+    "Rating": -2
+  },
+  {
+    "Word": "warm",
+    "Rating": 1
+  },
+  {
+    "Word": "warn",
+    "Rating": -2
+  },
+  {
+    "Word": "warned",
+    "Rating": -2
+  },
+  {
+    "Word": "warning",
+    "Rating": -3
+  },
+  {
+    "Word": "waste",
+    "Rating": -1
+  },
+  {
+    "Word": "wasted",
+    "Rating": -2
+  },
+  {
+    "Word": "wavering",
+    "Rating": -1
+  },
+  {
+    "Word": "weak",
+    "Rating": -2
+  },
+  {
+    "Word": "weakness",
+    "Rating": -2
+  },
+  {
+    "Word": "wealth",
+    "Rating": 3
+  },
+  {
+    "Word": "wealthy",
+    "Rating": 2
+  },
+  {
+    "Word": "weary",
+    "Rating": -2
+  },
+  {
+    "Word": "weep",
+    "Rating": -2
+  },
+  {
+    "Word": "weeping",
+    "Rating": -2
+  },
+  {
+    "Word": "welcome",
+    "Rating": 2
+  },
+  {
+    "Word": "welcomed",
+    "Rating": 2
+  },
+  {
+    "Word": "wicked",
+    "Rating": -2
+  },
+  {
+    "Word": "widowed",
+    "Rating": -1
+  },
+  {
+    "Word": "willingness",
+    "Rating": 2
+  },
+  {
+    "Word": "win",
+    "Rating": 4
+  },
+  {
+    "Word": "winning",
+    "Rating": 4
+  },
+  {
+    "Word": "wish",
+    "Rating": 1
+  },
+  {
+    "Word": "wishes",
+    "Rating": 1
+  },
+  {
+    "Word": "wishing",
+    "Rating": 1
+  },
+  {
+    "Word": "withdrawal",
+    "Rating": -3
+  },
+  {
+    "Word": "woeful",
+    "Rating": -3
+  },
+  {
+    "Word": "won",
+    "Rating": 3
+  },
+  {
+    "Word": "wonderful",
+    "Rating": 4
+  },
+  {
+    "Word": "woo",
+    "Rating": 3
+  },
+  {
+    "Word": "worn",
+    "Rating": -1
+  },
+  {
+    "Word": "worry",
+    "Rating": -3
+  },
+  {
+    "Word": "worst",
+    "Rating": -3
+  },
+  {
+    "Word": "worth",
+    "Rating": 2
+  },
+  {
+    "Word": "worthy",
+    "Rating": 2
+  },
+  {
+    "Word": "wrathful",
+    "Rating": -3
+  },
+  {
+    "Word": "wrong",
+    "Rating": -2
+  },
+  {
+    "Word": "wronged",
+    "Rating": -2
+  },
+  {
+    "Word": "yearning",
+    "Rating": 1
+  },
+  {
+    "Word": "yes",
+    "Rating": 1
+  },
+  {
+    "Word": "youthful",
+    "Rating": 2
+  }
+]

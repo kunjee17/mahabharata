@@ -197,8 +197,8 @@ type Book(bookno:string, bookname:string) =
                                 |> Set.intersect x.BookUniqueTerms
         posnegWordList 
         |> Array.filter (fun a -> commonWords.Contains a.Word) 
-        |> Array.map (fun b -> b.Rating) 
-        |> Array.sum
+        // |> Array.map (fun b -> b.Rating) 
+        // |> Array.sum
 let booknos = [|
                 "01";
                 "02";
@@ -246,6 +246,12 @@ let books = [|
 |]
 
 let book0 = books.[0]
+
+let book0Pos = book0.PosNegIndex |> Compact.serialize
+
+let posPath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "pos" + ".json")
+
+JsonToFile posPath book0Pos
 
 books |> Array.map (fun a -> (a.BookNo, a.PosNegIndex))
 
