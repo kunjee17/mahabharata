@@ -177,17 +177,17 @@ type Book(bookno:string, bookname:string) =
         let commonEmotionsInNumber = allEmotionsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
         let r = commonEmotionsInNumber |> Array.fold (bookSum x.BookNo) zeroEmotion
         { r with
-            Anger = (r.Anger * 100/commonEmotionsCount)
-            Anticipation = (r.Anticipation * 100/commonEmotionsCount)
-            Disgust =(r.Disgust * 100/commonEmotionsCount)
-            // Emotion = (r.Emotion * 100/commonEmotionsCount)
-            Fear = (r.Fear * 100/commonEmotionsCount)
-            Joy = (r.Joy * 100/commonEmotionsCount)
-            Negative = (r.Negative * 100/commonEmotionsCount)
-            Positive = (r.Positive * 100/commonEmotionsCount)
-            Sadness = (r.Sadness * 100/commonEmotionsCount)
-            Surprise = (r.Surprise * 100/commonEmotionsCount)
-            Trust = (r.Trust * 100/commonEmotionsCount)
+            Anger = (r.Anger)
+            Anticipation = (r.Anticipation)
+            Disgust =(r.Disgust)
+            // Emotion = (r.Emotion)
+            Fear = (r.Fear)
+            Joy = (r.Joy)
+            Negative = (r.Negative)
+            Positive = (r.Positive)
+            Sadness = (r.Sadness)
+            Surprise = (r.Surprise)
+            Trust = (r.Trust)
         }
 
     member x.PosNegIndex =
