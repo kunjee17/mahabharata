@@ -105,12 +105,12 @@ let bookSum bookname a b =
     }
 
 
-type Book(bookno:string) =
+type Book(bookno:string, bookname:string) =
 
     //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
     let removeSpecialChars (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
 
-    member x.BookNo = bookno
+    member x.BookNo = bookno + "-" + bookname
     member x.BookText =
                 Path.Combine(__SOURCE_DIRECTORY__, "..", "books/"+ bookno + ".txt")
                 |> File.ReadAllLines
@@ -129,18 +129,71 @@ type Book(bookno:string) =
         x.BookTermGroup
             |> Array.map (fun (x,_)-> x)
             |> set
-    
+
     member x.EmotionalIndex =
         let commonEmotions = x.BookUniqueTerms |> Set.intersect emotionWordsSet
-        let commonEmotionsInNumber = allEmotionsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray 
-        commonEmotionsInNumber |> Array.fold (bookSum bookno) zeroEmotion
+        let commonEmotionsCount = commonEmotions.Count
+        let commonEmotionsInNumber = allEmotionsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
+        let r = commonEmotionsInNumber |> Array.fold (bookSum x.BookNo) zeroEmotion
+        { r with
+            Anger = (r.Anger * 100/commonEmotionsCount)
+            Anticipation = (r.Anticipation * 100/commonEmotionsCount)
+            Disgust =(r.Disgust * 100/commonEmotionsCount)
+            Emotion = (r.Emotion * 100/commonEmotionsCount)
+            Fear = (r.Fear * 100/commonEmotionsCount)
+            Joy = (r.Joy * 100/commonEmotionsCount)
+            Negative = (r.Negative * 100/commonEmotionsCount)
+            Positive = (r.Positive * 100/commonEmotionsCount)
+            Sadness = (r.Sadness * 100/commonEmotionsCount)
+            Surprise = (r.Surprise * 100/commonEmotionsCount)
+            Trust = (r.Trust * 100/commonEmotionsCount)
+        }
 
 
-let booknos = [|"01";"02";"03";"04";"05";"06";"07";"08";"09";"10";"11";"12";"13";"14";"15";"16";"17";"18"|]
+let booknos = [|
+                "01";
+                "02";
+                "03";
+                "04";
+                "05";
+                "06";
+                "07";
+                "08";
+                "09";
+                "10";
+                "11";
+                "12";
+                "13";
+                "14";
+                "15";
+                "16";
+                "17";
+                "18"
+                |]
 
+let booknames = [|
+                "Adi Parva";
+                "Sabha Parva";
+                "Vana Parva";
+                "Virata Parva";
+                "Udyoga Parva";
+                "Bhishma Parva";
+                "Drona Parva";
+                "Karna Parva";
+                "Shalya Parva";
+                "Sauptika Parva";
+                "Stri Parva";
+                "Shanti Parva";
+                "Anushasana Parva";
+                "Ashvamedhika Parva";
+                "Ashramavasika Parva";
+                "Mausala Parva";
+                "Mahaprasthanika Parva";
+                "Svargarohana Parva "
+                |]
 let books = [|
-    for n in booknos do
-        yield Book(n)
+    for n,m in Array.zip booknos booknames do
+        yield Book(n,m)
 |]
 
 let book0 = books.[0]

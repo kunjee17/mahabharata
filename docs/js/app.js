@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     console.log('Ath shree Mahabharata katha');
 
-    var drawChart = function(chartid, bookName, bookdata) {
+    var drawChart = function (chartid, bookName, bookdata) {
         Highcharts.chart(chartid, {
             chart: {
                 type: 'column'
@@ -27,7 +27,7 @@ $(document).ready(function() {
                     borderWidth: 0,
                     dataLabels: {
                         enabled: true,
-                        format: '{point.y}'
+                        format: '{point.y:.1f}%'
                     }
                 }
             },
@@ -62,36 +62,36 @@ $(document).ready(function() {
 
 
     $.getJSON('js/emotional.json')
-        .done(function(books) {
+        .done(function (books) {
             console.log(books);
-            books.map(function(book) {
+            books.map(function (book) {
                 $('.nav.nav-tabs').append('<li><a href="#' + book.Word + '" data-toggle="pill">' + book.Word + '</a></li>');
                 $('.tab-content')
                     .append('<div class="tab-pane fade" id="' + book.Word + '"><p>' + book.Word + '</p><div id="' + book.Word + '-data"></div></div>');
                 $('#' + book.Word + '-data').append('<div id="' + book.Word + '-chart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto"></div>')
                 var bookdata = _.chain(book)
-                .map(function(y, name) {
-                    return { y, name };
-                })
-                .filter(function(o){
-                    return o.name !== 'Word'
-                })
-                .value();
+                    .map(function (y, name) {
+                        return { y, name };
+                    })
+                    .filter(function (o) {
+                        return o.name !== 'Word'
+                    })
+                    .value();
                 ;
-                
+
                 console.log(bookdata);
                 drawChart(book.Word + '-chart', book.Word, bookdata);
             });
 
         })
-        .fail(function(err) {
+        .fail(function (err) {
             console.log(err);
         })
         ;
 
 });
 
-$(function() {
+$(function () {
 
 
     // var ctx = document.getElementById('chart-sample');
