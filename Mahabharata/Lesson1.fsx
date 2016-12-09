@@ -189,7 +189,7 @@ let booknames = [|
                 "Ashramavasika Parva";
                 "Mausala Parva";
                 "Mahaprasthanika Parva";
-                "Svargarohana Parva "
+                "Svargarohana Parva"
                 |]
 let books = [|
     for n,m in Array.zip booknos booknames do
@@ -206,17 +206,13 @@ let emotionalPath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "emoti
 JsonToFile emotionalPath emotionalJsonData
 
 
+
 let posnegWordList =
     Path.Combine(__SOURCE_DIRECTORY__, "..", "data/AFINN/"+ "AFINN-111" + ".txt")
     |> File.ReadAllLines
-    // |> Array.map (fun x ->
-    //                 x.Split ' ' //|> (fun b -> b.[0],b.[1])
-    //                 )
-
-posnegWordList.[0].Split [|' '|]
-
-let test = "abandon      -2"
-test.Split ' '
+    |> Array.map (fun x ->
+                    x.Split '\t' |> (fun b -> b.[0],b.[1])
+                    )
 
 
 

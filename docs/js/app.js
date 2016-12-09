@@ -7,7 +7,7 @@ $(document).ready(function () {
                 type: 'column'
             },
             title: {
-                text: 'Mahabharata Book - ' + bookName + ' Analysis'
+                text: bookName + ' Analysis'
             },
             tooltip: {
                 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
@@ -56,31 +56,33 @@ $(document).ready(function () {
                 // }]
             }]
         });
+    };
+
+
+    var generateIdName = function (name) {
+        return name.replace(' ', '-');
     }
-
-
-
 
     $.getJSON('js/emotional.json')
         .done(function (books) {
             console.log(books);
             books.map(function (book) {
-                $('.nav.nav-tabs').append('<li><a href="#' + book.Word + '" data-toggle="pill">' + book.Word + '</a></li>');
+                $('.nav.nav-tabs').append('<li><a href="#' + generateIdName(book.Word) + '" data-toggle="pill">' + book.Word + '</a></li>');
                 $('.tab-content')
-                    .append('<div class="tab-pane fade" id="' + book.Word + '"><p>' + book.Word + '</p><div id="' + book.Word + '-data"></div></div>');
-                $('#' + book.Word + '-data').append('<div id="' + book.Word + '-chart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto"></div>')
+                    .append('<div class="tab-pane fade" id="' + generateIdName(book.Word) + '"><p>' + book.Word + '</p><div id="' + generateIdName(book.Word) + '-data"></div></div>');
+                $('#' + generateIdName(book.Word) + '-data').append('<div id="' + generateIdName(book.Word) + '-chart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto"></div>');
                 var bookdata = _.chain(book)
                     .map(function (y, name) {
-                        return { y, name };
+                        return { y: y, name: name };
                     })
                     .filter(function (o) {
-                        return o.name !== 'Word'
+                        return o.name !== 'Word';
                     })
                     .value();
-                ;
+
 
                 console.log(bookdata);
-                drawChart(book.Word + '-chart', book.Word, bookdata);
+                drawChart(generateIdName(book.Word + '-chart'), book.Word, bookdata);
             });
 
         })
