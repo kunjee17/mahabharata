@@ -18,46 +18,86 @@ open MathNet.Numerics.LinearAlgebra
 open MathNet.Numerics.LinearAlgebra.SparseMatrix
 open FSharp.Data
 
+[<AutoOpen>]
+module FNLP =
+
+    let stringToNum s = if String.IsNullOrEmpty(s) then 0. else 1.
+
+    //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
+    let removeSpecialChars (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
 
 
-module Utility =
+    let Terms (input:string)=
+            input
+            |> (fun x -> x.Split ' ')
+            |> Array.map (removeSpecialChars >> (fun x -> x.Trim()))
+            |> Array.filter (fun x -> x <> "")
 
-    let JsonToFile (path:string)(data : obj) =
-        use writer = new StreamWriter(path)
-        let txt = data |> Compact.serialize
-        writer.WriteLine (txt)
-
-    let JsonDropPath name =
-        Path.Combine (__SOURCE_DIRECTORY__, "..", "docs/js/" + name + ".json")
-
-    let dataToJsonFile = JsonDropPath >> JsonToFile
-
-//Basic_Emotions_(size_is_proportional_to_number_of__data.csv
-let EmotionalPath = Path.Combine(__SOURCE_DIRECTORY__, "..","data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
-type EmotionCsv = CsvProvider< "../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv">
+    let UniqueTermsWithFrequency (input:string[])=
+            input
+            |> Array.countBy id
 
 
+    //Basic_Emotions_(size_is_proportional_to_number_of__data.csv
+    let sentimentCSVPath = Path.Combine(__SOURCE_DIRECTORY__, "..","data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
+    type SentimentCsv = CsvProvider< "../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv">
 
-let EmotionData = EmotionCsv.Load("../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
+    let SentimentData = SentimentCsv.Load("../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
 
-type EmotionInNumber = {
-    Anger:float
-    Anticipation:float
-    Disgust:float
-    // Emotion:float
-    Fear:float
-    Joy:float
-    Negative:float
-    Positive:float
-    Sadness:float
-    Surprise:float
-    Trust:float
-    Word: string
-}
 
-let stringToNum s = if String.IsNullOrEmpty(s) then 0. else 1.
+    type SentimentInNumber = {
+        Anger:float
+        Anticipation:float
+        Disgust:float
+        Fear:float
+        Joy:float
+        Negative:float
+        Positive:float
+        Sadness:float
+        Surprise:float
+        Trust:float
+        Word: string
+    }
 
-let emotionCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, positive, sadness, surprise, trust, word) =
+    let ZeroSentiment = {
+        Anger = 0.
+        Anticipation = 0.
+        Disgust =0.
+        Fear = 0.
+        Joy = 0.
+        Negative = 0.
+        Positive = 0.
+        Sadness = 0.
+        Surprise = 0.
+        Trust = 0.
+        Word = String.Empty
+    }
+
+    //Active Pattern for Sentiments
+    let (|Anger|_|) input =
+        if input = "anger" then Some Anger else None
+    let (|Anticipation|_|) input =
+        if input = "anticip" then Some Anticipation else None
+    let (|Disgust|_|) input =
+        if input = "disgust" then Some Disgust else None
+    let (|Fear|_|) input =
+        if input = "fear" then Some Fear else None
+    let (|Joy|_|) input =
+        if input = "joy" then Some Joy else None
+    let (|Negative|_|) input =
+        if input = "negative" then Some Negative else None
+    let (|Positive|_|) input =
+        if input = "positive" then Some Positive else None
+    let (|Sadness|_|) input =
+        if input = "sadness" then Some Sadness else None
+    let (|Surprise|_|) input =
+        if input = "surprise" then Some Surprise else None
+    let (|Trust|_|) input =
+        if input = "trust" then Some Trust else None
+
+
+
+    let sentimentCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, positive, sadness, surprise, trust, word) =
         let a = {
             Anger = stringToNum anger
             Anticipation = stringToNum anticipation
@@ -73,143 +113,136 @@ let emotionCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, p
         }
 
         match emotion with
-        | "anger" -> if a.Anger = 0. then {a with Anger = 1.} else a
-        | "anticip" -> if a.Anticipation = 0. then {a with Anticipation = 1.} else a
-        | "disgust" -> if a.Disgust = 0. then {a with Disgust = 1. } else a
-        | "fear" -> if a.Fear = 0. then {a with Fear = 1.} else a
-        | "joy" -> if a.Joy = 0. then {a with Joy = 1.} else a
-        | "negative" -> if a.Negative = 0. then {a with Negative = 1.} else a
-        | "positive" -> if a.Positive = 0. then {a with Positive = 1.} else a
-        | "sadness" -> if a.Sadness = 0. then {a with Sadness = 1.} else a
-        | "surprise" -> if a.Surprise = 0. then {a with Surprise = 1.} else a
-        | "trust" -> if a.Trust = 0. then {a with Trust = 1.} else a
+        | Anger -> if a.Anger = 0. then {a with Anger = 1.} else a
+        | Anticipation -> if a.Anticipation = 0. then {a with Anticipation = 1.} else a
+        | Disgust -> if a.Disgust = 0. then {a with Disgust = 1. } else a
+        | Fear -> if a.Fear = 0. then {a with Fear = 1.} else a
+        | Joy -> if a.Joy = 0. then {a with Joy = 1.} else a
+        | Negative -> if a.Negative = 0. then {a with Negative = 1.} else a
+        | Positive -> if a.Positive = 0. then {a with Positive = 1.} else a
+        | Sadness -> if a.Sadness = 0. then {a with Sadness = 1.} else a
+        | Surprise -> if a.Surprise = 0. then {a with Surprise = 1.} else a
+        | Trust -> if a.Trust = 0. then {a with Trust = 1.} else a
         | _ -> a
 
+    let allSentimentsInNumber =
+        SentimentData.Rows
+        |> Seq.map (fun row ->
+            sentimentCalculate (
+                    row.Anger,
+                    row.Anticipation,
+                    row.Disgust,
+                    row.Emotion,
+                    row.Fear,
+                    row.Joy,
+                    row.Negative,
+                    row.Positive,
+                    row.Sadness,
+                    row.Surprise,
+                    row.Trust,
+                    row.Word
+                    ))
+    let SentimentWordsSet = allSentimentsInNumber |> Seq.map (fun row -> row.Word) |> set
 
-let allEmotionsInNumber = EmotionData.Rows |> Seq.map (fun row -> emotionCalculate (
-                                                                    row.Anger,
-                                                                    row.Anticipation,
-                                                                    row.Disgust,
-                                                                    row.Emotion,
-                                                                    row.Fear,
-                                                                    row.Joy,
-                                                                    row.Negative,
-                                                                    row.Positive,
-                                                                    row.Sadness,
-                                                                    row.Surprise,
-                                                                    row.Trust,
-                                                                    row.Word
-                                                        ))
-let emotionWordsSet = allEmotionsInNumber |> Seq.map (fun row -> row.Word) |> set
-
-
-type WordPosNeg = {
-    Word :string
-    Rating : int
-}
-
-let posnegWordList =
-    Path.Combine(__SOURCE_DIRECTORY__, "..", "data/AFINN/"+ "AFINN-111" + ".txt")
-    |> File.ReadAllLines
-    |> Array.map (fun x ->
-                    x.Split '\t' |> (fun b -> {Word = b.[0]; Rating = System.Int32.Parse b.[1]})
-                    )
-
-type DocItem = {
-    Term : string
-    Freq : int
-}
-
-type Doc = {
-    Bookno : string
-    DocItems : DocItem []
-}
-
-let zeroEmotion = {
-        Anger = 0.
-        Anticipation = 0.
-        Disgust =0.
-        // Emotion = 0.
-        Fear = 0.
-        Joy = 0.
-        Negative = 0.
-        Positive = 0.
-        Sadness = 0.
-        Surprise = 0.
-        Trust = 0.
-        Word = "book0"
-    }
-
-let bookSum bookname a b =
-    {
-        Anger = a.Anger + b.Anger
-        Anticipation = a.Anticipation + b.Anticipation
-        Disgust = a.Disgust + b.Disgust
-        // Emotion = a.Emotion + b.Emotion
-        Fear = a.Fear + b.Fear
-        Joy = a.Joy + b.Joy
-        Negative = a.Negative + b.Negative
-        Positive = a.Positive + b.Positive
-        Sadness = a.Sadness + b.Sadness
-        Surprise = a.Surprise + b.Surprise
-        Trust = a.Trust + b.Trust
-        Word = bookname
-    }
-
-
-type Book(bookno:string, bookname:string) =
-
-    //should be done with regex. But I don't know regex so I copy pasted from SO to remove all special chars
-    let removeSpecialChars (str : string) = Regex.Replace(str, "[^0-9a-zA-Z]+", " ")
-
-    member x.BookNo = bookno + "-" + bookname
-    member x.BookText =
-                Path.Combine(__SOURCE_DIRECTORY__, "..", "books/"+ bookno + ".txt")
-                |> File.ReadAllLines
-
-    member x.TermFrequency (input:string) =
-            input
-            // |> String.concat " "
-            |> (fun x -> x.Split ' ')
-            |> Array.map (removeSpecialChars >> (fun x -> x.Trim()))
-            |> Array.filter (fun x -> x <> "")
-            |> Array.countBy id
-    member x.BookTermGroup =
-            x.TermFrequency (x.BookText |> String.concat " ")
-
-    member x.BookUniqueTerms =
-        x.BookTermGroup
-            |> Array.map (fun (x,_)-> x)
-            |> set
-
-    member x.EmotionalIndex =
-        let commonEmotions = x.BookUniqueTerms |> Set.intersect emotionWordsSet
-        let commonEmotionsCount = commonEmotions.Count
-        let commonEmotionsInNumber = allEmotionsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
-        let r = commonEmotionsInNumber |> Array.fold (bookSum x.BookNo) zeroEmotion
-        { r with
-            Anger = (r.Anger)
-            Anticipation = (r.Anticipation)
-            Disgust =(r.Disgust)
-            // Emotion = (r.Emotion)
-            Fear = (r.Fear)
-            Joy = (r.Joy)
-            Negative = (r.Negative)
-            Positive = (r.Positive)
-            Sadness = (r.Sadness)
-            Surprise = (r.Surprise)
-            Trust = (r.Trust)
+    let SentimentSum word a b =
+        {
+            Anger = a.Anger + b.Anger
+            Anticipation = a.Anticipation + b.Anticipation
+            Disgust = a.Disgust + b.Disgust
+            // Emotion = a.Emotion + b.Emotion
+            Fear = a.Fear + b.Fear
+            Joy = a.Joy + b.Joy
+            Negative = a.Negative + b.Negative
+            Positive = a.Positive + b.Positive
+            Sadness = a.Sadness + b.Sadness
+            Surprise = a.Surprise + b.Surprise
+            Trust = a.Trust + b.Trust
+            Word = word
         }
 
-    member x.PosNegIndex =
-        let commonWords = posnegWordList
-                                |> Array.map (fun x -> x.Word)
-                                |> set
-                                |> Set.intersect x.BookUniqueTerms
-        posnegWordList
-        |> Array.filter (fun a -> commonWords.Contains a.Word)
-        // |> Array.map (fun b -> b.Rating)
-        // |> Array.sum
+
+    type Word = {
+        Term :string
+        Rating : int
+    }
+
+    let WordList =
+        Path.Combine(__SOURCE_DIRECTORY__, "..", "data/AFINN/"+ "AFINN-111" + ".txt")
+        |> File.ReadAllLines
+        |> Array.map (fun x ->
+                        x.Split '\t' |> (fun b -> {Term = b.[0]; Rating = System.Int32.Parse b.[1]})
+                        )
+
+
+[<AutoOpen>]
+module Utility =
+    let JsonDropPath name =
+        Path.Combine (__SOURCE_DIRECTORY__, "..", "docs/js/" + name + ".json")
+    let dataToJSONFile (fileName : string)(data :'a) =
+        let path = JsonDropPath fileName
+        use writer = new StreamWriter(path)
+        let txt = data |> Compact.serialize
+        writer.WriteLine (txt)
+
+
+
+
+module Book =
+    type Book = {
+        Name : string
+        Text : string
+        UniqueTerms : Set<string>
+        Terms : string []
+        UniqueTermsWithFrequency : (string * int) []
+        SentimentIndex : SentimentInNumber
+        WordsRating : Word []
+    }
+
+    let create (bookname:string) (booktext :string) =
+        let terms = Terms booktext
+        let termsCount = terms.Length |> float
+        let termsWithFrequency = UniqueTermsWithFrequency terms
+        let uniqueTerms = termsWithFrequency |> Array.map (fun (x,_) -> x)
+
+        {
+            Name = bookname
+            Text = booktext
+            UniqueTerms = uniqueTerms |> set
+            Terms = terms
+            UniqueTermsWithFrequency = termsWithFrequency
+            SentimentIndex =
+                let commonEmotions = uniqueTerms |> set |> Set.intersect SentimentWordsSet
+                let commonEmotionsCount = commonEmotions.Count
+                let commonEmotionsInNumber = allSentimentsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
+                let r = commonEmotionsInNumber |> Array.fold (SentimentSum bookname) ZeroSentiment
+                //Instead of 100 multiplying with 10000 just to get bigger number for plot
+                { r with
+                    Anger = (r.Anger/termsCount) * 10000.
+                    Anticipation = (r.Anticipation/termsCount) * 10000.
+                    Disgust =(r.Disgust/termsCount) * 10000.
+                    // Emotion = (r.Emotion)
+                    Fear = (r.Fear/termsCount) * 10000.
+                    Joy = (r.Joy/termsCount) * 10000.
+                    Negative = (r.Negative/termsCount) * 10000.
+                    Positive = (r.Positive/termsCount) * 10000.
+                    Sadness = (r.Sadness/termsCount) * 10000.
+                    Surprise = (r.Surprise/termsCount) * 10000.
+                    Trust = (r.Trust/termsCount) * 10000.
+                }
+            WordsRating =
+                let commonWords =
+                    WordList
+                    |> Array.map (fun x -> x.Term)
+                    |> set
+                    |> Set.intersect (uniqueTerms |> set)
+                WordList
+                |> Array.filter (fun a -> commonWords.Contains a.Term)
+        }
+
+
+//All books of Mahabharata starts procession from here.
+
+//Book Nos as per filnames
 let booknos = [|
                 "01";
                 "02";
@@ -231,6 +264,7 @@ let booknos = [|
                 "18"
                 |]
 
+//Book names
 let booknames = [|
                 "Adi Parva";
                 "Sabha Parva";
@@ -253,31 +287,41 @@ let booknames = [|
                 |]
 let books = [|
     for n,m in Array.zip booknos booknames do
-        yield Book(n,m)
+        let txt = Path.Combine(__SOURCE_DIRECTORY__, "..", "books/"+ n + ".txt")
+                    |> File.ReadAllLines |> String.concat " "
+        yield Book.create (n+"-"+m) txt
 |]
 
 let book0 = books.[0]
 
+dataToJSONFile "pos" book0.WordsRating
 
-Utility.dataToJsonFile "pos" book0.PosNegIndex
+// books |> Array.map (fun a -> (a.Name, a.WordsRating))
 
-books |> Array.map (fun a -> (a.BookNo, a.PosNegIndex))
-
-let allBookEmotionalIndex = books |> Array.map (fun x -> x.EmotionalIndex)
-
-
-Utility.dataToJsonFile "emotional" allBookEmotionalIndex
+let allBookEmotionalIndex = books |> Array.map (fun x -> x.SentimentIndex)
 
 
+dataToJSONFile "emotional" allBookEmotionalIndex
 
+let allJoy = books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Joy))
 
+dataToJSONFile "joy" allJoy
 
+let termsInWordRating = book0.UniqueTerms |> Set.intersect (book0.WordsRating |> Array.map (fun x -> x.Term) |> set)
 
+let termsWithFrequency = book0.UniqueTermsWithFrequency
+                        |> Array.filter (fun (x,_) -> termsInWordRating.Contains x )
+                        |> Array.sortBy (fun (_,y) -> -y)
 
+                        |> Array.take 50
+                        |> Array.map (fun (x,y)->
+                                        let term = book0.WordsRating |> Array.find (fun a -> a.Term = x)
+                                        (x, y * term.Rating)
+                                    )
+(**
+    Inverted Index. WIP.
 
-
-
-let (m : Matrix<float>) =
+    let (m : Matrix<float>) =
     let allbookTerms = books
                         |> Array.map (fun x -> x.BookUniqueTerms)
                         |> Array.fold (+) Set.empty
@@ -290,41 +334,42 @@ let (m : Matrix<float>) =
                         )
     sm
 
-let getUniqueTermsByFrequencyForBook (bookno : string) : Doc =
-    let bookToProcess = books |> Array.find (fun x -> x.BookNo = bookno)
-    let allOtherBooks = books |> Array.filter (fun x -> x.BookNo <> bookno)
+    let getUniqueTermsByFrequencyForBook (bookno : string) : Doc =
+        let bookToProcess = books |> Array.find (fun x -> x.BookNo = bookno)
+        let allOtherBooks = books |> Array.filter (fun x -> x.BookNo <> bookno)
 
-    let allBookTerms = allOtherBooks |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (+) Set.empty
+        let allBookTerms = allOtherBooks |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (+) Set.empty
 
-    let termsSpecifictoBook = bookToProcess.BookUniqueTerms - allBookTerms
-    let docItems: DocItem [] = bookToProcess.BookTermGroup
-                                |> Array.filter (fun (x,_) -> termsSpecifictoBook.Contains x)
-                                |> Array.map (fun (x,y)-> { Term = x; Freq = y})
-    {Bookno = bookno; DocItems = docItems}
-
-
-let uniqueTermsforAllBooksAsDoc = booknos |> Array.map getUniqueTermsByFrequencyForBook
-
-let uniqueTermsforAllBooks = books |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
-
-let invertedIndex (term:string) =
-    let n = books |> Array.filter (fun x -> x.BookUniqueTerms.Contains term) |> Array.length |> float
-    let m = books |> Array.length |> float
-    log (m/n)
+        let termsSpecifictoBook = bookToProcess.BookUniqueTerms - allBookTerms
+        let docItems: DocItem [] = bookToProcess.BookTermGroup
+                                    |> Array.filter (fun (x,_) -> termsSpecifictoBook.Contains x)
+                                    |> Array.map (fun (x,y)-> { Term = x; Freq = y})
+        {BookName = bookno; DocItems = docItems}
 
 
-let invertedIndexTerms =
-    uniqueTermsforAllBooks
-        |> Set.map (fun x -> (x,invertedIndex x))
+    let uniqueTermsforAllBooksAsDoc = booknos |> Array.map getUniqueTermsByFrequencyForBook
 
-// let terms =
-//     Compact.serialize uniqueTermsforAllBooksAsDoc
+    let uniqueTermsforAllBooks = books |> Array.map (fun x -> x.BookUniqueTerms) |> Array.fold (fun acc elem -> acc + elem) Set.empty
 
-
-
-// let jsonpath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "terms" + ".js")
-
-// JsonToFile jsonpath terms
+    let invertedIndex (term:string) =
+        let n = books |> Array.filter (fun x -> x.BookUniqueTerms.Contains term) |> Array.length |> float
+        let m = books |> Array.length |> float
+        log (m/n)
 
 
+    let invertedIndexTerms =
+        uniqueTermsforAllBooks
+            |> Set.map (fun x -> (x,invertedIndex x))
+
+    type DocItem = {
+        Term : string
+        Freq : int
+    }
+
+    type Doc = {
+        BookName : string
+        DocItems : DocItem []
+    }
+
+*)
 

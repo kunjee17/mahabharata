@@ -1,3690 +1,3690 @@
 [
   {
-    "Word": "abandon",
+    "Term": "abandon",
     "Rating": -2
   },
   {
-    "Word": "abandoned",
+    "Term": "abandoned",
     "Rating": -2
   },
   {
-    "Word": "abduction",
+    "Term": "abduction",
     "Rating": -2
   },
   {
-    "Word": "ability",
+    "Term": "ability",
     "Rating": 2
   },
   {
-    "Word": "absolve",
+    "Term": "absolve",
     "Rating": 2
   },
   {
-    "Word": "absolved",
+    "Term": "absolved",
     "Rating": 2
   },
   {
-    "Word": "absorbed",
+    "Term": "absorbed",
     "Rating": 1
   },
   {
-    "Word": "abused",
+    "Term": "abused",
     "Rating": -3
   },
   {
-    "Word": "accept",
+    "Term": "accept",
     "Rating": 1
   },
   {
-    "Word": "accepted",
+    "Term": "accepted",
     "Rating": 1
   },
   {
-    "Word": "accepting",
+    "Term": "accepting",
     "Rating": 1
   },
   {
-    "Word": "accident",
+    "Term": "accident",
     "Rating": -2
   },
   {
-    "Word": "accidental",
+    "Term": "accidental",
     "Rating": -2
   },
   {
-    "Word": "accidents",
+    "Term": "accidents",
     "Rating": -2
   },
   {
-    "Word": "accomplish",
+    "Term": "accomplish",
     "Rating": 2
   },
   {
-    "Word": "accomplished",
+    "Term": "accomplished",
     "Rating": 2
   },
   {
-    "Word": "accused",
+    "Term": "accused",
     "Rating": -2
   },
   {
-    "Word": "achievable",
+    "Term": "achievable",
     "Rating": 1
   },
   {
-    "Word": "acrimonious",
+    "Term": "acrimonious",
     "Rating": -3
   },
   {
-    "Word": "adequate",
+    "Term": "adequate",
     "Rating": 1
   },
   {
-    "Word": "admire",
+    "Term": "admire",
     "Rating": 3
   },
   {
-    "Word": "admit",
+    "Term": "admit",
     "Rating": -1
   },
   {
-    "Word": "admitted",
+    "Term": "admitted",
     "Rating": -1
   },
   {
-    "Word": "adopt",
+    "Term": "adopt",
     "Rating": 1
   },
   {
-    "Word": "adopts",
+    "Term": "adopts",
     "Rating": 1
   },
   {
-    "Word": "adorable",
+    "Term": "adorable",
     "Rating": 3
   },
   {
-    "Word": "adore",
+    "Term": "adore",
     "Rating": 3
   },
   {
-    "Word": "adored",
+    "Term": "adored",
     "Rating": 3
   },
   {
-    "Word": "adores",
+    "Term": "adores",
     "Rating": 3
   },
   {
-    "Word": "advanced",
+    "Term": "advanced",
     "Rating": 1
   },
   {
-    "Word": "advantage",
+    "Term": "advantage",
     "Rating": 2
   },
   {
-    "Word": "adventures",
+    "Term": "adventures",
     "Rating": 2
   },
   {
-    "Word": "affected",
+    "Term": "affected",
     "Rating": -1
   },
   {
-    "Word": "affection",
+    "Term": "affection",
     "Rating": 3
   },
   {
-    "Word": "affectionate",
+    "Term": "affectionate",
     "Rating": 3
   },
   {
-    "Word": "afflicted",
+    "Term": "afflicted",
     "Rating": -1
   },
   {
-    "Word": "afraid",
+    "Term": "afraid",
     "Rating": -2
   },
   {
-    "Word": "aggression",
+    "Term": "aggression",
     "Rating": -2
   },
   {
-    "Word": "agree",
+    "Term": "agree",
     "Rating": 1
   },
   {
-    "Word": "agreeable",
+    "Term": "agreeable",
     "Rating": 2
   },
   {
-    "Word": "agreed",
+    "Term": "agreed",
     "Rating": 1
   },
   {
-    "Word": "agreement",
+    "Term": "agreement",
     "Rating": 1
   },
   {
-    "Word": "alarm",
+    "Term": "alarm",
     "Rating": -2
   },
   {
-    "Word": "alarmed",
+    "Term": "alarmed",
     "Rating": -2
   },
   {
-    "Word": "alert",
+    "Term": "alert",
     "Rating": -1
   },
   {
-    "Word": "alive",
+    "Term": "alive",
     "Rating": 1
   },
   {
-    "Word": "alone",
+    "Term": "alone",
     "Rating": -2
   },
   {
-    "Word": "amazed",
+    "Term": "amazed",
     "Rating": 2
   },
   {
-    "Word": "ambitious",
+    "Term": "ambitious",
     "Rating": 2
   },
   {
-    "Word": "amused",
+    "Term": "amused",
     "Rating": 3
   },
   {
-    "Word": "amusement",
+    "Term": "amusement",
     "Rating": 3
   },
   {
-    "Word": "anger",
+    "Term": "anger",
     "Rating": -3
   },
   {
-    "Word": "angry",
+    "Term": "angry",
     "Rating": -3
   },
   {
-    "Word": "anguish",
+    "Term": "anguish",
     "Rating": -3
   },
   {
-    "Word": "annoyed",
+    "Term": "annoyed",
     "Rating": -2
   },
   {
-    "Word": "anxiety",
+    "Term": "anxiety",
     "Rating": -2
   },
   {
-    "Word": "anxious",
+    "Term": "anxious",
     "Rating": -2
   },
   {
-    "Word": "apology",
+    "Term": "apology",
     "Rating": -1
   },
   {
-    "Word": "appease",
+    "Term": "appease",
     "Rating": 2
   },
   {
-    "Word": "appeased",
+    "Term": "appeased",
     "Rating": 2
   },
   {
-    "Word": "applaud",
+    "Term": "applaud",
     "Rating": 2
   },
   {
-    "Word": "applauded",
+    "Term": "applauded",
     "Rating": 2
   },
   {
-    "Word": "applauding",
+    "Term": "applauding",
     "Rating": 2
   },
   {
-    "Word": "applause",
+    "Term": "applause",
     "Rating": 2
   },
   {
-    "Word": "approval",
+    "Term": "approval",
     "Rating": 2
   },
   {
-    "Word": "approved",
+    "Term": "approved",
     "Rating": 2
   },
   {
-    "Word": "ardent",
+    "Term": "ardent",
     "Rating": 1
   },
   {
-    "Word": "ashamed",
+    "Term": "ashamed",
     "Rating": -2
   },
   {
-    "Word": "ass",
+    "Term": "ass",
     "Rating": -4
   },
   {
-    "Word": "astonished",
+    "Term": "astonished",
     "Rating": 2
   },
   {
-    "Word": "attack",
+    "Term": "attack",
     "Rating": -1
   },
   {
-    "Word": "attacked",
+    "Term": "attacked",
     "Rating": -1
   },
   {
-    "Word": "attacking",
+    "Term": "attacking",
     "Rating": -1
   },
   {
-    "Word": "attract",
+    "Term": "attract",
     "Rating": 1
   },
   {
-    "Word": "attracted",
+    "Term": "attracted",
     "Rating": 1
   },
   {
-    "Word": "attractions",
+    "Term": "attractions",
     "Rating": 2
   },
   {
-    "Word": "authority",
+    "Term": "authority",
     "Rating": 1
   },
   {
-    "Word": "avert",
+    "Term": "avert",
     "Rating": -1
   },
   {
-    "Word": "averted",
+    "Term": "averted",
     "Rating": -1
   },
   {
-    "Word": "avoid",
+    "Term": "avoid",
     "Rating": -1
   },
   {
-    "Word": "avoided",
+    "Term": "avoided",
     "Rating": -1
   },
   {
-    "Word": "await",
+    "Term": "await",
     "Rating": -1
   },
   {
-    "Word": "awaited",
+    "Term": "awaited",
     "Rating": -1
   },
   {
-    "Word": "axe",
+    "Term": "axe",
     "Rating": -1
   },
   {
-    "Word": "backed",
+    "Term": "backed",
     "Rating": 1
   },
   {
-    "Word": "backs",
+    "Term": "backs",
     "Rating": 1
   },
   {
-    "Word": "bad",
+    "Term": "bad",
     "Rating": -3
   },
   {
-    "Word": "banish",
+    "Term": "banish",
     "Rating": -1
   },
   {
-    "Word": "battle",
+    "Term": "battle",
     "Rating": -1
   },
   {
-    "Word": "battles",
+    "Term": "battles",
     "Rating": -1
   },
   {
-    "Word": "beaten",
+    "Term": "beaten",
     "Rating": -2
   },
   {
-    "Word": "beauties",
+    "Term": "beauties",
     "Rating": 3
   },
   {
-    "Word": "beautiful",
+    "Term": "beautiful",
     "Rating": 3
   },
   {
-    "Word": "beautifully",
+    "Term": "beautifully",
     "Rating": 3
   },
   {
-    "Word": "beloved",
+    "Term": "beloved",
     "Rating": 3
   },
   {
-    "Word": "benefit",
+    "Term": "benefit",
     "Rating": 2
   },
   {
-    "Word": "benefits",
+    "Term": "benefits",
     "Rating": 2
   },
   {
-    "Word": "bereaved",
+    "Term": "bereaved",
     "Rating": -2
   },
   {
-    "Word": "best",
+    "Term": "best",
     "Rating": 3
   },
   {
-    "Word": "betray",
+    "Term": "betray",
     "Rating": -3
   },
   {
-    "Word": "betraying",
+    "Term": "betraying",
     "Rating": -3
   },
   {
-    "Word": "better",
+    "Term": "better",
     "Rating": 2
   },
   {
-    "Word": "big",
+    "Term": "big",
     "Rating": 1
   },
   {
-    "Word": "bitch",
+    "Term": "bitch",
     "Rating": -5
   },
   {
-    "Word": "bitter",
+    "Term": "bitter",
     "Rating": -2
   },
   {
-    "Word": "bitterly",
+    "Term": "bitterly",
     "Rating": -2
   },
   {
-    "Word": "blame",
+    "Term": "blame",
     "Rating": -2
   },
   {
-    "Word": "blaming",
+    "Term": "blaming",
     "Rating": -2
   },
   {
-    "Word": "bless",
+    "Term": "bless",
     "Rating": 2
   },
   {
-    "Word": "blessing",
+    "Term": "blessing",
     "Rating": 3
   },
   {
-    "Word": "blind",
+    "Term": "blind",
     "Rating": -1
   },
   {
-    "Word": "bliss",
+    "Term": "bliss",
     "Rating": 3
   },
   {
-    "Word": "blocks",
+    "Term": "blocks",
     "Rating": -1
   },
   {
-    "Word": "boastful",
+    "Term": "boastful",
     "Rating": -2
   },
   {
-    "Word": "bold",
+    "Term": "bold",
     "Rating": 2
   },
   {
-    "Word": "bore",
+    "Term": "bore",
     "Rating": -2
   },
   {
-    "Word": "brave",
+    "Term": "brave",
     "Rating": 2
   },
   {
-    "Word": "bright",
+    "Term": "bright",
     "Rating": 1
   },
   {
-    "Word": "brightest",
+    "Term": "brightest",
     "Rating": 2
   },
   {
-    "Word": "brightness",
+    "Term": "brightness",
     "Rating": 1
   },
   {
-    "Word": "brilliant",
+    "Term": "brilliant",
     "Rating": 4
   },
   {
-    "Word": "broke",
+    "Term": "broke",
     "Rating": -1
   },
   {
-    "Word": "broken",
+    "Term": "broken",
     "Rating": -1
   },
   {
-    "Word": "burden",
+    "Term": "burden",
     "Rating": -2
   },
   {
-    "Word": "burdened",
+    "Term": "burdened",
     "Rating": -2
   },
   {
-    "Word": "calm",
+    "Term": "calm",
     "Rating": 2
   },
   {
-    "Word": "capable",
+    "Term": "capable",
     "Rating": 1
   },
   {
-    "Word": "captivated",
+    "Term": "captivated",
     "Rating": 3
   },
   {
-    "Word": "care",
+    "Term": "care",
     "Rating": 2
   },
   {
-    "Word": "careful",
+    "Term": "careful",
     "Rating": 2
   },
   {
-    "Word": "carefully",
+    "Term": "carefully",
     "Rating": 2
   },
   {
-    "Word": "careless",
+    "Term": "careless",
     "Rating": -2
   },
   {
-    "Word": "cares",
+    "Term": "cares",
     "Rating": 2
   },
   {
-    "Word": "celebrate",
+    "Term": "celebrate",
     "Rating": 3
   },
   {
-    "Word": "celebrated",
+    "Term": "celebrated",
     "Rating": 3
   },
   {
-    "Word": "certain",
+    "Term": "certain",
     "Rating": 1
   },
   {
-    "Word": "chance",
+    "Term": "chance",
     "Rating": 2
   },
   {
-    "Word": "charged",
+    "Term": "charged",
     "Rating": -3
   },
   {
-    "Word": "charming",
+    "Term": "charming",
     "Rating": 3
   },
   {
-    "Word": "chastise",
+    "Term": "chastise",
     "Rating": -3
   },
   {
-    "Word": "chastised",
+    "Term": "chastised",
     "Rating": -3
   },
   {
-    "Word": "chastising",
+    "Term": "chastising",
     "Rating": -3
   },
   {
-    "Word": "cheer",
+    "Term": "cheer",
     "Rating": 2
   },
   {
-    "Word": "cheerful",
+    "Term": "cheerful",
     "Rating": 2
   },
   {
-    "Word": "cheering",
+    "Term": "cheering",
     "Rating": 2
   },
   {
-    "Word": "cheerless",
+    "Term": "cheerless",
     "Rating": -2
   },
   {
-    "Word": "cheers",
+    "Term": "cheers",
     "Rating": 2
   },
   {
-    "Word": "cherish",
+    "Term": "cherish",
     "Rating": 2
   },
   {
-    "Word": "cherished",
+    "Term": "cherished",
     "Rating": 2
   },
   {
-    "Word": "cherishing",
+    "Term": "cherishing",
     "Rating": 2
   },
   {
-    "Word": "childish",
+    "Term": "childish",
     "Rating": -2
   },
   {
-    "Word": "choked",
+    "Term": "choked",
     "Rating": -2
   },
   {
-    "Word": "clash",
+    "Term": "clash",
     "Rating": -2
   },
   {
-    "Word": "clean",
+    "Term": "clean",
     "Rating": 2
   },
   {
-    "Word": "clear",
+    "Term": "clear",
     "Rating": 1
   },
   {
-    "Word": "cleared",
+    "Term": "cleared",
     "Rating": 1
   },
   {
-    "Word": "clever",
+    "Term": "clever",
     "Rating": 2
   },
   {
-    "Word": "clouded",
+    "Term": "clouded",
     "Rating": -1
   },
   {
-    "Word": "combat",
+    "Term": "combat",
     "Rating": -1
   },
   {
-    "Word": "comfort",
+    "Term": "comfort",
     "Rating": 2
   },
   {
-    "Word": "comforting",
+    "Term": "comforting",
     "Rating": 2
   },
   {
-    "Word": "comforts",
+    "Term": "comforts",
     "Rating": 2
   },
   {
-    "Word": "commended",
+    "Term": "commended",
     "Rating": 2
   },
   {
-    "Word": "commit",
+    "Term": "commit",
     "Rating": 1
   },
   {
-    "Word": "committed",
+    "Term": "committed",
     "Rating": 1
   },
   {
-    "Word": "committing",
+    "Term": "committing",
     "Rating": 1
   },
   {
-    "Word": "compassionate",
+    "Term": "compassionate",
     "Rating": 2
   },
   {
-    "Word": "compelled",
+    "Term": "compelled",
     "Rating": 1
   },
   {
-    "Word": "competent",
+    "Term": "competent",
     "Rating": 2
   },
   {
-    "Word": "complacent",
+    "Term": "complacent",
     "Rating": -2
   },
   {
-    "Word": "complain",
+    "Term": "complain",
     "Rating": -2
   },
   {
-    "Word": "conciliate",
+    "Term": "conciliate",
     "Rating": 2
   },
   {
-    "Word": "conciliated",
+    "Term": "conciliated",
     "Rating": 2
   },
   {
-    "Word": "conciliating",
+    "Term": "conciliating",
     "Rating": 2
   },
   {
-    "Word": "condemned",
+    "Term": "condemned",
     "Rating": -2
   },
   {
-    "Word": "confidence",
+    "Term": "confidence",
     "Rating": 2
   },
   {
-    "Word": "conflict",
+    "Term": "conflict",
     "Rating": -2
   },
   {
-    "Word": "confused",
+    "Term": "confused",
     "Rating": -2
   },
   {
-    "Word": "congratulations",
+    "Term": "congratulations",
     "Rating": 2
   },
   {
-    "Word": "consent",
+    "Term": "consent",
     "Rating": 2
   },
   {
-    "Word": "conspiracy",
+    "Term": "conspiracy",
     "Rating": -3
   },
   {
-    "Word": "constrained",
+    "Term": "constrained",
     "Rating": -2
   },
   {
-    "Word": "contempt",
+    "Term": "contempt",
     "Rating": -2
   },
   {
-    "Word": "contemptuous",
+    "Term": "contemptuous",
     "Rating": -2
   },
   {
-    "Word": "contemptuously",
+    "Term": "contemptuously",
     "Rating": -2
   },
   {
-    "Word": "contending",
+    "Term": "contending",
     "Rating": -1
   },
   {
-    "Word": "convinced",
+    "Term": "convinced",
     "Rating": 1
   },
   {
-    "Word": "cool",
+    "Term": "cool",
     "Rating": 1
   },
   {
-    "Word": "corpse",
+    "Term": "corpse",
     "Rating": -1
   },
   {
-    "Word": "costly",
+    "Term": "costly",
     "Rating": -2
   },
   {
-    "Word": "courage",
+    "Term": "courage",
     "Rating": 2
   },
   {
-    "Word": "courageous",
+    "Term": "courageous",
     "Rating": 2
   },
   {
-    "Word": "coward",
+    "Term": "coward",
     "Rating": -2
   },
   {
-    "Word": "cried",
+    "Term": "cried",
     "Rating": -2
   },
   {
-    "Word": "cries",
+    "Term": "cries",
     "Rating": -2
   },
   {
-    "Word": "crime",
+    "Term": "crime",
     "Rating": -3
   },
   {
-    "Word": "criminals",
+    "Term": "criminals",
     "Rating": -3
   },
   {
-    "Word": "cruel",
+    "Term": "cruel",
     "Rating": -3
   },
   {
-    "Word": "cruelty",
+    "Term": "cruelty",
     "Rating": -3
   },
   {
-    "Word": "crush",
+    "Term": "crush",
     "Rating": -1
   },
   {
-    "Word": "crushed",
+    "Term": "crushed",
     "Rating": -2
   },
   {
-    "Word": "cry",
+    "Term": "cry",
     "Rating": -1
   },
   {
-    "Word": "crying",
+    "Term": "crying",
     "Rating": -2
   },
   {
-    "Word": "curious",
+    "Term": "curious",
     "Rating": 1
   },
   {
-    "Word": "curse",
+    "Term": "curse",
     "Rating": -1
   },
   {
-    "Word": "cut",
+    "Term": "cut",
     "Rating": -1
   },
   {
-    "Word": "cutting",
+    "Term": "cutting",
     "Rating": -1
   },
   {
-    "Word": "danger",
+    "Term": "danger",
     "Rating": -2
   },
   {
-    "Word": "daring",
+    "Term": "daring",
     "Rating": 2
   },
   {
-    "Word": "darkness",
+    "Term": "darkness",
     "Rating": -1
   },
   {
-    "Word": "dauntless",
+    "Term": "dauntless",
     "Rating": 2
   },
   {
-    "Word": "dead",
+    "Term": "dead",
     "Rating": -3
   },
   {
-    "Word": "deafening",
+    "Term": "deafening",
     "Rating": -1
   },
   {
-    "Word": "dear",
+    "Term": "dear",
     "Rating": 2
   },
   {
-    "Word": "dearly",
+    "Term": "dearly",
     "Rating": 3
   },
   {
-    "Word": "death",
+    "Term": "death",
     "Rating": -2
   },
   {
-    "Word": "debt",
+    "Term": "debt",
     "Rating": -2
   },
   {
-    "Word": "deceit",
+    "Term": "deceit",
     "Rating": -3
   },
   {
-    "Word": "deceitful",
+    "Term": "deceitful",
     "Rating": -3
   },
   {
-    "Word": "deceived",
+    "Term": "deceived",
     "Rating": -3
   },
   {
-    "Word": "deceiving",
+    "Term": "deceiving",
     "Rating": -3
   },
   {
-    "Word": "deception",
+    "Term": "deception",
     "Rating": -3
   },
   {
-    "Word": "defeated",
+    "Term": "defeated",
     "Rating": -2
   },
   {
-    "Word": "deferring",
+    "Term": "deferring",
     "Rating": -1
   },
   {
-    "Word": "degraded",
+    "Term": "degraded",
     "Rating": -2
   },
   {
-    "Word": "dejected",
+    "Term": "dejected",
     "Rating": -2
   },
   {
-    "Word": "delay",
+    "Term": "delay",
     "Rating": -1
   },
   {
-    "Word": "delight",
+    "Term": "delight",
     "Rating": 3
   },
   {
-    "Word": "delighted",
+    "Term": "delighted",
     "Rating": 3
   },
   {
-    "Word": "delighting",
+    "Term": "delighting",
     "Rating": 3
   },
   {
-    "Word": "delights",
+    "Term": "delights",
     "Rating": 3
   },
   {
-    "Word": "demand",
+    "Term": "demand",
     "Rating": -1
   },
   {
-    "Word": "demanded",
+    "Term": "demanded",
     "Rating": -1
   },
   {
-    "Word": "demanding",
+    "Term": "demanding",
     "Rating": -1
   },
   {
-    "Word": "depressed",
+    "Term": "depressed",
     "Rating": -2
   },
   {
-    "Word": "derided",
+    "Term": "derided",
     "Rating": -2
   },
   {
-    "Word": "derision",
+    "Term": "derision",
     "Rating": -2
   },
   {
-    "Word": "desirable",
+    "Term": "desirable",
     "Rating": 2
   },
   {
-    "Word": "desire",
+    "Term": "desire",
     "Rating": 1
   },
   {
-    "Word": "desired",
+    "Term": "desired",
     "Rating": 2
   },
   {
-    "Word": "desirous",
+    "Term": "desirous",
     "Rating": 2
   },
   {
-    "Word": "despair",
+    "Term": "despair",
     "Rating": -3
   },
   {
-    "Word": "desperately",
+    "Term": "desperately",
     "Rating": -3
   },
   {
-    "Word": "despondent",
+    "Term": "despondent",
     "Rating": -3
   },
   {
-    "Word": "destroy",
+    "Term": "destroy",
     "Rating": -3
   },
   {
-    "Word": "destroyed",
+    "Term": "destroyed",
     "Rating": -3
   },
   {
-    "Word": "destroying",
+    "Term": "destroying",
     "Rating": -3
   },
   {
-    "Word": "destroys",
+    "Term": "destroys",
     "Rating": -3
   },
   {
-    "Word": "destruction",
+    "Term": "destruction",
     "Rating": -3
   },
   {
-    "Word": "destructive",
+    "Term": "destructive",
     "Rating": -3
   },
   {
-    "Word": "determined",
+    "Term": "determined",
     "Rating": 2
   },
   {
-    "Word": "devastated",
+    "Term": "devastated",
     "Rating": -2
   },
   {
-    "Word": "devoted",
+    "Term": "devoted",
     "Rating": 3
   },
   {
-    "Word": "die",
+    "Term": "die",
     "Rating": -3
   },
   {
-    "Word": "died",
+    "Term": "died",
     "Rating": -3
   },
   {
-    "Word": "difficult",
+    "Term": "difficult",
     "Rating": -1
   },
   {
-    "Word": "dire",
+    "Term": "dire",
     "Rating": -3
   },
   {
-    "Word": "dirt",
+    "Term": "dirt",
     "Rating": -2
   },
   {
-    "Word": "dirty",
+    "Term": "dirty",
     "Rating": -2
   },
   {
-    "Word": "disappear",
+    "Term": "disappear",
     "Rating": -1
   },
   {
-    "Word": "disappeared",
+    "Term": "disappeared",
     "Rating": -1
   },
   {
-    "Word": "disappears",
+    "Term": "disappears",
     "Rating": -1
   },
   {
-    "Word": "disappointment",
+    "Term": "disappointment",
     "Rating": -2
   },
   {
-    "Word": "disaster",
+    "Term": "disaster",
     "Rating": -2
   },
   {
-    "Word": "disconsolate",
+    "Term": "disconsolate",
     "Rating": -2
   },
   {
-    "Word": "discontented",
+    "Term": "discontented",
     "Rating": -2
   },
   {
-    "Word": "discord",
+    "Term": "discord",
     "Rating": -2
   },
   {
-    "Word": "disdain",
+    "Term": "disdain",
     "Rating": -2
   },
   {
-    "Word": "disgrace",
+    "Term": "disgrace",
     "Rating": -2
   },
   {
-    "Word": "disgraced",
+    "Term": "disgraced",
     "Rating": -2
   },
   {
-    "Word": "disguise",
+    "Term": "disguise",
     "Rating": -1
   },
   {
-    "Word": "disguised",
+    "Term": "disguised",
     "Rating": -1
   },
   {
-    "Word": "disguising",
+    "Term": "disguising",
     "Rating": -1
   },
   {
-    "Word": "disgusted",
+    "Term": "disgusted",
     "Rating": -3
   },
   {
-    "Word": "dislike",
+    "Term": "dislike",
     "Rating": -2
   },
   {
-    "Word": "displeased",
+    "Term": "displeased",
     "Rating": -2
   },
   {
-    "Word": "dispute",
+    "Term": "dispute",
     "Rating": -2
   },
   {
-    "Word": "disputes",
+    "Term": "disputes",
     "Rating": -2
   },
   {
-    "Word": "disquiet",
+    "Term": "disquiet",
     "Rating": -2
   },
   {
-    "Word": "disregard",
+    "Term": "disregard",
     "Rating": -2
   },
   {
-    "Word": "disregarded",
+    "Term": "disregarded",
     "Rating": -2
   },
   {
-    "Word": "disregarding",
+    "Term": "disregarding",
     "Rating": -2
   },
   {
-    "Word": "disrespect",
+    "Term": "disrespect",
     "Rating": -2
   },
   {
-    "Word": "disrespected",
+    "Term": "disrespected",
     "Rating": -2
   },
   {
-    "Word": "dissatisfied",
+    "Term": "dissatisfied",
     "Rating": -2
   },
   {
-    "Word": "distracted",
+    "Term": "distracted",
     "Rating": -2
   },
   {
-    "Word": "distress",
+    "Term": "distress",
     "Rating": -2
   },
   {
-    "Word": "distressed",
+    "Term": "distressed",
     "Rating": -2
   },
   {
-    "Word": "disturb",
+    "Term": "disturb",
     "Rating": -2
   },
   {
-    "Word": "disturbed",
+    "Term": "disturbed",
     "Rating": -2
   },
   {
-    "Word": "doomed",
+    "Term": "doomed",
     "Rating": -2
   },
   {
-    "Word": "doubt",
+    "Term": "doubt",
     "Rating": -1
   },
   {
-    "Word": "doubtful",
+    "Term": "doubtful",
     "Rating": -1
   },
   {
-    "Word": "doubts",
+    "Term": "doubts",
     "Rating": -1
   },
   {
-    "Word": "downcast",
+    "Term": "downcast",
     "Rating": -2
   },
   {
-    "Word": "drag",
+    "Term": "drag",
     "Rating": -1
   },
   {
-    "Word": "dragged",
+    "Term": "dragged",
     "Rating": -1
   },
   {
-    "Word": "drained",
+    "Term": "drained",
     "Rating": -2
   },
   {
-    "Word": "dreadful",
+    "Term": "dreadful",
     "Rating": -3
   },
   {
-    "Word": "dream",
+    "Term": "dream",
     "Rating": 1
   },
   {
-    "Word": "dreams",
+    "Term": "dreams",
     "Rating": 1
   },
   {
-    "Word": "drop",
+    "Term": "drop",
     "Rating": -1
   },
   {
-    "Word": "drowned",
+    "Term": "drowned",
     "Rating": -2
   },
   {
-    "Word": "drunk",
+    "Term": "drunk",
     "Rating": -2
   },
   {
-    "Word": "dull",
+    "Term": "dull",
     "Rating": -2
   },
   {
-    "Word": "eager",
+    "Term": "eager",
     "Rating": 2
   },
   {
-    "Word": "earnest",
+    "Term": "earnest",
     "Rating": 2
   },
   {
-    "Word": "ease",
+    "Term": "ease",
     "Rating": 2
   },
   {
-    "Word": "easy",
+    "Term": "easy",
     "Rating": 1
   },
   {
-    "Word": "effective",
+    "Term": "effective",
     "Rating": 2
   },
   {
-    "Word": "elegant",
+    "Term": "elegant",
     "Rating": 2
   },
   {
-    "Word": "elegantly",
+    "Term": "elegantly",
     "Rating": 2
   },
   {
-    "Word": "embrace",
+    "Term": "embrace",
     "Rating": 1
   },
   {
-    "Word": "emergency",
+    "Term": "emergency",
     "Rating": -2
   },
   {
-    "Word": "empty",
+    "Term": "empty",
     "Rating": -1
   },
   {
-    "Word": "encouraged",
+    "Term": "encouraged",
     "Rating": 2
   },
   {
-    "Word": "enemies",
+    "Term": "enemies",
     "Rating": -2
   },
   {
-    "Word": "enemy",
+    "Term": "enemy",
     "Rating": -2
   },
   {
-    "Word": "energetic",
+    "Term": "energetic",
     "Rating": 2
   },
   {
-    "Word": "engage",
+    "Term": "engage",
     "Rating": 1
   },
   {
-    "Word": "engrossed",
+    "Term": "engrossed",
     "Rating": 1
   },
   {
-    "Word": "enjoy",
+    "Term": "enjoy",
     "Rating": 2
   },
   {
-    "Word": "enjoying",
+    "Term": "enjoying",
     "Rating": 2
   },
   {
-    "Word": "enjoys",
+    "Term": "enjoys",
     "Rating": 2
   },
   {
-    "Word": "enlightened",
+    "Term": "enlightened",
     "Rating": 2
   },
   {
-    "Word": "enraged",
+    "Term": "enraged",
     "Rating": -2
   },
   {
-    "Word": "enraging",
+    "Term": "enraging",
     "Rating": -2
   },
   {
-    "Word": "ensure",
+    "Term": "ensure",
     "Rating": 1
   },
   {
-    "Word": "entertaining",
+    "Term": "entertaining",
     "Rating": 2
   },
   {
-    "Word": "entitled",
+    "Term": "entitled",
     "Rating": 1
   },
   {
-    "Word": "envy",
+    "Term": "envy",
     "Rating": -1
   },
   {
-    "Word": "error",
+    "Term": "error",
     "Rating": -2
   },
   {
-    "Word": "escape",
+    "Term": "escape",
     "Rating": -1
   },
   {
-    "Word": "escapes",
+    "Term": "escapes",
     "Rating": -1
   },
   {
-    "Word": "escaping",
+    "Term": "escaping",
     "Rating": -1
   },
   {
-    "Word": "esteemed",
+    "Term": "esteemed",
     "Rating": 2
   },
   {
-    "Word": "evil",
+    "Term": "evil",
     "Rating": -3
   },
   {
-    "Word": "excellence",
+    "Term": "excellence",
     "Rating": 3
   },
   {
-    "Word": "excellent",
+    "Term": "excellent",
     "Rating": 3
   },
   {
-    "Word": "excite",
+    "Term": "excite",
     "Rating": 3
   },
   {
-    "Word": "excited",
+    "Term": "excited",
     "Rating": 3
   },
   {
-    "Word": "excitement",
+    "Term": "excitement",
     "Rating": 3
   },
   {
-    "Word": "exciting",
+    "Term": "exciting",
     "Rating": 3
   },
   {
-    "Word": "excluded",
+    "Term": "excluded",
     "Rating": -2
   },
   {
-    "Word": "exclusive",
+    "Term": "exclusive",
     "Rating": 2
   },
   {
-    "Word": "exempt",
+    "Term": "exempt",
     "Rating": -1
   },
   {
-    "Word": "exhausted",
+    "Term": "exhausted",
     "Rating": -2
   },
   {
-    "Word": "exhilarated",
+    "Term": "exhilarated",
     "Rating": 3
   },
   {
-    "Word": "expand",
+    "Term": "expand",
     "Rating": 1
   },
   {
-    "Word": "exploits",
+    "Term": "exploits",
     "Rating": -2
   },
   {
-    "Word": "exposed",
+    "Term": "exposed",
     "Rating": -1
   },
   {
-    "Word": "exposing",
+    "Term": "exposing",
     "Rating": -1
   },
   {
-    "Word": "extend",
+    "Term": "extend",
     "Rating": 1
   },
   {
-    "Word": "faggot",
+    "Term": "faggot",
     "Rating": -3
   },
   {
-    "Word": "faggots",
+    "Term": "faggots",
     "Rating": -3
   },
   {
-    "Word": "fail",
+    "Term": "fail",
     "Rating": -2
   },
   {
-    "Word": "failed",
+    "Term": "failed",
     "Rating": -2
   },
   {
-    "Word": "failing",
+    "Term": "failing",
     "Rating": -2
   },
   {
-    "Word": "failure",
+    "Term": "failure",
     "Rating": -2
   },
   {
-    "Word": "fair",
+    "Term": "fair",
     "Rating": 2
   },
   {
-    "Word": "faith",
+    "Term": "faith",
     "Rating": 1
   },
   {
-    "Word": "faithful",
+    "Term": "faithful",
     "Rating": 3
   },
   {
-    "Word": "fallen",
+    "Term": "fallen",
     "Rating": -2
   },
   {
-    "Word": "falling",
+    "Term": "falling",
     "Rating": -1
   },
   {
-    "Word": "falsified",
+    "Term": "falsified",
     "Rating": -3
   },
   {
-    "Word": "falsify",
+    "Term": "falsify",
     "Rating": -3
   },
   {
-    "Word": "fame",
+    "Term": "fame",
     "Rating": 1
   },
   {
-    "Word": "fascinate",
+    "Term": "fascinate",
     "Rating": 3
   },
   {
-    "Word": "fatigue",
+    "Term": "fatigue",
     "Rating": -2
   },
   {
-    "Word": "fatigued",
+    "Term": "fatigued",
     "Rating": -2
   },
   {
-    "Word": "fear",
+    "Term": "fear",
     "Rating": -2
   },
   {
-    "Word": "fearful",
+    "Term": "fearful",
     "Rating": -2
   },
   {
-    "Word": "fearing",
+    "Term": "fearing",
     "Rating": -2
   },
   {
-    "Word": "fearless",
+    "Term": "fearless",
     "Rating": 2
   },
   {
-    "Word": "feeling",
+    "Term": "feeling",
     "Rating": 1
   },
   {
-    "Word": "festive",
+    "Term": "festive",
     "Rating": 2
   },
   {
-    "Word": "fight",
+    "Term": "fight",
     "Rating": -1
   },
   {
-    "Word": "fine",
+    "Term": "fine",
     "Rating": 2
   },
   {
-    "Word": "fire",
+    "Term": "fire",
     "Rating": -2
   },
   {
-    "Word": "fired",
+    "Term": "fired",
     "Rating": -2
   },
   {
-    "Word": "fit",
+    "Term": "fit",
     "Rating": 1
   },
   {
-    "Word": "fond",
+    "Term": "fond",
     "Rating": 2
   },
   {
-    "Word": "fondness",
+    "Term": "fondness",
     "Rating": 2
   },
   {
-    "Word": "fool",
+    "Term": "fool",
     "Rating": -2
   },
   {
-    "Word": "foolish",
+    "Term": "foolish",
     "Rating": -2
   },
   {
-    "Word": "fools",
+    "Term": "fools",
     "Rating": -2
   },
   {
-    "Word": "forced",
+    "Term": "forced",
     "Rating": -1
   },
   {
-    "Word": "forgive",
+    "Term": "forgive",
     "Rating": 1
   },
   {
-    "Word": "forgiving",
+    "Term": "forgiving",
     "Rating": 1
   },
   {
-    "Word": "forgotten",
+    "Term": "forgotten",
     "Rating": -1
   },
   {
-    "Word": "fortunate",
+    "Term": "fortunate",
     "Rating": 2
   },
   {
-    "Word": "free",
+    "Term": "free",
     "Rating": 1
   },
   {
-    "Word": "freedom",
+    "Term": "freedom",
     "Rating": 2
   },
   {
-    "Word": "fresh",
+    "Term": "fresh",
     "Rating": 1
   },
   {
-    "Word": "friendly",
+    "Term": "friendly",
     "Rating": 2
   },
   {
-    "Word": "fright",
+    "Term": "fright",
     "Rating": -2
   },
   {
-    "Word": "frightened",
+    "Term": "frightened",
     "Rating": -2
   },
   {
-    "Word": "frightening",
+    "Term": "frightening",
     "Rating": -3
   },
   {
-    "Word": "frustrate",
+    "Term": "frustrate",
     "Rating": -2
   },
   {
-    "Word": "frustrated",
+    "Term": "frustrated",
     "Rating": -2
   },
   {
-    "Word": "frustrating",
+    "Term": "frustrating",
     "Rating": -2
   },
   {
-    "Word": "fulfilled",
+    "Term": "fulfilled",
     "Rating": 2
   },
   {
-    "Word": "funeral",
+    "Term": "funeral",
     "Rating": -1
   },
   {
-    "Word": "furious",
+    "Term": "furious",
     "Rating": -3
   },
   {
-    "Word": "futile",
+    "Term": "futile",
     "Rating": 2
   },
   {
-    "Word": "gain",
+    "Term": "gain",
     "Rating": 2
   },
   {
-    "Word": "gained",
+    "Term": "gained",
     "Rating": 2
   },
   {
-    "Word": "gaining",
+    "Term": "gaining",
     "Rating": 2
   },
   {
-    "Word": "generous",
+    "Term": "generous",
     "Rating": 2
   },
   {
-    "Word": "ghost",
+    "Term": "ghost",
     "Rating": -1
   },
   {
-    "Word": "gift",
+    "Term": "gift",
     "Rating": 2
   },
   {
-    "Word": "glad",
+    "Term": "glad",
     "Rating": 3
   },
   {
-    "Word": "glee",
+    "Term": "glee",
     "Rating": 3
   },
   {
-    "Word": "glorious",
+    "Term": "glorious",
     "Rating": 2
   },
   {
-    "Word": "glory",
+    "Term": "glory",
     "Rating": 2
   },
   {
-    "Word": "god",
+    "Term": "god",
     "Rating": 1
   },
   {
-    "Word": "good",
+    "Term": "good",
     "Rating": 3
   },
   {
-    "Word": "goodness",
+    "Term": "goodness",
     "Rating": 3
   },
   {
-    "Word": "grace",
+    "Term": "grace",
     "Rating": 1
   },
   {
-    "Word": "gracious",
+    "Term": "gracious",
     "Rating": 3
   },
   {
-    "Word": "grand",
+    "Term": "grand",
     "Rating": 3
   },
   {
-    "Word": "grant",
+    "Term": "grant",
     "Rating": 1
   },
   {
-    "Word": "granted",
+    "Term": "granted",
     "Rating": 1
   },
   {
-    "Word": "granting",
+    "Term": "granting",
     "Rating": 1
   },
   {
-    "Word": "grants",
+    "Term": "grants",
     "Rating": 1
   },
   {
-    "Word": "grateful",
+    "Term": "grateful",
     "Rating": 3
   },
   {
-    "Word": "gratification",
+    "Term": "gratification",
     "Rating": 2
   },
   {
-    "Word": "grave",
+    "Term": "grave",
     "Rating": -2
   },
   {
-    "Word": "great",
+    "Term": "great",
     "Rating": 3
   },
   {
-    "Word": "greater",
+    "Term": "greater",
     "Rating": 3
   },
   {
-    "Word": "greatest",
+    "Term": "greatest",
     "Rating": 3
   },
   {
-    "Word": "greed",
+    "Term": "greed",
     "Rating": -3
   },
   {
-    "Word": "greeted",
+    "Term": "greeted",
     "Rating": 1
   },
   {
-    "Word": "grey",
+    "Term": "grey",
     "Rating": -1
   },
   {
-    "Word": "grief",
+    "Term": "grief",
     "Rating": -2
   },
   {
-    "Word": "grieved",
+    "Term": "grieved",
     "Rating": -2
   },
   {
-    "Word": "gross",
+    "Term": "gross",
     "Rating": -2
   },
   {
-    "Word": "growing",
+    "Term": "growing",
     "Rating": 1
   },
   {
-    "Word": "growth",
+    "Term": "growth",
     "Rating": 2
   },
   {
-    "Word": "guilt",
+    "Term": "guilt",
     "Rating": -3
   },
   {
-    "Word": "guilty",
+    "Term": "guilty",
     "Rating": -3
   },
   {
-    "Word": "hacked",
+    "Term": "hacked",
     "Rating": -1
   },
   {
-    "Word": "hailed",
+    "Term": "hailed",
     "Rating": 2
   },
   {
-    "Word": "happiness",
+    "Term": "happiness",
     "Rating": 3
   },
   {
-    "Word": "happy",
+    "Term": "happy",
     "Rating": 3
   },
   {
-    "Word": "hard",
+    "Term": "hard",
     "Rating": -1
   },
   {
-    "Word": "harm",
+    "Term": "harm",
     "Rating": -2
   },
   {
-    "Word": "harsh",
+    "Term": "harsh",
     "Rating": -2
   },
   {
-    "Word": "hate",
+    "Term": "hate",
     "Rating": -3
   },
   {
-    "Word": "hated",
+    "Term": "hated",
     "Rating": -3
   },
   {
-    "Word": "haunt",
+    "Term": "haunt",
     "Rating": -1
   },
   {
-    "Word": "healthy",
+    "Term": "healthy",
     "Rating": 2
   },
   {
-    "Word": "heaven",
+    "Term": "heaven",
     "Rating": 2
   },
   {
-    "Word": "heavenly",
+    "Term": "heavenly",
     "Rating": 4
   },
   {
-    "Word": "hell",
+    "Term": "hell",
     "Rating": -4
   },
   {
-    "Word": "help",
+    "Term": "help",
     "Rating": 2
   },
   {
-    "Word": "helpless",
+    "Term": "helpless",
     "Rating": -2
   },
   {
-    "Word": "hero",
+    "Term": "hero",
     "Rating": 2
   },
   {
-    "Word": "heroes",
+    "Term": "heroes",
     "Rating": 2
   },
   {
-    "Word": "heroic",
+    "Term": "heroic",
     "Rating": 3
   },
   {
-    "Word": "hesitate",
+    "Term": "hesitate",
     "Rating": -2
   },
   {
-    "Word": "hid",
+    "Term": "hid",
     "Rating": -1
   },
   {
-    "Word": "hides",
+    "Term": "hides",
     "Rating": -1
   },
   {
-    "Word": "hiding",
+    "Term": "hiding",
     "Rating": -1
   },
   {
-    "Word": "hilarious",
+    "Term": "hilarious",
     "Rating": 2
   },
   {
-    "Word": "honest",
+    "Term": "honest",
     "Rating": 2
   },
   {
-    "Word": "honour",
+    "Term": "honour",
     "Rating": 2
   },
   {
-    "Word": "honoured",
+    "Term": "honoured",
     "Rating": 2
   },
   {
-    "Word": "honouring",
+    "Term": "honouring",
     "Rating": 2
   },
   {
-    "Word": "hope",
+    "Term": "hope",
     "Rating": 2
   },
   {
-    "Word": "hopes",
+    "Term": "hopes",
     "Rating": 2
   },
   {
-    "Word": "hoping",
+    "Term": "hoping",
     "Rating": 2
   },
   {
-    "Word": "horrible",
+    "Term": "horrible",
     "Rating": -3
   },
   {
-    "Word": "hostile",
+    "Term": "hostile",
     "Rating": -2
   },
   {
-    "Word": "huge",
+    "Term": "huge",
     "Rating": 1
   },
   {
-    "Word": "humiliated",
+    "Term": "humiliated",
     "Rating": -3
   },
   {
-    "Word": "humiliation",
+    "Term": "humiliation",
     "Rating": -3
   },
   {
-    "Word": "humor",
+    "Term": "humor",
     "Rating": 2
   },
   {
-    "Word": "hunger",
+    "Term": "hunger",
     "Rating": -2
   },
   {
-    "Word": "hurt",
+    "Term": "hurt",
     "Rating": -2
   },
   {
-    "Word": "hurting",
+    "Term": "hurting",
     "Rating": -2
   },
   {
-    "Word": "ignorance",
+    "Term": "ignorance",
     "Rating": -2
   },
   {
-    "Word": "ignorant",
+    "Term": "ignorant",
     "Rating": -2
   },
   {
-    "Word": "ill",
+    "Term": "ill",
     "Rating": -2
   },
   {
-    "Word": "illness",
+    "Term": "illness",
     "Rating": -2
   },
   {
-    "Word": "immortal",
+    "Term": "immortal",
     "Rating": 2
   },
   {
-    "Word": "impatient",
+    "Term": "impatient",
     "Rating": -2
   },
   {
-    "Word": "important",
+    "Term": "important",
     "Rating": 2
   },
   {
-    "Word": "impotent",
+    "Term": "impotent",
     "Rating": -2
   },
   {
-    "Word": "impressed",
+    "Term": "impressed",
     "Rating": 3
   },
   {
-    "Word": "inaction",
+    "Term": "inaction",
     "Rating": -2
   },
   {
-    "Word": "incapable",
+    "Term": "incapable",
     "Rating": -2
   },
   {
-    "Word": "incensed",
+    "Term": "incensed",
     "Rating": -2
   },
   {
-    "Word": "inconvenience",
+    "Term": "inconvenience",
     "Rating": -2
   },
   {
-    "Word": "increase",
+    "Term": "increase",
     "Rating": 1
   },
   {
-    "Word": "increased",
+    "Term": "increased",
     "Rating": 1
   },
   {
-    "Word": "indestructible",
+    "Term": "indestructible",
     "Rating": 2
   },
   {
-    "Word": "indifference",
+    "Term": "indifference",
     "Rating": -2
   },
   {
-    "Word": "indifferent",
+    "Term": "indifferent",
     "Rating": -2
   },
   {
-    "Word": "indignant",
+    "Term": "indignant",
     "Rating": -2
   },
   {
-    "Word": "indignation",
+    "Term": "indignation",
     "Rating": -2
   },
   {
-    "Word": "infected",
+    "Term": "infected",
     "Rating": -2
   },
   {
-    "Word": "inferior",
+    "Term": "inferior",
     "Rating": -2
   },
   {
-    "Word": "inflamed",
+    "Term": "inflamed",
     "Rating": -2
   },
   {
-    "Word": "influential",
+    "Term": "influential",
     "Rating": 2
   },
   {
-    "Word": "infuriate",
+    "Term": "infuriate",
     "Rating": -2
   },
   {
-    "Word": "infuriated",
+    "Term": "infuriated",
     "Rating": -2
   },
   {
-    "Word": "injured",
+    "Term": "injured",
     "Rating": -2
   },
   {
-    "Word": "injury",
+    "Term": "injury",
     "Rating": -2
   },
   {
-    "Word": "injustice",
+    "Term": "injustice",
     "Rating": -2
   },
   {
-    "Word": "inquisitive",
+    "Term": "inquisitive",
     "Rating": 2
   },
   {
-    "Word": "insignificant",
+    "Term": "insignificant",
     "Rating": -2
   },
   {
-    "Word": "inspire",
+    "Term": "inspire",
     "Rating": 2
   },
   {
-    "Word": "inspired",
+    "Term": "inspired",
     "Rating": 2
   },
   {
-    "Word": "inspiring",
+    "Term": "inspiring",
     "Rating": 3
   },
   {
-    "Word": "insult",
+    "Term": "insult",
     "Rating": -2
   },
   {
-    "Word": "insulted",
+    "Term": "insulted",
     "Rating": -2
   },
   {
-    "Word": "insulting",
+    "Term": "insulting",
     "Rating": -2
   },
   {
-    "Word": "insults",
+    "Term": "insults",
     "Rating": -2
   },
   {
-    "Word": "intelligent",
+    "Term": "intelligent",
     "Rating": 2
   },
   {
-    "Word": "intense",
+    "Term": "intense",
     "Rating": 1
   },
   {
-    "Word": "interest",
+    "Term": "interest",
     "Rating": 1
   },
   {
-    "Word": "interested",
+    "Term": "interested",
     "Rating": 2
   },
   {
-    "Word": "interesting",
+    "Term": "interesting",
     "Rating": 2
   },
   {
-    "Word": "interests",
+    "Term": "interests",
     "Rating": 1
   },
   {
-    "Word": "interrogated",
+    "Term": "interrogated",
     "Rating": -2
   },
   {
-    "Word": "interrupted",
+    "Term": "interrupted",
     "Rating": -2
   },
   {
-    "Word": "interruption",
+    "Term": "interruption",
     "Rating": -2
   },
   {
-    "Word": "invincible",
+    "Term": "invincible",
     "Rating": 2
   },
   {
-    "Word": "invulnerable",
+    "Term": "invulnerable",
     "Rating": 2
   },
   {
-    "Word": "irresistible",
+    "Term": "irresistible",
     "Rating": 2
   },
   {
-    "Word": "jealous",
+    "Term": "jealous",
     "Rating": -2
   },
   {
-    "Word": "jewel",
+    "Term": "jewel",
     "Rating": 1
   },
   {
-    "Word": "jewels",
+    "Term": "jewels",
     "Rating": 1
   },
   {
-    "Word": "joke",
+    "Term": "joke",
     "Rating": 2
   },
   {
-    "Word": "joy",
+    "Term": "joy",
     "Rating": 3
   },
   {
-    "Word": "joyful",
+    "Term": "joyful",
     "Rating": 3
   },
   {
-    "Word": "joyfully",
+    "Term": "joyfully",
     "Rating": 3
   },
   {
-    "Word": "joyous",
+    "Term": "joyous",
     "Rating": 3
   },
   {
-    "Word": "jubilant",
+    "Term": "jubilant",
     "Rating": 3
   },
   {
-    "Word": "justice",
+    "Term": "justice",
     "Rating": 2
   },
   {
-    "Word": "keen",
+    "Term": "keen",
     "Rating": 1
   },
   {
-    "Word": "kill",
+    "Term": "kill",
     "Rating": -3
   },
   {
-    "Word": "killed",
+    "Term": "killed",
     "Rating": -3
   },
   {
-    "Word": "killing",
+    "Term": "killing",
     "Rating": -3
   },
   {
-    "Word": "kind",
+    "Term": "kind",
     "Rating": 2
   },
   {
-    "Word": "lame",
+    "Term": "lame",
     "Rating": -2
   },
   {
-    "Word": "laugh",
+    "Term": "laugh",
     "Rating": 1
   },
   {
-    "Word": "laughed",
+    "Term": "laughed",
     "Rating": 1
   },
   {
-    "Word": "laughing",
+    "Term": "laughing",
     "Rating": 1
   },
   {
-    "Word": "leave",
+    "Term": "leave",
     "Rating": -1
   },
   {
-    "Word": "lenient",
+    "Term": "lenient",
     "Rating": 1
   },
   {
-    "Word": "lethargy",
+    "Term": "lethargy",
     "Rating": -2
   },
   {
-    "Word": "liar",
+    "Term": "liar",
     "Rating": -3
   },
   {
-    "Word": "like",
+    "Term": "like",
     "Rating": 2
   },
   {
-    "Word": "liked",
+    "Term": "liked",
     "Rating": 2
   },
   {
-    "Word": "likes",
+    "Term": "likes",
     "Rating": 2
   },
   {
-    "Word": "limited",
+    "Term": "limited",
     "Rating": -1
   },
   {
-    "Word": "limits",
+    "Term": "limits",
     "Rating": -1
   },
   {
-    "Word": "lonely",
+    "Term": "lonely",
     "Rating": -2
   },
   {
-    "Word": "longing",
+    "Term": "longing",
     "Rating": -1
   },
   {
-    "Word": "loom",
+    "Term": "loom",
     "Rating": -1
   },
   {
-    "Word": "looming",
+    "Term": "looming",
     "Rating": -1
   },
   {
-    "Word": "loose",
+    "Term": "loose",
     "Rating": -3
   },
   {
-    "Word": "losing",
+    "Term": "losing",
     "Rating": -3
   },
   {
-    "Word": "loss",
+    "Term": "loss",
     "Rating": -3
   },
   {
-    "Word": "lost",
+    "Term": "lost",
     "Rating": -3
   },
   {
-    "Word": "lovable",
+    "Term": "lovable",
     "Rating": 3
   },
   {
-    "Word": "love",
+    "Term": "love",
     "Rating": 3
   },
   {
-    "Word": "loved",
+    "Term": "loved",
     "Rating": 3
   },
   {
-    "Word": "lovely",
+    "Term": "lovely",
     "Rating": 3
   },
   {
-    "Word": "loving",
+    "Term": "loving",
     "Rating": 2
   },
   {
-    "Word": "lowest",
+    "Term": "lowest",
     "Rating": -1
   },
   {
-    "Word": "luck",
+    "Term": "luck",
     "Rating": 3
   },
   {
-    "Word": "lucky",
+    "Term": "lucky",
     "Rating": 3
   },
   {
-    "Word": "mad",
+    "Term": "mad",
     "Rating": -3
   },
   {
-    "Word": "madly",
+    "Term": "madly",
     "Rating": -3
   },
   {
-    "Word": "madness",
+    "Term": "madness",
     "Rating": -3
   },
   {
-    "Word": "matter",
+    "Term": "matter",
     "Rating": 1
   },
   {
-    "Word": "matters",
+    "Term": "matters",
     "Rating": 1
   },
   {
-    "Word": "melancholy",
+    "Term": "melancholy",
     "Rating": -2
   },
   {
-    "Word": "mercy",
+    "Term": "mercy",
     "Rating": 2
   },
   {
-    "Word": "merry",
+    "Term": "merry",
     "Rating": 3
   },
   {
-    "Word": "mess",
+    "Term": "mess",
     "Rating": -2
   },
   {
-    "Word": "miserable",
+    "Term": "miserable",
     "Rating": -3
   },
   {
-    "Word": "misery",
+    "Term": "misery",
     "Rating": -2
   },
   {
-    "Word": "miss",
+    "Term": "miss",
     "Rating": -2
   },
   {
-    "Word": "missing",
+    "Term": "missing",
     "Rating": -2
   },
   {
-    "Word": "mistake",
+    "Term": "mistake",
     "Rating": -2
   },
   {
-    "Word": "mistaken",
+    "Term": "mistaken",
     "Rating": -2
   },
   {
-    "Word": "mistaking",
+    "Term": "mistaking",
     "Rating": -2
   },
   {
-    "Word": "mock",
+    "Term": "mock",
     "Rating": -2
   },
   {
-    "Word": "mocking",
+    "Term": "mocking",
     "Rating": -2
   },
   {
-    "Word": "mourned",
+    "Term": "mourned",
     "Rating": -2
   },
   {
-    "Word": "mourning",
+    "Term": "mourning",
     "Rating": -2
   },
   {
-    "Word": "murderous",
+    "Term": "murderous",
     "Rating": -3
   },
   {
-    "Word": "natural",
+    "Term": "natural",
     "Rating": 1
   },
   {
-    "Word": "neglect",
+    "Term": "neglect",
     "Rating": -2
   },
   {
-    "Word": "neglected",
+    "Term": "neglected",
     "Rating": -2
   },
   {
-    "Word": "nerves",
+    "Term": "nerves",
     "Rating": -1
   },
   {
-    "Word": "nice",
+    "Term": "nice",
     "Rating": 3
   },
   {
-    "Word": "no",
+    "Term": "no",
     "Rating": -1
   },
   {
-    "Word": "noble",
+    "Term": "noble",
     "Rating": 2
   },
   {
-    "Word": "notorious",
+    "Term": "notorious",
     "Rating": -2
   },
   {
-    "Word": "obsolete",
+    "Term": "obsolete",
     "Rating": -2
   },
   {
-    "Word": "obstacles",
+    "Term": "obstacles",
     "Rating": -2
   },
   {
-    "Word": "offend",
+    "Term": "offend",
     "Rating": -2
   },
   {
-    "Word": "offended",
+    "Term": "offended",
     "Rating": -2
   },
   {
-    "Word": "offender",
+    "Term": "offender",
     "Rating": -2
   },
   {
-    "Word": "offending",
+    "Term": "offending",
     "Rating": -2
   },
   {
-    "Word": "opportunity",
+    "Term": "opportunity",
     "Rating": 2
   },
   {
-    "Word": "oppressed",
+    "Term": "oppressed",
     "Rating": -2
   },
   {
-    "Word": "outraged",
+    "Term": "outraged",
     "Rating": -3
   },
   {
-    "Word": "overjoyed",
+    "Term": "overjoyed",
     "Rating": 4
   },
   {
-    "Word": "overlooked",
+    "Term": "overlooked",
     "Rating": -1
   },
   {
-    "Word": "pain",
+    "Term": "pain",
     "Rating": -2
   },
   {
-    "Word": "pained",
+    "Term": "pained",
     "Rating": -2
   },
   {
-    "Word": "panic",
+    "Term": "panic",
     "Rating": -3
   },
   {
-    "Word": "pardon",
+    "Term": "pardon",
     "Rating": 2
   },
   {
-    "Word": "pathetic",
+    "Term": "pathetic",
     "Rating": -2
   },
   {
-    "Word": "pay",
+    "Term": "pay",
     "Rating": -1
   },
   {
-    "Word": "peace",
+    "Term": "peace",
     "Rating": 2
   },
   {
-    "Word": "peaceful",
+    "Term": "peaceful",
     "Rating": 2
   },
   {
-    "Word": "peacefully",
+    "Term": "peacefully",
     "Rating": 2
   },
   {
-    "Word": "penalty",
+    "Term": "penalty",
     "Rating": -2
   },
   {
-    "Word": "pensive",
+    "Term": "pensive",
     "Rating": -1
   },
   {
-    "Word": "perfect",
+    "Term": "perfect",
     "Rating": 3
   },
   {
-    "Word": "perfectly",
+    "Term": "perfectly",
     "Rating": 3
   },
   {
-    "Word": "peril",
+    "Term": "peril",
     "Rating": -2
   },
   {
-    "Word": "perpetrator",
+    "Term": "perpetrator",
     "Rating": -2
   },
   {
-    "Word": "perplexed",
+    "Term": "perplexed",
     "Rating": -2
   },
   {
-    "Word": "persecute",
+    "Term": "persecute",
     "Rating": -2
   },
   {
-    "Word": "persecuted",
+    "Term": "persecuted",
     "Rating": -2
   },
   {
-    "Word": "persecuting",
+    "Term": "persecuting",
     "Rating": -2
   },
   {
-    "Word": "perturbed",
+    "Term": "perturbed",
     "Rating": -2
   },
   {
-    "Word": "picturesque",
+    "Term": "picturesque",
     "Rating": 2
   },
   {
-    "Word": "piteous",
+    "Term": "piteous",
     "Rating": -2
   },
   {
-    "Word": "pitied",
+    "Term": "pitied",
     "Rating": -1
   },
   {
-    "Word": "pity",
+    "Term": "pity",
     "Rating": -2
   },
   {
-    "Word": "playful",
+    "Term": "playful",
     "Rating": 2
   },
   {
-    "Word": "pleasant",
+    "Term": "pleasant",
     "Rating": 3
   },
   {
-    "Word": "please",
+    "Term": "please",
     "Rating": 1
   },
   {
-    "Word": "pleased",
+    "Term": "pleased",
     "Rating": 3
   },
   {
-    "Word": "pleasure",
+    "Term": "pleasure",
     "Rating": 3
   },
   {
-    "Word": "poison",
+    "Term": "poison",
     "Rating": -2
   },
   {
-    "Word": "poisoned",
+    "Term": "poisoned",
     "Rating": -2
   },
   {
-    "Word": "pollute",
+    "Term": "pollute",
     "Rating": -2
   },
   {
-    "Word": "polluted",
+    "Term": "polluted",
     "Rating": -2
   },
   {
-    "Word": "poor",
+    "Term": "poor",
     "Rating": -2
   },
   {
-    "Word": "popular",
+    "Term": "popular",
     "Rating": 3
   },
   {
-    "Word": "positive",
+    "Term": "positive",
     "Rating": 2
   },
   {
-    "Word": "postponing",
+    "Term": "postponing",
     "Rating": -1
   },
   {
-    "Word": "poverty",
+    "Term": "poverty",
     "Rating": -1
   },
   {
-    "Word": "powerful",
+    "Term": "powerful",
     "Rating": 2
   },
   {
-    "Word": "powerless",
+    "Term": "powerless",
     "Rating": -2
   },
   {
-    "Word": "praise",
+    "Term": "praise",
     "Rating": 3
   },
   {
-    "Word": "praised",
+    "Term": "praised",
     "Rating": 3
   },
   {
-    "Word": "praises",
+    "Term": "praises",
     "Rating": 3
   },
   {
-    "Word": "praising",
+    "Term": "praising",
     "Rating": 3
   },
   {
-    "Word": "pray",
+    "Term": "pray",
     "Rating": 1
   },
   {
-    "Word": "prepared",
+    "Term": "prepared",
     "Rating": 1
   },
   {
-    "Word": "pressure",
+    "Term": "pressure",
     "Rating": -1
   },
   {
-    "Word": "pretend",
+    "Term": "pretend",
     "Rating": -1
   },
   {
-    "Word": "pretty",
+    "Term": "pretty",
     "Rating": 1
   },
   {
-    "Word": "prevent",
+    "Term": "prevent",
     "Rating": -1
   },
   {
-    "Word": "prevented",
+    "Term": "prevented",
     "Rating": -1
   },
   {
-    "Word": "preventing",
+    "Term": "preventing",
     "Rating": -1
   },
   {
-    "Word": "prisoner",
+    "Term": "prisoner",
     "Rating": -2
   },
   {
-    "Word": "prisoners",
+    "Term": "prisoners",
     "Rating": -2
   },
   {
-    "Word": "progress",
+    "Term": "progress",
     "Rating": 2
   },
   {
-    "Word": "prominent",
+    "Term": "prominent",
     "Rating": 2
   },
   {
-    "Word": "promise",
+    "Term": "promise",
     "Rating": 1
   },
   {
-    "Word": "promised",
+    "Term": "promised",
     "Rating": 1
   },
   {
-    "Word": "promises",
+    "Term": "promises",
     "Rating": 1
   },
   {
-    "Word": "promote",
+    "Term": "promote",
     "Rating": 1
   },
   {
-    "Word": "prosecute",
+    "Term": "prosecute",
     "Rating": -1
   },
   {
-    "Word": "prospect",
+    "Term": "prospect",
     "Rating": 1
   },
   {
-    "Word": "prosperous",
+    "Term": "prosperous",
     "Rating": 3
   },
   {
-    "Word": "protect",
+    "Term": "protect",
     "Rating": 1
   },
   {
-    "Word": "protected",
+    "Term": "protected",
     "Rating": 1
   },
   {
-    "Word": "protects",
+    "Term": "protects",
     "Rating": 1
   },
   {
-    "Word": "protest",
+    "Term": "protest",
     "Rating": -2
   },
   {
-    "Word": "proud",
+    "Term": "proud",
     "Rating": 2
   },
   {
-    "Word": "provoked",
+    "Term": "provoked",
     "Rating": -1
   },
   {
-    "Word": "punish",
+    "Term": "punish",
     "Rating": -2
   },
   {
-    "Word": "punitive",
+    "Term": "punitive",
     "Rating": -2
   },
   {
-    "Word": "quaking",
+    "Term": "quaking",
     "Rating": -2
   },
   {
-    "Word": "questioned",
+    "Term": "questioned",
     "Rating": -1
   },
   {
-    "Word": "rage",
+    "Term": "rage",
     "Rating": -2
   },
   {
-    "Word": "rainy",
+    "Term": "rainy",
     "Rating": -1
   },
   {
-    "Word": "raptures",
+    "Term": "raptures",
     "Rating": 2
   },
   {
-    "Word": "rash",
+    "Term": "rash",
     "Rating": -2
   },
   {
-    "Word": "reach",
+    "Term": "reach",
     "Rating": 1
   },
   {
-    "Word": "reached",
+    "Term": "reached",
     "Rating": 1
   },
   {
-    "Word": "reaching",
+    "Term": "reaching",
     "Rating": 1
   },
   {
-    "Word": "reckless",
+    "Term": "reckless",
     "Rating": -2
   },
   {
-    "Word": "recommend",
+    "Term": "recommend",
     "Rating": 2
   },
   {
-    "Word": "refuse",
+    "Term": "refuse",
     "Rating": -2
   },
   {
-    "Word": "refused",
+    "Term": "refused",
     "Rating": -2
   },
   {
-    "Word": "refusing",
+    "Term": "refusing",
     "Rating": -2
   },
   {
-    "Word": "regrets",
+    "Term": "regrets",
     "Rating": -2
   },
   {
-    "Word": "reject",
+    "Term": "reject",
     "Rating": -1
   },
   {
-    "Word": "rejected",
+    "Term": "rejected",
     "Rating": -1
   },
   {
-    "Word": "rejecting",
+    "Term": "rejecting",
     "Rating": -1
   },
   {
-    "Word": "rejoice",
+    "Term": "rejoice",
     "Rating": 4
   },
   {
-    "Word": "rejoiced",
+    "Term": "rejoiced",
     "Rating": 4
   },
   {
-    "Word": "relieve",
+    "Term": "relieve",
     "Rating": 1
   },
   {
-    "Word": "relieved",
+    "Term": "relieved",
     "Rating": 2
   },
   {
-    "Word": "relieving",
+    "Term": "relieving",
     "Rating": 2
   },
   {
-    "Word": "relishing",
+    "Term": "relishing",
     "Rating": 2
   },
   {
-    "Word": "remarkable",
+    "Term": "remarkable",
     "Rating": 2
   },
   {
-    "Word": "rescue",
+    "Term": "rescue",
     "Rating": 2
   },
   {
-    "Word": "rescued",
+    "Term": "rescued",
     "Rating": 2
   },
   {
-    "Word": "resigned",
+    "Term": "resigned",
     "Rating": -1
   },
   {
-    "Word": "resolute",
+    "Term": "resolute",
     "Rating": 2
   },
   {
-    "Word": "resolve",
+    "Term": "resolve",
     "Rating": 2
   },
   {
-    "Word": "resolved",
+    "Term": "resolved",
     "Rating": 2
   },
   {
-    "Word": "resolves",
+    "Term": "resolves",
     "Rating": 2
   },
   {
-    "Word": "resolving",
+    "Term": "resolving",
     "Rating": 2
   },
   {
-    "Word": "respected",
+    "Term": "respected",
     "Rating": 2
   },
   {
-    "Word": "responsible",
+    "Term": "responsible",
     "Rating": 2
   },
   {
-    "Word": "restore",
+    "Term": "restore",
     "Rating": 1
   },
   {
-    "Word": "restored",
+    "Term": "restored",
     "Rating": 1
   },
   {
-    "Word": "retained",
+    "Term": "retained",
     "Rating": -1
   },
   {
-    "Word": "retarded",
+    "Term": "retarded",
     "Rating": -2
   },
   {
-    "Word": "retreat",
+    "Term": "retreat",
     "Rating": -1
   },
   {
-    "Word": "revenge",
+    "Term": "revenge",
     "Rating": -2
   },
   {
-    "Word": "revered",
+    "Term": "revered",
     "Rating": 2
   },
   {
-    "Word": "revive",
+    "Term": "revive",
     "Rating": 2
   },
   {
-    "Word": "reward",
+    "Term": "reward",
     "Rating": 2
   },
   {
-    "Word": "rewarded",
+    "Term": "rewarded",
     "Rating": 2
   },
   {
-    "Word": "rich",
+    "Term": "rich",
     "Rating": 2
   },
   {
-    "Word": "ridiculous",
+    "Term": "ridiculous",
     "Rating": -3
   },
   {
-    "Word": "risk",
+    "Term": "risk",
     "Rating": -2
   },
   {
-    "Word": "rob",
+    "Term": "rob",
     "Rating": -2
   },
   {
-    "Word": "robber",
+    "Term": "robber",
     "Rating": -2
   },
   {
-    "Word": "ruin",
+    "Term": "ruin",
     "Rating": -2
   },
   {
-    "Word": "sad",
+    "Term": "sad",
     "Rating": -2
   },
   {
-    "Word": "safe",
+    "Term": "safe",
     "Rating": 1
   },
   {
-    "Word": "safely",
+    "Term": "safely",
     "Rating": 1
   },
   {
-    "Word": "safety",
+    "Term": "safety",
     "Rating": 1
   },
   {
-    "Word": "satisfied",
+    "Term": "satisfied",
     "Rating": 2
   },
   {
-    "Word": "save",
+    "Term": "save",
     "Rating": 2
   },
   {
-    "Word": "saved",
+    "Term": "saved",
     "Rating": 2
   },
   {
-    "Word": "secure",
+    "Term": "secure",
     "Rating": 2
   },
   {
-    "Word": "secured",
+    "Term": "secured",
     "Rating": 2
   },
   {
-    "Word": "selfish",
+    "Term": "selfish",
     "Rating": -3
   },
   {
-    "Word": "sentence",
+    "Term": "sentence",
     "Rating": -2
   },
   {
-    "Word": "sentenced",
+    "Term": "sentenced",
     "Rating": -2
   },
   {
-    "Word": "severe",
+    "Term": "severe",
     "Rating": -2
   },
   {
-    "Word": "shame",
+    "Term": "shame",
     "Rating": -2
   },
   {
-    "Word": "share",
+    "Term": "share",
     "Rating": 1
   },
   {
-    "Word": "shoot",
+    "Term": "shoot",
     "Rating": -1
   },
   {
-    "Word": "sigh",
+    "Term": "sigh",
     "Rating": -2
   },
   {
-    "Word": "significance",
+    "Term": "significance",
     "Rating": 1
   },
   {
-    "Word": "significant",
+    "Term": "significant",
     "Rating": 1
   },
   {
-    "Word": "silly",
+    "Term": "silly",
     "Rating": -1
   },
   {
-    "Word": "sincere",
+    "Term": "sincere",
     "Rating": 2
   },
   {
-    "Word": "sincerity",
+    "Term": "sincerity",
     "Rating": 2
   },
   {
-    "Word": "sinful",
+    "Term": "sinful",
     "Rating": -3
   },
   {
-    "Word": "slavery",
+    "Term": "slavery",
     "Rating": -3
   },
   {
-    "Word": "sleeplessness",
+    "Term": "sleeplessness",
     "Rating": -2
   },
   {
-    "Word": "smile",
+    "Term": "smile",
     "Rating": 2
   },
   {
-    "Word": "smiled",
+    "Term": "smiled",
     "Rating": 2
   },
   {
-    "Word": "smiles",
+    "Term": "smiles",
     "Rating": 2
   },
   {
-    "Word": "smiling",
+    "Term": "smiling",
     "Rating": 2
   },
   {
-    "Word": "solemn",
+    "Term": "solemn",
     "Rating": -1
   },
   {
-    "Word": "solid",
+    "Term": "solid",
     "Rating": 2
   },
   {
-    "Word": "solution",
+    "Term": "solution",
     "Rating": 1
   },
   {
-    "Word": "soothe",
+    "Term": "soothe",
     "Rating": 3
   },
   {
-    "Word": "soothing",
+    "Term": "soothing",
     "Rating": 3
   },
   {
-    "Word": "sore",
+    "Term": "sore",
     "Rating": -1
   },
   {
-    "Word": "sorrow",
+    "Term": "sorrow",
     "Rating": -2
   },
   {
-    "Word": "sorrowful",
+    "Term": "sorrowful",
     "Rating": -2
   },
   {
-    "Word": "sorry",
+    "Term": "sorry",
     "Rating": -1
   },
   {
-    "Word": "spark",
+    "Term": "spark",
     "Rating": 1
   },
   {
-    "Word": "spirit",
+    "Term": "spirit",
     "Rating": 1
   },
   {
-    "Word": "spirited",
+    "Term": "spirited",
     "Rating": 2
   },
   {
-    "Word": "splendid",
+    "Term": "splendid",
     "Rating": 3
   },
   {
-    "Word": "starve",
+    "Term": "starve",
     "Rating": -2
   },
   {
-    "Word": "steadfast",
+    "Term": "steadfast",
     "Rating": 2
   },
   {
-    "Word": "steal",
+    "Term": "steal",
     "Rating": -2
   },
   {
-    "Word": "stimulate",
+    "Term": "stimulate",
     "Rating": 1
   },
   {
-    "Word": "stimulated",
+    "Term": "stimulated",
     "Rating": 1
   },
   {
-    "Word": "stolen",
+    "Term": "stolen",
     "Rating": -2
   },
   {
-    "Word": "stop",
+    "Term": "stop",
     "Rating": -1
   },
   {
-    "Word": "stopped",
+    "Term": "stopped",
     "Rating": -1
   },
   {
-    "Word": "stopping",
+    "Term": "stopping",
     "Rating": -1
   },
   {
-    "Word": "stout",
+    "Term": "stout",
     "Rating": 2
   },
   {
-    "Word": "straight",
+    "Term": "straight",
     "Rating": 1
   },
   {
-    "Word": "strange",
+    "Term": "strange",
     "Rating": -1
   },
   {
-    "Word": "strength",
+    "Term": "strength",
     "Rating": 2
   },
   {
-    "Word": "strengthen",
+    "Term": "strengthen",
     "Rating": 2
   },
   {
-    "Word": "stricken",
+    "Term": "stricken",
     "Rating": -2
   },
   {
-    "Word": "strike",
+    "Term": "strike",
     "Rating": -1
   },
   {
-    "Word": "strong",
+    "Term": "strong",
     "Rating": 2
   },
   {
-    "Word": "stronger",
+    "Term": "stronger",
     "Rating": 2
   },
   {
-    "Word": "strongest",
+    "Term": "strongest",
     "Rating": 2
   },
   {
-    "Word": "struck",
+    "Term": "struck",
     "Rating": -1
   },
   {
-    "Word": "struggling",
+    "Term": "struggling",
     "Rating": -2
   },
   {
-    "Word": "success",
+    "Term": "success",
     "Rating": 2
   },
   {
-    "Word": "successful",
+    "Term": "successful",
     "Rating": 3
   },
   {
-    "Word": "sucks",
+    "Term": "sucks",
     "Rating": -3
   },
   {
-    "Word": "suffer",
+    "Term": "suffer",
     "Rating": -2
   },
   {
-    "Word": "suffering",
+    "Term": "suffering",
     "Rating": -2
   },
   {
-    "Word": "suffers",
+    "Term": "suffers",
     "Rating": -2
   },
   {
-    "Word": "suicide",
+    "Term": "suicide",
     "Rating": -2
   },
   {
-    "Word": "superior",
+    "Term": "superior",
     "Rating": 2
   },
   {
-    "Word": "support",
+    "Term": "support",
     "Rating": 2
   },
   {
-    "Word": "supported",
+    "Term": "supported",
     "Rating": 2
   },
   {
-    "Word": "supporter",
+    "Term": "supporter",
     "Rating": 1
   },
   {
-    "Word": "supporting",
+    "Term": "supporting",
     "Rating": 1
   },
   {
-    "Word": "suspect",
+    "Term": "suspect",
     "Rating": -1
   },
   {
-    "Word": "suspected",
+    "Term": "suspected",
     "Rating": -1
   },
   {
-    "Word": "suspecting",
+    "Term": "suspecting",
     "Rating": -1
   },
   {
-    "Word": "suspended",
+    "Term": "suspended",
     "Rating": -1
   },
   {
-    "Word": "suspicious",
+    "Term": "suspicious",
     "Rating": -2
   },
   {
-    "Word": "swearing",
+    "Term": "swearing",
     "Rating": -2
   },
   {
-    "Word": "sweet",
+    "Term": "sweet",
     "Rating": 2
   },
   {
-    "Word": "swift",
+    "Term": "swift",
     "Rating": 2
   },
   {
-    "Word": "swiftly",
+    "Term": "swiftly",
     "Rating": 2
   },
   {
-    "Word": "tears",
+    "Term": "tears",
     "Rating": -2
   },
   {
-    "Word": "tender",
+    "Term": "tender",
     "Rating": 2
   },
   {
-    "Word": "terrible",
+    "Term": "terrible",
     "Rating": -3
   },
   {
-    "Word": "terribly",
+    "Term": "terribly",
     "Rating": -3
   },
   {
-    "Word": "terrific",
+    "Term": "terrific",
     "Rating": 4
   },
   {
-    "Word": "terrified",
+    "Term": "terrified",
     "Rating": -3
   },
   {
-    "Word": "terror",
+    "Term": "terror",
     "Rating": -3
   },
   {
-    "Word": "thoughtful",
+    "Term": "thoughtful",
     "Rating": 2
   },
   {
-    "Word": "thoughtless",
+    "Term": "thoughtless",
     "Rating": -2
   },
   {
-    "Word": "threatened",
+    "Term": "threatened",
     "Rating": -2
   },
   {
-    "Word": "threatens",
+    "Term": "threatens",
     "Rating": -2
   },
   {
-    "Word": "thwart",
+    "Term": "thwart",
     "Rating": -2
   },
   {
-    "Word": "timid",
+    "Term": "timid",
     "Rating": -2
   },
   {
-    "Word": "tired",
+    "Term": "tired",
     "Rating": -2
   },
   {
-    "Word": "top",
+    "Term": "top",
     "Rating": 2
   },
   {
-    "Word": "tops",
+    "Term": "tops",
     "Rating": 2
   },
   {
-    "Word": "torn",
+    "Term": "torn",
     "Rating": -2
   },
   {
-    "Word": "torture",
+    "Term": "torture",
     "Rating": -4
   },
   {
-    "Word": "tortured",
+    "Term": "tortured",
     "Rating": -4
   },
   {
-    "Word": "tortures",
+    "Term": "tortures",
     "Rating": -4
   },
   {
-    "Word": "torturing",
+    "Term": "torturing",
     "Rating": -4
   },
   {
-    "Word": "tranquil",
+    "Term": "tranquil",
     "Rating": 2
   },
   {
-    "Word": "treasure",
+    "Term": "treasure",
     "Rating": 2
   },
   {
-    "Word": "treasures",
+    "Term": "treasures",
     "Rating": 2
   },
   {
-    "Word": "trembling",
+    "Term": "trembling",
     "Rating": -2
   },
   {
-    "Word": "triumph",
+    "Term": "triumph",
     "Rating": 4
   },
   {
-    "Word": "trouble",
+    "Term": "trouble",
     "Rating": -2
   },
   {
-    "Word": "troubled",
+    "Term": "troubled",
     "Rating": -2
   },
   {
-    "Word": "true",
+    "Term": "true",
     "Rating": 2
   },
   {
-    "Word": "trust",
+    "Term": "trust",
     "Rating": 1
   },
   {
-    "Word": "trusted",
+    "Term": "trusted",
     "Rating": 2
   },
   {
-    "Word": "ugly",
+    "Term": "ugly",
     "Rating": -3
   },
   {
-    "Word": "uncertain",
+    "Term": "uncertain",
     "Rating": -1
   },
   {
-    "Word": "uneasy",
+    "Term": "uneasy",
     "Rating": -2
   },
   {
-    "Word": "unequal",
+    "Term": "unequal",
     "Rating": -1
   },
   {
-    "Word": "unfair",
+    "Term": "unfair",
     "Rating": -2
   },
   {
-    "Word": "unfulfilled",
+    "Term": "unfulfilled",
     "Rating": -2
   },
   {
-    "Word": "unhappy",
+    "Term": "unhappy",
     "Rating": -2
   },
   {
-    "Word": "united",
+    "Term": "united",
     "Rating": 1
   },
   {
-    "Word": "unsatisfied",
+    "Term": "unsatisfied",
     "Rating": -2
   },
   {
-    "Word": "unsettled",
+    "Term": "unsettled",
     "Rating": -1
   },
   {
-    "Word": "unsupported",
+    "Term": "unsupported",
     "Rating": -2
   },
   {
-    "Word": "unworthy",
+    "Term": "unworthy",
     "Rating": -2
   },
   {
-    "Word": "useful",
+    "Term": "useful",
     "Rating": 2
   },
   {
-    "Word": "vested",
+    "Term": "vested",
     "Rating": 1
   },
   {
-    "Word": "vexation",
+    "Term": "vexation",
     "Rating": -2
   },
   {
-    "Word": "vicious",
+    "Term": "vicious",
     "Rating": -2
   },
   {
-    "Word": "victim",
+    "Term": "victim",
     "Rating": -3
   },
   {
-    "Word": "vigilant",
+    "Term": "vigilant",
     "Rating": 3
   },
   {
-    "Word": "vile",
+    "Term": "vile",
     "Rating": -3
   },
   {
-    "Word": "violate",
+    "Term": "violate",
     "Rating": -2
   },
   {
-    "Word": "violated",
+    "Term": "violated",
     "Rating": -2
   },
   {
-    "Word": "violence",
+    "Term": "violence",
     "Rating": -3
   },
   {
-    "Word": "violent",
+    "Term": "violent",
     "Rating": -3
   },
   {
-    "Word": "virtuous",
+    "Term": "virtuous",
     "Rating": 2
   },
   {
-    "Word": "virulent",
+    "Term": "virulent",
     "Rating": -2
   },
   {
-    "Word": "vision",
+    "Term": "vision",
     "Rating": 1
   },
   {
-    "Word": "vitality",
+    "Term": "vitality",
     "Rating": 3
   },
   {
-    "Word": "want",
+    "Term": "want",
     "Rating": 1
   },
   {
-    "Word": "war",
+    "Term": "war",
     "Rating": -2
   },
   {
-    "Word": "warfare",
+    "Term": "warfare",
     "Rating": -2
   },
   {
-    "Word": "warm",
+    "Term": "warm",
     "Rating": 1
   },
   {
-    "Word": "warn",
+    "Term": "warn",
     "Rating": -2
   },
   {
-    "Word": "warned",
+    "Term": "warned",
     "Rating": -2
   },
   {
-    "Word": "warning",
+    "Term": "warning",
     "Rating": -3
   },
   {
-    "Word": "waste",
+    "Term": "waste",
     "Rating": -1
   },
   {
-    "Word": "wasted",
+    "Term": "wasted",
     "Rating": -2
   },
   {
-    "Word": "wavering",
+    "Term": "wavering",
     "Rating": -1
   },
   {
-    "Word": "weak",
+    "Term": "weak",
     "Rating": -2
   },
   {
-    "Word": "weakness",
+    "Term": "weakness",
     "Rating": -2
   },
   {
-    "Word": "wealth",
+    "Term": "wealth",
     "Rating": 3
   },
   {
-    "Word": "wealthy",
+    "Term": "wealthy",
     "Rating": 2
   },
   {
-    "Word": "weary",
+    "Term": "weary",
     "Rating": -2
   },
   {
-    "Word": "weep",
+    "Term": "weep",
     "Rating": -2
   },
   {
-    "Word": "weeping",
+    "Term": "weeping",
     "Rating": -2
   },
   {
-    "Word": "welcome",
+    "Term": "welcome",
     "Rating": 2
   },
   {
-    "Word": "welcomed",
+    "Term": "welcomed",
     "Rating": 2
   },
   {
-    "Word": "wicked",
+    "Term": "wicked",
     "Rating": -2
   },
   {
-    "Word": "widowed",
+    "Term": "widowed",
     "Rating": -1
   },
   {
-    "Word": "willingness",
+    "Term": "willingness",
     "Rating": 2
   },
   {
-    "Word": "win",
+    "Term": "win",
     "Rating": 4
   },
   {
-    "Word": "winning",
+    "Term": "winning",
     "Rating": 4
   },
   {
-    "Word": "wish",
+    "Term": "wish",
     "Rating": 1
   },
   {
-    "Word": "wishes",
+    "Term": "wishes",
     "Rating": 1
   },
   {
-    "Word": "wishing",
+    "Term": "wishing",
     "Rating": 1
   },
   {
-    "Word": "withdrawal",
+    "Term": "withdrawal",
     "Rating": -3
   },
   {
-    "Word": "woeful",
+    "Term": "woeful",
     "Rating": -3
   },
   {
-    "Word": "won",
+    "Term": "won",
     "Rating": 3
   },
   {
-    "Word": "wonderful",
+    "Term": "wonderful",
     "Rating": 4
   },
   {
-    "Word": "woo",
+    "Term": "woo",
     "Rating": 3
   },
   {
-    "Word": "worn",
+    "Term": "worn",
     "Rating": -1
   },
   {
-    "Word": "worry",
+    "Term": "worry",
     "Rating": -3
   },
   {
-    "Word": "worst",
+    "Term": "worst",
     "Rating": -3
   },
   {
-    "Word": "worth",
+    "Term": "worth",
     "Rating": 2
   },
   {
-    "Word": "worthy",
+    "Term": "worthy",
     "Rating": 2
   },
   {
-    "Word": "wrathful",
+    "Term": "wrathful",
     "Rating": -3
   },
   {
-    "Word": "wrong",
+    "Term": "wrong",
     "Rating": -2
   },
   {
-    "Word": "wronged",
+    "Term": "wronged",
     "Rating": -2
   },
   {
-    "Word": "yearning",
+    "Term": "yearning",
     "Rating": 1
   },
   {
-    "Word": "yes",
+    "Term": "yes",
     "Rating": 1
   },
   {
-    "Word": "youthful",
+    "Term": "youthful",
     "Rating": 2
   }
 ]
