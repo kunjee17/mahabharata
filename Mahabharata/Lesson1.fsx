@@ -292,9 +292,7 @@ let books = [|
         yield Book.create (n+"-"+m) txt
 |]
 
-let book0 = books.[0]
-
-dataToJSONFile "pos" book0.WordsRating
+// let book0 = books.[0]
 
 // books |> Array.map (fun a -> (a.Name, a.WordsRating))
 
@@ -303,21 +301,44 @@ let allBookEmotionalIndex = books |> Array.map (fun x -> x.SentimentIndex)
 
 dataToJSONFile "emotional" allBookEmotionalIndex
 
-let allJoy = books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Joy))
 
-dataToJSONFile "joy" allJoy
 
-let termsInWordRating = book0.UniqueTerms |> Set.intersect (book0.WordsRating |> Array.map (fun x -> x.Term) |> set)
+(*
+    Anger,Anticipation,Disgus,Fear,Joy,Negative,Positive,Sadness,Surprise,Trust,
+*)
 
-let termsWithFrequency = book0.UniqueTermsWithFrequency
-                        |> Array.filter (fun (x,_) -> termsInWordRating.Contains x )
+dataToJSONFile "anger" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Anger)))
+dataToJSONFile "anticipation" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Anticipation)))
+dataToJSONFile "disgus" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Disgust)))
+dataToJSONFile "fear" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Fear)))
+dataToJSONFile "joy" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Joy)))
+dataToJSONFile "negative" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Negative)))
+dataToJSONFile "positive" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Positive)))
+dataToJSONFile "sadness" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Sadness)))
+dataToJSONFile "surprise" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Surprise)))
+dataToJSONFile "trust" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Trust)))
+
+
+
+let termsInWordRating (book:Book.Book)=
+    let currentTermsInWordRating =
+        book.UniqueTerms
+        |> Set.intersect (book.WordsRating |> Array.map (fun x -> x.Term) |> set)
+
+    let termsWithFrequency =
+        book.UniqueTermsWithFrequency
+                        |> Array.filter (fun (x,_) -> currentTermsInWordRating.Contains x )
                         |> Array.sortBy (fun (_,y) -> -y)
-
-                        |> Array.take 50
+                        |> Array.take 51
                         |> Array.map (fun (x,y)->
-                                        let term = book0.WordsRating |> Array.find (fun a -> a.Term = x)
+                                        let term = book.WordsRating |> Array.find (fun a -> a.Term = x)
                                         (x, y * term.Rating)
-                                    )
+                                   )
+                        |> Array.sortBy (fun (_,y)-> -y)
+    let bookfileName = book.Name.ToLower().Replace(" ", "-") + "-rating"
+    dataToJSONFile bookfileName termsWithFrequency
+
+books |> Array.iter termsInWordRating
 (**
     Inverted Index. WIP.
 

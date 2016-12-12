@@ -1,0 +1,206 @@
+[
+  {
+    "Item1": "great",
+    "Item2": 105
+  },
+  {
+    "Item1": "good",
+    "Item2": 30
+  },
+  {
+    "Item1": "excellent",
+    "Item2": 24
+  },
+  {
+    "Item1": "like",
+    "Item2": 22
+  },
+  {
+    "Item1": "desirous",
+    "Item2": 16
+  },
+  {
+    "Item1": "wealth",
+    "Item2": 15
+  },
+  {
+    "Item1": "agreeable",
+    "Item2": 14
+  },
+  {
+    "Item1": "heroes",
+    "Item2": 14
+  },
+  {
+    "Item1": "adored",
+    "Item2": 12
+  },
+  {
+    "Item1": "bliss",
+    "Item2": 12
+  },
+  {
+    "Item1": "devoted",
+    "Item2": 12
+  },
+  {
+    "Item1": "happiness",
+    "Item2": 12
+  },
+  {
+    "Item1": "best",
+    "Item2": 12
+  },
+  {
+    "Item1": "pleasure",
+    "Item2": 12
+  },
+  {
+    "Item1": "beautiful",
+    "Item2": 12
+  },
+  {
+    "Item1": "kind",
+    "Item2": 12
+  },
+  {
+    "Item1": "reached",
+    "Item2": 11
+  },
+  {
+    "Item1": "desire",
+    "Item2": 10
+  },
+  {
+    "Item1": "success",
+    "Item2": 10
+  },
+  {
+    "Item1": "superior",
+    "Item2": 10
+  },
+  {
+    "Item1": "joy",
+    "Item2": 9
+  },
+  {
+    "Item1": "heroic",
+    "Item2": 9
+  },
+  {
+    "Item1": "enjoy",
+    "Item2": 6
+  },
+  {
+    "Item1": "desirable",
+    "Item2": 6
+  },
+  {
+    "Item1": "wish",
+    "Item2": 5
+  },
+  {
+    "Item1": "courage",
+    "Item2": 4
+  },
+  {
+    "Item1": "faith",
+    "Item2": 4
+  },
+  {
+    "Item1": "rewards",
+    "Item2": 4
+  },
+  {
+    "Item1": "enjoying",
+    "Item2": 4
+  },
+  {
+    "Item1": "god",
+    "Item2": 3
+  },
+  {
+    "Item1": "committed",
+    "Item2": 3
+  },
+  {
+    "Item1": "capable",
+    "Item2": 3
+  },
+  {
+    "Item1": "fame",
+    "Item2": 3
+  },
+  {
+    "Item1": "matter",
+    "Item2": 2
+  },
+  {
+    "Item1": "free",
+    "Item2": 2
+  },
+  {
+    "Item1": "disappeared",
+    "Item2": -2
+  },
+  {
+    "Item1": "darkness",
+    "Item2": -3
+  },
+  {
+    "Item1": "difficult",
+    "Item2": -3
+  },
+  {
+    "Item1": "afflicted",
+    "Item2": -3
+  },
+  {
+    "Item1": "incapable",
+    "Item2": -4
+  },
+  {
+    "Item1": "fallen",
+    "Item2": -4
+  },
+  {
+    "Item1": "rage",
+    "Item2": -4
+  },
+  {
+    "Item1": "no",
+    "Item2": -6
+  },
+  {
+    "Item1": "doubt",
+    "Item2": -6
+  },
+  {
+    "Item1": "deception",
+    "Item2": -6
+  },
+  {
+    "Item1": "death",
+    "Item2": -8
+  },
+  {
+    "Item1": "battle",
+    "Item2": -12
+  },
+  {
+    "Item1": "terrible",
+    "Item2": -12
+  },
+  {
+    "Item1": "grief",
+    "Item2": -14
+  },
+  {
+    "Item1": "fire",
+    "Item2": -18
+  },
+  {
+    "Item1": "sinful",
+    "Item2": -21
+  }
+]
