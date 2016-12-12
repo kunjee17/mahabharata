@@ -18,6 +18,20 @@ open MathNet.Numerics.LinearAlgebra
 open MathNet.Numerics.LinearAlgebra.SparseMatrix
 open FSharp.Data
 
+
+
+module Utility =
+
+    let JsonToFile (path:string)(data : obj) =
+        use writer = new StreamWriter(path)
+        let txt = data |> Compact.serialize
+        writer.WriteLine (txt)
+
+    let JsonDropPath name =
+        Path.Combine (__SOURCE_DIRECTORY__, "..", "docs/js/" + name + ".json")
+
+    let dataToJsonFile = JsonDropPath >> JsonToFile
+
 //Basic_Emotions_(size_is_proportional_to_number_of__data.csv
 let EmotionalPath = Path.Combine(__SOURCE_DIRECTORY__, "..","data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
 type EmotionCsv = CsvProvider< "../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv">
@@ -27,26 +41,23 @@ type EmotionCsv = CsvProvider< "../data/Basic_Emotions_(size_is_proportional_to_
 let EmotionData = EmotionCsv.Load("../data/Basic_Emotions_(size_is_proportional_to_number_of__data.csv")
 
 type EmotionInNumber = {
-    Anger:int
-    Anticipation:int
-    Disgust:int
-    // Emotion:int
-    Fear:int
-    Joy:int
-    Negative:int
-    Positive:int
-    Sadness:int
-    Surprise:int
-    Trust:int
+    Anger:float
+    Anticipation:float
+    Disgust:float
+    // Emotion:float
+    Fear:float
+    Joy:float
+    Negative:float
+    Positive:float
+    Sadness:float
+    Surprise:float
+    Trust:float
     Word: string
 }
 
-let JsonToFile (path:string)(text : string) =
-    use writer = new StreamWriter(path)
-    writer.WriteLine (text)
-let stringToNum s = if String.IsNullOrEmpty(s) then 0 else 1
+let stringToNum s = if String.IsNullOrEmpty(s) then 0. else 1.
 
-let emotionCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, positive, sadness, surprise, trust, word) =     
+let emotionCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, positive, sadness, surprise, trust, word) =
         let a = {
             Anger = stringToNum anger
             Anticipation = stringToNum anticipation
@@ -61,19 +72,19 @@ let emotionCalculate (anger,anticipation, disgust,emotion,fear, joy, negative, p
             Word = word
         }
 
-        match emotion with 
-        | "anger" -> if a.Anger = 0 then {a with Anger = 1} else a
-        | "anticip" -> if a.Anticipation = 0 then {a with Anticipation = 1} else a 
-        | "disgust" -> if a.Disgust = 0 then {a with Disgust = 1 } else a
-        | "fear" -> if a.Fear = 0 then {a with Fear = 1} else a
-        | "joy" -> if a.Joy = 0 then {a with Joy = 1} else a
-        | "negative" -> if a.Negative = 0 then {a with Negative = 1} else a
-        | "positive" -> if a.Positive = 0 then {a with Positive = 1} else a
-        | "sadness" -> if a.Sadness = 0 then {a with Sadness = 1} else a
-        | "surprise" -> if a.Surprise = 0 then {a with Surprise = 1} else a
-        | "trust" -> if a.Trust = 0 then {a with Trust = 1} else a
-        | _ -> a 
-    
+        match emotion with
+        | "anger" -> if a.Anger = 0. then {a with Anger = 1.} else a
+        | "anticip" -> if a.Anticipation = 0. then {a with Anticipation = 1.} else a
+        | "disgust" -> if a.Disgust = 0. then {a with Disgust = 1. } else a
+        | "fear" -> if a.Fear = 0. then {a with Fear = 1.} else a
+        | "joy" -> if a.Joy = 0. then {a with Joy = 1.} else a
+        | "negative" -> if a.Negative = 0. then {a with Negative = 1.} else a
+        | "positive" -> if a.Positive = 0. then {a with Positive = 1.} else a
+        | "sadness" -> if a.Sadness = 0. then {a with Sadness = 1.} else a
+        | "surprise" -> if a.Surprise = 0. then {a with Surprise = 1.} else a
+        | "trust" -> if a.Trust = 0. then {a with Trust = 1.} else a
+        | _ -> a
+
 
 let allEmotionsInNumber = EmotionData.Rows |> Seq.map (fun row -> emotionCalculate (
                                                                     row.Anger,
@@ -115,17 +126,17 @@ type Doc = {
 }
 
 let zeroEmotion = {
-        Anger = 0
-        Anticipation = 0
-        Disgust =0
-        // Emotion = 0
-        Fear = 0
-        Joy = 0
-        Negative = 0
-        Positive = 0
-        Sadness = 0
-        Surprise = 0
-        Trust = 0
+        Anger = 0.
+        Anticipation = 0.
+        Disgust =0.
+        // Emotion = 0.
+        Fear = 0.
+        Joy = 0.
+        Negative = 0.
+        Positive = 0.
+        Sadness = 0.
+        Surprise = 0.
+        Trust = 0.
         Word = "book0"
     }
 
@@ -191,13 +202,13 @@ type Book(bookno:string, bookname:string) =
         }
 
     member x.PosNegIndex =
-        let commonWords = posnegWordList 
-                                |> Array.map (fun x -> x.Word) 
-                                |> set 
+        let commonWords = posnegWordList
+                                |> Array.map (fun x -> x.Word)
+                                |> set
                                 |> Set.intersect x.BookUniqueTerms
-        posnegWordList 
-        |> Array.filter (fun a -> commonWords.Contains a.Word) 
-        // |> Array.map (fun b -> b.Rating) 
+        posnegWordList
+        |> Array.filter (fun a -> commonWords.Contains a.Word)
+        // |> Array.map (fun b -> b.Rating)
         // |> Array.sum
 let booknos = [|
                 "01";
@@ -247,20 +258,15 @@ let books = [|
 
 let book0 = books.[0]
 
-let book0Pos = book0.PosNegIndex |> Compact.serialize
 
-let posPath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "pos" + ".json")
-
-JsonToFile posPath book0Pos
+Utility.dataToJsonFile "pos" book0.PosNegIndex
 
 books |> Array.map (fun a -> (a.BookNo, a.PosNegIndex))
 
 let allBookEmotionalIndex = books |> Array.map (fun x -> x.EmotionalIndex)
 
-let emotionalJsonData = Compact.serialize allBookEmotionalIndex
 
-let emotionalPath = Path.Combine(__SOURCE_DIRECTORY__, "..", "docs/js/" + "emotional" + ".json")
-JsonToFile emotionalPath emotionalJsonData
+Utility.dataToJsonFile "emotional" allBookEmotionalIndex
 
 
 
