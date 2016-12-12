@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mahabharata</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/vertical-tabs.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="/bookwise-sentiment">Book Wise</a>
+                <a class="navbar-brand" href="/sentiment-wise">Setiment Wise</a>
+                <a class="navbar-brand" href="/word-frequency">Word Frequency</a>
+            </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Mahabharata</h1>
+        </div>
+    </div>
+
+    <!--<div id="hichart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto">-->
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-tabs">
+                    <!--<li><a href="#home" data-toggle="pill">Home</a></li>
+                    <li><a href="#menu1" data-toggle="pill">Menu 1</a></li>
+                    <li><a href="#menu2" data-toggle="pill">Menu 2</a></li>
+                    <li><a href="#menu3" data-toggle="pill">Menu 3</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <!--<div class="tab-pane fade" id="home">
+                <p>Home</p>
+            </div>
+            <div class="tab-pane fade" id="menu1">
+                <p>Menu1</p>
+            </div>
+            <div class="tab-pane fade" id="menu2">
+                <p>Menu2</p>
+            </div>
+            <div class="tab-pane fade" id="menu3">
+                <p>Menu3</p>
+            </div>-->
+        </div>
+    </div>
+
+    <div id="scripts">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="js/emotional.json"></script>
+        <script src="js/terms.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            console.log('Ath shree Mahabharata katha');
+
+            var drawColumnChart = function (chartid, bookName, bookdata) {
+                Highcharts.chart(chartid, {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: bookName + ' Analysis'
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> of total<br/>'
+                    },
+                    xAxis: {
+                        type: 'category'
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Total word frequency'
+                        }
+
+                    },
+                    plotOptions: {
+                        series: {
+                            borderWidth: 0,
+                            dataLabels: {
+                                enabled: true,
+                                format: '{point.y:.3f}%'
+                            }
+                        }
+                    },
+                    series: [{
+                        name: bookName,
+                        colorByPoint: true,
+                        data: bookdata
+                        // data: [{
+                        //     name: 'Microsoft Internet Explorer',
+                        //     y: 56.33
+                        // }, {
+                        //     name: 'Anticipation',
+                        //     y: 24.03,
+                        // }, {
+                        //     name: 'Firefox',
+                        //     y: 10.38
+                        // }, {
+                        //     name: 'Safari',
+                        //     y: 4.77
+                        // }, {
+                        //     name: 'Opera',
+                        //     y: 0.91
+                        // }, {
+                        //     name: 'Proprietary or Undetectable',
+                        //     y: 0.2
+                        // }]
+                    }]
+                });
+            };
+
+
+        var generateIdName = function (name) {
+            return name.replace(' ', '-');
+        };
+
+        var generateNumber = function (name) {
+            return name.split('-')[0];
+        }
+
+        var activaTab = function (tab) {
+            $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+        };
+
+        $.getJSON('js/emotional.json')
+            .done(function (books) {
+                console.log(books);
+                books.map(function (book) {
+                    $('.nav.nav-tabs').append('<li><a href="#' + generateIdName(book.Word) + '" data-toggle="pill">' + generateNumber(book.Word) + '</a></li>');
+                    $('.tab-content')
+                        .append('<div class="tab-pane fade" id="' + generateIdName(book.Word) + '"><strong>' + book.Word + '</strong><br/><br/><br/><div id="' + generateIdName(book.Word) + '-data"></div></div>');
+                    $('#' + generateIdName(book.Word) + '-data').append('<div id="' + generateIdName(book.Word) + '-columnchart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto"></div>');
+                    var bookdata = _.chain(book)
+                        .map(function (y, name) {
+                            return { y: y, name: name };
+                        })
+                        .filter(function (o) {
+                            return o.name !== 'Word';
+                        })
+                        .value();
+                    $('.nav-tabs a[href="#' + generateIdName(book.Word) + '"]').on('shown.bs.tab', function(e){
+                        drawColumnChart(generateIdName(book.Word + '-columnchart'), book.Word, bookdata);
+                    });
+                });
+                activaTab(generateIdName(books[0].Word));
+            })
+            .fail(function (err) {
+                console.log(err);
+            })
+            ;
+
+        });
+
+        </script>
+    </div>
+</body>
+
+</html>

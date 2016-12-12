@@ -339,6 +339,13 @@ let termsInWordRating (book:Book.Book)=
     dataToJSONFile bookfileName termsWithFrequency
 
 books |> Array.iter termsInWordRating
+
+let d = books |> Array.map (fun x -> x.Name.ToLower().Replace(" ","-") + "-rating" )
+
+
+
+dataToJSONFile "d" (Compact.serialize d)
+
 (**
     Inverted Index. WIP.
 

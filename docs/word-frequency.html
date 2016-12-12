@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mahabharata</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/vertical-tabs.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="/bookwise-sentiment">Book Wise</a>
+                <a class="navbar-brand" href="/sentiment-wise">Setiment Wise</a>
+                <a class="navbar-brand" href="/word-frequency">Word Frequency</a>
+            </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1>Mahabharata</h1>
+        </div>
+    </div>
+
+    <!--<div id="hichart" style="min-width:310 px; height: 400px; max-width: 600px; margin 0 auto">-->
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <!--<div class="tab-pane fade" id="home">
+                <p>Home</p>
+            </div>
+            <div class="tab-pane fade" id="menu1">
+                <p>Menu1</p>
+            </div>
+            <div class="tab-pane fade" id="menu2">
+                <p>Menu2</p>
+            </div>
+            <div class="tab-pane fade" id="menu3">
+                <p>Menu3</p>
+            </div>-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="scripts">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/lodash/4.17.2/lodash.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="js/emotional.json"></script>
+        <script src="js/terms.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            console.log('Ath shree Mahabharata katha');
+
+            var drawColumnChart = function (chartid, name, data) {
+                Highcharts.chart(chartid, {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: name + ' Analysis'
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b> of total<br/>'
+                    },
+                    xAxis: {
+                        type: 'category'
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Total word frequency'
+                        }
+
+                    },
+                    plotOptions: {
+                        series: {
+                            borderWidth: 0,
+                            dataLabels: {
+                                enabled: true,
+                                format: '{point.y}'
+                            }
+                        }
+                    },
+                    series: [{
+                        name: name,
+                        colorByPoint: true,
+                        data: data
+                        // data: [{
+                        //     name: 'Microsoft Internet Explorer',
+                        //     y: 56.33
+                        // }, {
+                        //     name: 'Anticipation',
+                        //     y: 24.03,
+                        // }, {
+                        //     name: 'Firefox',
+                        //     y: 10.38
+                        // }, {
+                        //     name: 'Safari',
+                        //     y: 4.77
+                        // }, {
+                        //     name: 'Opera',
+                        //     y: 0.91
+                        // }, {
+                        //     name: 'Proprietary or Undetectable',
+                        //     y: 0.2
+                        // }]
+                    }]
+                });
+            };
+
+
+            var generateName = function (name) {
+                return name.replace('-', ' ');
+            };
+
+            var generateNumber = function (name) {
+                return name.split('-')[0];
+            }
+
+            var activaTab = function (tab) {
+                $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+            };
+
+
+            var pullDataAndDrawChart = function(link,divid,divname){
+                $.getJSON(link)
+                    .done(function (data) {
+                        var r = _.chain(data)
+                            .map(function (a) {
+                                return { y: a.Item2, name: a.Item1 };
+                            })
+                            .value();
+
+                        drawColumnChart(divid,divname, r);
+                    })
+                    .fail(function (err) {
+                        console.log(err);
+                    })
+                    ;
+            }
+
+            var books = [
+                "01-adi-parva-rating","02-sabha-parva-rating","03-vana-parva-rating",
+                "04-virata-parva-rating","05-udyoga-parva-rating","06-bhishma-parva-rating",
+                "07-drona-parva-rating","08-karna-parva-rating","09-shalya-parva-rating",
+                "10-sauptika-parva-rating","11-stri-parva-rating","12-shanti-parva-rating",
+                "13-anushasana-parva-rating","14-ashvamedhika-parva-rating","15-ashramavasika-parva-rating",
+                "16-mausala-parva-rating","17-mahaprasthanika-parva-rating","18-svargarohana-parva-rating"];
+
+
+
+            books.map(function(b){
+                var link = 'js/'+b+'.json';
+                $('.nav.nav-tabs')
+                    .append('<li><a href="#' + b + '" data-toggle="pill">' + generateNumber(b) + '</a></li>');
+                $('.tab-content')
+                    .append('<div class="tab-pane fade" id="' + b + '"><strong>' + generateName(b) + '</strong><br/><br/><br/><div id="' + b + '-chart"></div></div>');
+                // var link = 'js/'+s+'.json';
+                // var divid = s+'-chart';
+                // var divname = s.charAt(0).toUpperCase() + s.slice(1) + ' Chart';
+                $('.nav-tabs a[href="#' + b + '"]').on('shown.bs.tab', function(e){
+                    pullDataAndDrawChart(link,b,generateName(b));
+                });
+            });
+
+            activaTab(books[0]);
+        });
+
+        </script>
+    </div>
+</body>
+
+</html>
