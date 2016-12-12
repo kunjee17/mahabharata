@@ -215,19 +215,19 @@ module Book =
                 let commonEmotionsCount = commonEmotions.Count
                 let commonEmotionsInNumber = allSentimentsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
                 let r = commonEmotionsInNumber |> Array.fold (SentimentSum bookname) ZeroSentiment
-                //Instead of 100 multiplying with 10000 just to get bigger number for plot
+                //Instead of 100 multiplying with 1000 just to get bigger number for plot
                 { r with
-                    Anger = (r.Anger/termsCount) * 10000.
-                    Anticipation = (r.Anticipation/termsCount) * 10000.
-                    Disgust =(r.Disgust/termsCount) * 10000.
+                    Anger = (r.Anger/termsCount) * 1000.
+                    Anticipation = (r.Anticipation/termsCount) * 1000.
+                    Disgust =(r.Disgust/termsCount) * 1000.
                     // Emotion = (r.Emotion)
-                    Fear = (r.Fear/termsCount) * 10000.
-                    Joy = (r.Joy/termsCount) * 10000.
-                    Negative = (r.Negative/termsCount) * 10000.
-                    Positive = (r.Positive/termsCount) * 10000.
-                    Sadness = (r.Sadness/termsCount) * 10000.
-                    Surprise = (r.Surprise/termsCount) * 10000.
-                    Trust = (r.Trust/termsCount) * 10000.
+                    Fear = (r.Fear/termsCount) * 1000.
+                    Joy = (r.Joy/termsCount) * 1000.
+                    Negative = (r.Negative/termsCount) * 1000.
+                    Positive = (r.Positive/termsCount) * 1000.
+                    Sadness = (r.Sadness/termsCount) * 1000.
+                    Surprise = (r.Surprise/termsCount) * 1000.
+                    Trust = (r.Trust/termsCount) * 1000.
                 }
             WordsRating =
                 let commonWords =
@@ -340,11 +340,6 @@ let termsInWordRating (book:Book.Book)=
 
 books |> Array.iter termsInWordRating
 
-let d = books |> Array.map (fun x -> x.Name.ToLower().Replace(" ","-") + "-rating" )
-
-
-
-dataToJSONFile "d" (Compact.serialize d)
 
 (**
     Inverted Index. WIP.
