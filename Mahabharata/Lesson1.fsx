@@ -212,22 +212,22 @@ module Book =
             UniqueTermsWithFrequency = termsWithFrequency
             SentimentIndex =
                 let commonEmotions = uniqueTerms |> set |> Set.intersect SentimentWordsSet
-                let commonEmotionsCount = commonEmotions.Count
+                let commonEmotionsCount = commonEmotions.Count |> float
                 let commonEmotionsInNumber = allSentimentsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
                 let r = commonEmotionsInNumber |> Array.fold (SentimentSum bookname) ZeroSentiment
                 //Instead of 100 multiplying with 1000 just to get bigger number for plot
                 { r with
-                    Anger = (r.Anger/termsCount) * 1000.
-                    Anticipation = (r.Anticipation/termsCount) * 1000.
-                    Disgust =(r.Disgust/termsCount) * 1000.
+                    Anger = (r.Anger/commonEmotionsCount) * 100.
+                    Anticipation = (r.Anticipation/commonEmotionsCount) * 100.
+                    Disgust =(r.Disgust/commonEmotionsCount) * 100.
                     // Emotion = (r.Emotion)
-                    Fear = (r.Fear/termsCount) * 1000.
-                    Joy = (r.Joy/termsCount) * 1000.
-                    Negative = (r.Negative/termsCount) * 1000.
-                    Positive = (r.Positive/termsCount) * 1000.
-                    Sadness = (r.Sadness/termsCount) * 1000.
-                    Surprise = (r.Surprise/termsCount) * 1000.
-                    Trust = (r.Trust/termsCount) * 1000.
+                    Fear = (r.Fear/commonEmotionsCount) * 100.
+                    Joy = (r.Joy/commonEmotionsCount) * 100.
+                    Negative = (r.Negative/commonEmotionsCount) * 100.
+                    Positive = (r.Positive/commonEmotionsCount) * 100.
+                    Sadness = (r.Sadness/commonEmotionsCount) * 100.
+                    Surprise = (r.Surprise/commonEmotionsCount) * 100.
+                    Trust = (r.Trust/commonEmotionsCount) * 100.
                 }
             WordsRating =
                 let commonWords =
