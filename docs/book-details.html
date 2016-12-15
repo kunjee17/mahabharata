@@ -45,113 +45,44 @@
         <div class="row">
             <div class="col-xs-12">
                 <ul class="nav nav-tabs">
-                    <li><a href="#anger" data-toggle="pill">Anger</a></li>
-                    <li><a href="#anticipation" data-toggle="pill">Anticipation</a></li>
-                    <li><a href="#disgus" data-toggle="pill">Disgus</a></li>
-                    <li><a href="#fear" data-toggle="pill">Fear</a></li>
-                    <li><a href="#joy" data-toggle="pill">Joy</a></li>
-                    <li><a href="#negative" data-toggle="pill">Negative</a></li>
-                    <li><a href="#positive" data-toggle="pill">Positive</a></li>
-                    <li><a href="#sadness" data-toggle="pill">Sadness</a></li>
-                    <li><a href="#surprise" data-toggle="pill">Surprise</a></li>
-                    <li><a href="#trust" data-toggle="pill">Trust</a></li>
+                    <li><a href="#terms" data-toggle="pill">Terms</a></li>
+                    <li><a href="#uniqueterms" data-toggle="pill">Unique Terms</a></li>
+                    <li><a href="#utbyterms" data-toggle="pill">Unique Terms by Terms</a></li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="tab-content">
-                    <div id="anger" class="tab-pane fade">
-                        <strong>Anger</strong>
+                    <div id="terms" class="tab-pane fade">
+                        <strong>Terms</strong>
                         <br/>
                         <br/>
                         <br/>
-                        <div id="anger-chart">
+                        <div id="terms-chart">
 
                         </div>
                     </div>
-                    <div id="anticipation" class="tab-pane fade">
-                        <strong>Anticipation</strong>
+                    <div id="uniqueterms" class="tab-pane fade">
+                        <strong>Unique Terms</strong>
                         <br/>
                         <br/>
                         <br/>
-                        <div id="anticipation-chart">
+                        <div id="uniqueterms-chart">
 
                         </div>
                     </div>
-                    <div id="disgus" class="tab-pane fade">
-                        <strong>Disgus</strong>
+                    <div id="utbyterms" class="tab-pane fade">
+                        <strong>Unique Terms by Terms in % </strong>
                         <br/>
                         <br/>
                         <br/>
-                        <div id="disgus-chart">
+                        <div id="utbyterms-chart">
 
                         </div>
                     </div>
-                    <div id="fear" class="tab-pane fade">
-                        <strong>Fear</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="fear-chart">
-
-                        </div>
-                    </div>
-                    <div id="joy" class="tab-pane fade">
-                        <strong>Joy</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="joy-chart">
-
-                        </div>
-                    </div>
-                    <div id="negative" class="tab-pane fade">
-                        <strong>Negative</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="negative-chart">
-
-                        </div>
-                    </div>
-                    <div id="positive" class="tab-pane fade">
-                        <strong>Positive</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="positive-chart">
-
-                        </div>
-                    </div>
-                    <div id="sadness" class="tab-pane fade">
-                        <strong>Sadness</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="sadness-chart">
-
-                        </div>
-                    </div>
-                    <div id="surprise" class="tab-pane fade">
-                        <strong>Surprise</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="surprise-chart">
-
-                        </div>
-                    </div>
-                    <div id="trust" class="tab-pane fade">
-                        <strong>Trust</strong>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div id="trust-chart">
-
-                        </div>
-                    </div>
-                    <!--<div class="tab-pane fade" id="home">
+                </div>
+                <!--<div class="tab-pane fade" id="home">
                 <p>Home</p>
             </div>
             <div class="tab-pane fade" id="menu1">
@@ -163,9 +94,9 @@
             <div class="tab-pane fade" id="menu3">
                 <p>Menu3</p>
             </div>-->
-                </div>
             </div>
         </div>
+    </div>
 
     </div>
 
@@ -202,7 +133,7 @@
                         },
                         yAxis: {
                             title: {
-                                text: 'Total word frequency'
+                                text: 'Total Terms'
                             }
 
                         },
@@ -211,7 +142,7 @@
                                 borderWidth: 0,
                                 dataLabels: {
                                     enabled: true,
-                                    format: '{point.y:.3f}%'
+                                    format: '{point.y:.1f}'
                                 }
                             }
                         },
@@ -275,7 +206,7 @@
                         ;
                 }
 
-                var sentiments = ['anger', 'anticipation', 'disgus', 'fear', 'joy', 'negative', 'positive', 'sadness', 'surprise', 'trust'];
+                var sentiments = ['terms', 'uniqueterms', 'utbyterms'];
 
 
 
@@ -288,7 +219,7 @@
                     });
                 });
 
-                activaTab('anger');
+                activaTab('terms');
             });
 
         </script>
