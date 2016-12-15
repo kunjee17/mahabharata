@@ -318,7 +318,10 @@ dataToJSONFile "sadness" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex
 dataToJSONFile "surprise" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Surprise)))
 dataToJSONFile "trust" (books |> Array.map (fun x -> (x.Name, x.SentimentIndex.Trust)))
 
+//Terms and UniqueTerms
 
+dataToJSONFile "terms" (books |> Array.map (fun x -> (x.Name, x.Terms.Length)))
+dataToJSONFile "uniqueterms" (books |> Array.map (fun x -> (x.Name, x.UniqueTerms.Count)))
 
 let termsInWordRating (book:Book.Book)=
     let currentTermsInWordRating =
