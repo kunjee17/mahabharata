@@ -215,7 +215,7 @@ module Book =
                 let commonEmotionsCount = commonEmotions.Count |> float
                 let commonEmotionsInNumber = allSentimentsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
                 let r = commonEmotionsInNumber |> Array.fold (SentimentSum bookname) ZeroSentiment
-                //Instead of 100 multiplying with 1000 just to get bigger number for plot
+
                 { r with
                     Anger = (r.Anger/commonEmotionsCount) * 100.
                     Anticipation = (r.Anticipation/commonEmotionsCount) * 100.
