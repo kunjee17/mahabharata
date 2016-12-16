@@ -212,7 +212,9 @@ module Book =
             UniqueTermsWithFrequency = termsWithFrequency
             SentimentIndex =
                 let commonEmotions = uniqueTerms |> set |> Set.intersect SentimentWordsSet
-                let commonEmotionsCount = commonEmotions.Count |> float
+                let commonEmotionsCount = termsWithFrequency
+                                            |> Array.filter(fun (x,_) -> commonEmotions.Contains x)
+                                            |> Array.map (fun (_,y) -> y) |> Array.sum |> float
                 let commonEmotionsInNumber = allSentimentsInNumber |> Seq.filter (fun x -> commonEmotions.Contains x.Word) |> Seq.toArray
                 let r = commonEmotionsInNumber |> Array.fold (SentimentSum bookname) ZeroSentiment
 
