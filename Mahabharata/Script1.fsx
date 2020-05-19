@@ -5,8 +5,8 @@
 //TODO use regex or FParsec for better performace
 #I "../packages"
 #r "FsVerbalExpressions/lib/net461/FsVerbalExpressions.dll"
-#r "FParsec/lib/portable-net45+netcore45+wpa81+wp8/FParsecCS.dll"
-#r "FParsec/lib/portable-net45+netcore45+wpa81+wp8/FParsec.dll"
+#r "FParsec/lib/net40-client/FParsecCS.dll"
+#r "FParsec/lib/net40-client/FParsec.dll"
 #r "FSharp.Collections.ParallelSeq/lib/net40/FSharp.Collections.ParallelSeq.dll"
 
 open System.Text.RegularExpressions

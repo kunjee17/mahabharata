@@ -1,7 +1,4 @@
-﻿#I "../packages/fparsec/lib/net40-client"
-#r "FParsec.dll"
-#r "FParsecCS.dll"
-#load "NameFinder.fs"
+﻿#load "NameFinder.fs"
 open System
 open NameFinder
 

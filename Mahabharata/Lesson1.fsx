@@ -4,9 +4,9 @@ Lesson 1 - Basic understanding of NLP. Getting started with term,document freque
 #I "../packages"
 #r "Microsoft.FsharpLu.Json/lib/net452/Microsoft.FsharpLu.Json.dll"
 #r "Newtonsoft.Json/lib/net45/Newtonsoft.Json.dll"
-#r "MathNet.Numerics/lib/net40/MathNet.Numerics.dll"
-#r "MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
-#r "FSharp.Data/lib/net40/FSharp.Data.dll"
+#r "MathNet.Numerics/lib/net461/MathNet.Numerics.dll"
+#r "MathNet.Numerics.FSharp/lib/net45/MathNet.Numerics.FSharp.dll"
+#r "FSharp.Data/lib/net45/FSharp.Data.dll"
 
 open System.IO
 open System
